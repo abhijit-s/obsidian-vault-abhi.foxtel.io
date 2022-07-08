@@ -1,3 +1,38 @@
+:root {
+  --font-normal: 16px;
+  --font-small: 13px;
+  --font-smaller: 11px;
+  --font-smallest: 10px;
+
+  --font-settings: 15px;
+  --font-settings-small: 13px;
+  --font-inputs: 14px;
+
+  /*----------------------------------------------------------------
+  FONTS
+  ----------------------------------------------------------------*/
+
+  /* Preview mode */
+
+  --text: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+  /* Editor mode */
+
+  --text-editor: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+  /* Code */
+
+  --font-monospace: 'JetBrains Mono', SFMono-Regular, Consolas, 'Roboto Mono',
+    monospace;
+
+  /* UI */
+
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
 .theme-dark {
   --background-primary: #272b34;
   --background-primary-alt: #20242b;
@@ -90,6 +125,11 @@
 
 body {
   -webkit-font-smoothing: auto;
+  --font-adaptive-normal: var(--font-normal);
+  --font-adaptive-small: var(--font-small);
+  --font-adaptive-smaller: var(--font-smaller);
+  --font-adaptive-smallest: var(--font-smallest);
+  --line-width-adaptive: var(--line-width);
 }
 
 .titlebar {
@@ -227,8 +267,12 @@ blockquote {
   border-radius: 4px !important;
 }
 
+html {
+  font-size: var(--editor-font-size);
+}
+
 body {
-  --font-monospace: 'Fira Code', 'Source Code Pro', monospace;
+  --font-monospace: 'Hack Nerd Font Mono', 'Fira Code', 'Source Code Pro', monospace;
 }
 
 mjx-container[jax='CHTML'] {
@@ -254,6 +298,10 @@ mjx-container[jax='CHTML'] {
 .markdown-preview-view code {
   vertical-align: 0;
   word-break: break-word;
+  font-family: var(--text);
+  font-size: var(--preview-font-size) !important;
+  font-weight: var(--preview-font-weight);
+  line-height: var(--preview-line-heightline-height);
 }
 
 .markdown-preview-section:not(:first-child) h1, .markdown-preview-section:not(:first-child) h2, .markdown-preview-section:not(:first-child) h3, .markdown-preview-section:not(:first-child) h4, .markdown-preview-section:not(:first-child) h5, .markdown-preview-section:not(:first-child) h6 {
