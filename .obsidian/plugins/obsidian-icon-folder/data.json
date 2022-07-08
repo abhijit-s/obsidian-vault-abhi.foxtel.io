@@ -4,7 +4,11 @@
     "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
     "fontSize": 16,
     "iconColor": null,
-    "recentlyUsedIcons": [],
+    "recentlyUsedIcons": [
+      "RiListCheck2",
+      "FasTape",
+      "FasPuzzlePiece"
+    ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
     "extraPadding": {
@@ -13,5 +17,8 @@
       "bottom": 2,
       "left": 2
     }
-  }
+  },
+  "Work/History v2": "FasTape",
+  "Work/History v2/Design": "FasPuzzlePiece",
+  "Work/History v2/Requirements": "RiListCheck2"
 }

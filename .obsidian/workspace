@@ -7,8 +7,13 @@
         "id": "ea514759f69311ae",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Work/History v2/Requirements/Content-API.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
         }
       }
     ],
@@ -49,7 +54,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 309.5
   },
   "right": {
     "id": "3c3f3be0bdad1e7d",
@@ -65,6 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Work/History v2/Requirements/Content-API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Work/History v2/Requirements/Content-API.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,6 +117,24 @@
             "type": "leaf",
             "state": {
               "type": "outline",
+              "state": {
+                "file": "Work/History v2/Requirements/Content-API.md"
+              }
+            }
+          },
+          {
+            "id": "7d2812d802999265",
+            "type": "leaf",
+            "state": {
+              "type": "BC-matrix",
+              "state": {}
+            }
+          },
+          {
+            "id": "bcde155de5fbbeed",
+            "type": "leaf",
+            "state": {
+              "type": "BC-tree",
               "state": {}
             }
           }
@@ -121,5 +146,9 @@
     "collapsed": true
   },
   "active": "ea514759f69311ae",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Work/History v2/Requirements/Content-API.md",
+    "Work/History v2/Design/V2 (Future).md",
+    "Work/History v2/Design/V1 (Current).md"
+  ]
 }
