@@ -7,5 +7,6 @@
   "spellcheck": true,
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "Work/History v2/zAttachments",
-  "tabSize": 3
+  "tabSize": 3,
+  "promptDelete": false
 }
