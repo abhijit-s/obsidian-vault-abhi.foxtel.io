@@ -83,23 +83,23 @@ For help and/or CSS snippets, thanks to:
 
   /* Preview mode */
 
-  --text: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
-    Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  --text: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', 'Noto Sans', Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, sans-serif;
 
   /* Editor mode */
 
-  --text-editor: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  --text-editor: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans', 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
 
   /* Code */
 
-  --font-monospace: 'JetBrains Mono', SFMono-Regular, Consolas, 'Roboto Mono',
+  --font-monospace: 'Hack Nerd Font Mono', 'JetBrains Mono', SFMono-Regular, Consolas, 'Roboto Mono',
     monospace;
 
   /* UI */
 
-  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
-    Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Noto Sans', 'Segoe UI', Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, sans-serif;
 
   /* Colors, sizes, weights, padding */
 
