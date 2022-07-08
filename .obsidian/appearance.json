@@ -1,6 +1,6 @@
 {
-  "cssTheme": "Things",
+  "cssTheme": "",
   "baseFontSize": 12,
   "monospaceFontFamily": "Hack Nerd Font Mono",
-  "baseFontSizeAction": true
+  "baseFontSizeAction": false
 }

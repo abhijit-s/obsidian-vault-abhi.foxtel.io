@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "ea514759f69311ae",
+        "id": "9772ff62499f6f81",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Work/History v2/Design/V2 (Future).md",
-            "mode": "preview",
+            "file": "Work/History v2/Requirements/Content-API.md",
+            "mode": "source",
             "backlinks": true,
             "source": false
           }
@@ -41,7 +41,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#history",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -50,8 +50,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -71,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Work/History v2/Design/V2 (Future).md",
+                "file": "Work/History v2/Requirements/Content-API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Work/History v2/Design/V2 (Future).md",
+                "file": "Work/History v2/Requirements/Content-API.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Work/History v2/Design/V2 (Future).md"
+                "file": "Work/History v2/Requirements/Content-API.md"
               }
             }
           },
@@ -168,12 +167,12 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "ea514759f69311ae",
+  "active": "9772ff62499f6f81",
   "lastOpenFiles": [
+    "Work/History v2/Requirements/Content-API.md",
     "Work/History v2/Design/V2 (Future).md",
-    "Work/History v2/My Tasks.md",
-    "Work/History v2/Design/Drawing 2022-07-08 13.05.28.excalidraw.md",
     "Work/History v2/Design/V1 (Current).md",
-    "Work/History v2/Requirements/Content-API.md"
+    "Work/History v2/My Tasks.md",
+    "Work/History v2/Design/Drawing 2022-07-08 13.05.28.excalidraw.md"
   ]
 }
