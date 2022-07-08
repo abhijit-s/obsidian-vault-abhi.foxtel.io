@@ -1,8 +1,8 @@
 {
   "cssTheme": "Things",
-  "baseFontSize": 13,
+  "baseFontSize": 14,
   "monospaceFontFamily": "Hack Nerd Font Mono",
   "baseFontSizeAction": true,
   "textFontFamily": "",
-  "interfaceFontFamily": ""
+  "interfaceFontFamily": "Helvetica Neue"
 }
