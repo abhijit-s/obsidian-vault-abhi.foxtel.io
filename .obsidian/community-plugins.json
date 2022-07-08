@@ -16,5 +16,12 @@
   "obsidian-enhancing-mindmap",
   "map-of-content",
   "obsidian-map-view",
-  "excalibrain"
+  "excalibrain",
+  "obsidian-codeblock-labels",
+  "cm-editor-syntax-highlight-obsidian",
+  "cmenu-plugin",
+  "obsidian-emoji-toolbar",
+  "obsidian-markdown-formatting-assistant-plugin",
+  "obsidian-jsonifier",
+  "obsidian-import-json"
 ]
