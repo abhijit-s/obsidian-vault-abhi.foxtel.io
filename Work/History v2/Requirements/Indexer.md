@@ -1,5 +1,7 @@
 #history #requirements #kayo 
 
+
+### Corner case: Duplicate Content with different asset IDs
 - Duplicate assets: Need another mechanism to update resume points for existing history
 - This would be need to be facilitated using:
 	- Vimond asset update events that are received
