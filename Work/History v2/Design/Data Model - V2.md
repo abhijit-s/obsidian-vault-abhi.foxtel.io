@@ -1,4 +1,8 @@
-Resume points & history summary will be stored fundamentally at the asset level. The primary set of attributes will be:
+Resume points & history summary will be stored for each profile, 
+- Fundamentally at the **ASSET** level. 
+- As disparate sets of assets in `IN_PROGRESS` and `COMPLETED` states
+
+The primary set of attributes for an asset resume point will be:
 
 ```json
 {
@@ -19,4 +23,24 @@ Resume points & history summary will be stored fundamentally at the asset level.
     "seasonCategoryId": "1450",
 }
 ```
-However, this is primarily done because of demands of the read-path. There is a need to group/filter the assets at one of these hierarchical levels (  binge specific)
+However, this is primarily done because of demands of the read-path. There is a need to group/filter the assets at one of these hierarchical levels (<mark style="background: #FFB86CA6;"> ⚠️ binge specific </mark> )
+
+ For Kayo this might mean having to do the same in a different manner. For now we know Kayo (and perhaps Flash) needs to do it using:
+- The hierarchy (shows)
+- Other attributes such as sport and there might be other attributes ( `rir:Question` TBD )
+
+## Data model design considerations
+
+The governing aspects for the design would be:
+- The way the data needs to be viewed/projected. Behind the scenes, this would mean `viewing-api` would facilitate it with a combination of API calls + filters + aggregation + sorting. 
+- DynamoDB storage design & API consideration: In order to make fetch/read data efficiently, it is recommend that `GetItem` requests are made instead of `Query` requests (naturally the queries are slower, with the exception that querying using the partition key for all results can be quicker than a table scan).
+	- Therefore the attempt is to ensure we strike a balance between making keyed `GetItem` calls and post processing (filtering/sorting/aggregation)
+- We can possibly externalise certain pre-lookups (such as arriving at a limited set of asset IDs) to then get specific history items. 
+
+### How can we narrow down the set of assets that we have to get resume points for from DynamoDB?
+There can be multiple approaches to this depending on the use case.
+Some known use cases:
+- Get viewing history for a particular show (in which case the show category ID will be known)
+- Get viewing history for a particular show & season (in which case the show & season category IDs will be known)
+- Get the entire viewing history (Resume/Watched)
+- 

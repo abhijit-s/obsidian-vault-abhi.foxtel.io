@@ -26,5 +26,6 @@
   "obsidian-import-json",
   "obsidian-minimal-settings",
   "obsidian-style-settings",
-  "obsidian-dictionary-plugin"
+  "obsidian-dictionary-plugin",
+  "highlightr-plugin"
 ]
