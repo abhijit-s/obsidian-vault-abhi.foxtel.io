@@ -54,4 +54,16 @@ Some known use cases (`rir:Information` with potentially more for Kayo and/or Fl
 
 ## Efficient Querying in DynamoDB
 
-This is 
+From the looks of it, it seems we may have to build a hierarchy evaluation mechanism - 
+- either using the table design, or 
+- externalising it (another API perhaps)
+
+
+### 🚧  WIP:
+
+- 🤔  Can we look at storing assets using hierarchical keys such that we can make range queries efficiently. See: [DynamoDB: Best Practices for using sort keys to organise data](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-sort-keys.html)
+- 🤔  Can we utilise Global or Local Secondary Indexes to provide for dimensional queries (hierarchical perhaps). See: [DynamoDB: General guidelines for secondary indexes in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-indexes-general.html)
+- 🤔  Can we use DynamoDB streams and lambdas to perform aggregations? This might be helpful if we want to retain a summary/collection of `assetIds` (and/or `categoryId`s) per profile for query/join purposes. See: [DynamoDB: Using Global Secondary Indexes for materialised aggregation queries](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-gsi-aggregation.html)
+
+See also:
+ [DynamoDB: Take advantage of sparse indexes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-indexes-general-sparse-indexes.html)

@@ -1,5 +1,6 @@
 #history #requirements #kayo 
 
+Processing 
 
 ### Corner case: Duplicate Content with different asset IDs
 - Duplicate assets: Need another mechanism to update resume points for existing history
