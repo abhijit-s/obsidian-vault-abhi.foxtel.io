@@ -23,5 +23,8 @@
   "obsidian-emoji-toolbar",
   "obsidian-markdown-formatting-assistant-plugin",
   "obsidian-jsonifier",
-  "obsidian-import-json"
+  "obsidian-import-json",
+  "obsidian-minimal-settings",
+  "obsidian-style-settings",
+  "obsidian-dictionary-plugin"
 ]
