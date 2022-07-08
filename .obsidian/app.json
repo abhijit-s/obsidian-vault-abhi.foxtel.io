@@ -8,5 +8,11 @@
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "Work/History v2/zAttachments",
   "tabSize": 3,
-  "promptDelete": false
+  "promptDelete": false,
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "2",
+    "downscalePercent": 100
+  }
 }

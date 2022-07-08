@@ -51,3 +51,7 @@ Some known use cases (`rir:Information` with potentially more for Kayo and/or Fl
 	- Apply any aggregation/filtering/sorting rules to it
 
 📔  Furthermore, according to a corner case that needs to be handled (as mentioned in [[Indexer#Corner case Duplicate Content with different asset IDs]] ) we may have to extend the data model to incorporate a summary row that contains the list of ALL `assetId`s per `profileId` for which there is a history entry.
+
+## Efficient Querying in DynamoDB
+
+This is 

@@ -5,9 +5,11 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
-      "RiListCheck2",
+      "RiIndentIncrease",
+      "FasPuzzlePiece",
       "FasTape",
-      "FasPuzzlePiece"
+      "RiListCheck2",
+      "FasToriiGate"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -20,5 +22,8 @@
   },
   "Work/History v2": "FasTape",
   "Work/History v2/Design": "FasPuzzlePiece",
-  "Work/History v2/Requirements": "RiListCheck2"
+  "Work/History v2/Requirements": "RiListCheck2",
+  "Work/History v2/Requirements/Indexer.md": "RiIndentIncrease",
+  "Work/History v2/Requirements/XP-API.md": "FasToriiGate",
+  "Work/History v2/Requirements/Content-API.md": "FasBookOpen"
 }

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Work/History v2/Requirements/Indexer.md",
+            "file": "Work/History v2/Design/Data Model - V2.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Work/History v2/Requirements/Indexer.md",
+                "file": "Work/History v2/Design/Data Model - V2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Work/History v2/Requirements/Indexer.md",
+                "file": "Work/History v2/Design/Data Model - V2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Work/History v2/Requirements/Indexer.md"
+                "file": "Work/History v2/Design/Data Model - V2.md"
               }
             }
           },
@@ -169,15 +169,15 @@
   },
   "active": "76f98b75a281229f",
   "lastOpenFiles": [
-    "Work/History v2/Requirements/Indexer.md",
-    "Work/History v2/Design/V2 (Future).md",
-    "Work/History v2/Design/V1 (Current).md",
     "Work/History v2/Design/Data Model - V2.md",
-    "Work/History v2/Requirements/XP-API.md",
+    "Work/History v2/Design/Efficient DynamoDB querying.md",
+    "Work/History v2/Requirements/Indexer.md",
+    "Work/History v2/Design/V1 (Current).md",
+    "Work/History v2/Design/V2 (Future).md",
     "Work/History v2/Requirements/Content-API.md",
+    "Work/History v2/Requirements/XP-API.md",
     "Work/History v2/My Tasks.md",
     "Work/History v2/zAttachments/Ares History Indexer + Viewing API - Ares History (v1).pdf",
-    "Work/History v2/Requirements/Untitled Diagram.svg",
-    "Work/History v2/Design/Drawing 2022-07-08 13.05.28.excalidraw.md"
+    "Work/History v2/Requirements/Untitled Diagram.svg"
   ]
 }
