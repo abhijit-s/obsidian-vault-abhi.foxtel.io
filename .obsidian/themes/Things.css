@@ -93,7 +93,7 @@ For help and/or CSS snippets, thanks to:
 
   /* Code */
 
-  --font-monospace: 'JetBrains Mono', SFMono-Regular, Consolas, 'Roboto Mono',
+  --font-monospace: 'Hack Nerd Font Mono', 'JetBrains Mono', SFMono-Regular, Consolas, 'Roboto Mono',
     monospace;
 
   /* UI */
@@ -113,15 +113,15 @@ For help and/or CSS snippets, thanks to:
   --strong-color: var(--pink);
   --em-color: var(--pink);
 
-  --font-normal: 16px;
-  --font-small: 13px;
-  --font-smaller: 11px;
-  --font-smallest: 10px;
+  --font-normal: 100%;
+  --font-small: 12px;
+  --font-smaller: 10px;
+  --font-smallest: 8px;
   --editor-font-size: 1rem;
 
-  --font-settings: 15px;
-  --font-settings-small: 13px;
-  --font-inputs: 14px;
+  --font-settings: 14px;
+  --font-settings-small: 12px;
+  --font-inputs: 12px;
 
   --h1: 1.5em;
   --h2: 1.3em;
