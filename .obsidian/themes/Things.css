@@ -113,26 +113,25 @@ For help and/or CSS snippets, thanks to:
   --strong-color: var(--pink);
   --em-color: var(--pink);
 
-  --font-normal: 100%;
+  --font-normal: 13px;
   --font-small: 12px;
   --font-smaller: 10px;
   --font-smallest: 8px;
-  --editor-font-size: 1rem;
 
   --font-settings: 14px;
   --font-settings-small: 12px;
   --font-inputs: 12px;
 
-  --h1: 1.5em;
-  --h2: 1.3em;
-  --h3: 1.1em;
-  --h4: 0.9em;
+  --h1: 1.125em;
+  --h2: 1.05em;
+  --h3: 1em;
+  --h4: 0.90em;
   --h5: 0.85em;
   --h6: 0.85em;
 
-  --h1-weight: 700;
-  --h2-weight: 700;
-  --h3-weight: 600;
+  --h1-weight: 600;
+  --h2-weight: 600;
+  --h3-weight: 500;
   --h4-weight: 500;
   --h5-weight: 500;
   --h6-weight: 400;
@@ -154,15 +153,16 @@ For help and/or CSS snippets, thanks to:
   --cursor: default;
 }
 
-/* Desktop fonts */
 body {
-  --font-adaptive-normal: var(--font-normal);
+  --font-adaptive-normal: var(--font-text-size, var(--editor-font-size));
   --font-adaptive-small: var(--font-small);
   --font-adaptive-smaller: var(--font-smaller);
   --font-adaptive-smallest: var(--font-smallest);
   --line-width-adaptive: var(--line-width);
+  --line-width-wide: calc(var(--line-width) + 12.5%);
+  --font-code: calc(var(--font-adaptive-normal) * 0.9);
+  --table-font-size: calc(var(--font-adaptive-normal) * 0.875)
 }
-
 /* Tablet fonts */
 @media (min-width: 400pt) {
   .is-mobile {
