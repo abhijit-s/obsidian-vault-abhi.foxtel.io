@@ -41,17 +41,31 @@ The governing aspects for the design would be:
 - We can possibly externalise certain pre-lookups (such as arriving at a limited set of asset IDs) to then get specific history items. 
 
 ### How can we narrow down the set of assets that we have to get resume points for from DynamoDB?
-There can be multiple approaches to this depending on the use case.
+There can be a couple of different approaches to this depending on the use case (or across all use cases)
 
 Some known use cases (`rir:Information` with potentially more for Kayo and/or Flash):
-- Get viewing history for a particular show (in which case the show category ID will be known)
-- Get viewing history for a particular show & season (in which case the show & season category IDs will be known)
-- `fas:FileImport`  Get the entire viewing history (Resume/Watched) - Special case wherein no identifiers or contextual information is known. This would perhaps be addressed using a two-step approach involving:
+1. Get viewing history for a particular show (in which case the show category ID will be known)
+2. Get viewing history for a particular show & season (in which case the show & season category IDs will be known)
+3. `fas:FileImport`  Get the entire viewing history (Resume/Watched) - Special case wherein no identifiers or contextual information is known. This would perhaps be addressed using a two-step approach involving:
 	- Fetch all history (`IN_PROGRESS` or `COMPLETED`) for a profile
 	- Apply any aggregation/filtering/sorting rules to it
+	
+	#### Approach 1
+	- Ensure that we have enough information within the history row so that we can 'post-process' in order to achieve the desired viewing history output. This would mean embedding additional attributes which would then facilitate aggregation/filtering/sorting of the retrieved history rows. 
 
-📔  Furthermore, according to a corner case that needs to be handled (as mentioned in [[Indexer#Corner case Duplicate Content with different asset IDs]] ) we may have to extend the data model to incorporate a summary row that contains the list of ALL `assetId`s per `profileId` for which there is a history entry.
+| Pros                                                                                  | Cons |
+| ------------------------------------------------------------------------------------- | ---- |
+| Each history row needs to store additional information thus making the payload larger |      |
+|                                                                                       |      |
 
+
+	
+	#### Approach 2
+	- Ensure that we have enough information within the history row so that we can 'post-process' in order to achieve the desired viewing history output. This would mean embedding additional attributes which would then facilitate aggregation/filtering/sorting of the retrieved history rows. 
+	- Pros:
+	- Cons
+
+ 
 ## Efficient Querying in DynamoDB
 
 From the looks of it, it seems we may have to build a hierarchy evaluation mechanism - 

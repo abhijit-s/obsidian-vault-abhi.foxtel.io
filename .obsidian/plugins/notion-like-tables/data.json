@@ -1,0 +1,79 @@
+{
+  "appData": {},
+  "state": {
+    "Work/History v2/Design/Data Model - V2.md": {
+      "0": {
+        "data": {
+          "headers": [
+            {
+              "id": "d758c8a6-37d8-43da-9fdd-d2b3dff406c7",
+              "initialIndex": 0,
+              "content": "Pros",
+              "sortName": "default",
+              "width": "305px",
+              "type": "text"
+            },
+            {
+              "id": "2c7cc097-0038-4e9c-b4af-30c0967caed8",
+              "initialIndex": 1,
+              "content": "Cons",
+              "sortName": "default",
+              "width": "288px",
+              "type": "text"
+            }
+          ],
+          "rows": [
+            {
+              "id": "3c13b7e5-fd59-484c-8c50-ced6f4f78f6c",
+              "initialIndex": 0,
+              "creationTime": 1657496725152
+            },
+            {
+              "id": "d3e4b8a7-b23b-40cf-95ac-d2c956c775f6",
+              "initialIndex": 1,
+              "creationTime": 1657496807608
+            }
+          ],
+          "cells": [
+            {
+              "id": "8d4a2fd4-d39c-4840-b51e-c72bf38c6220",
+              "rowId": "3c13b7e5-fd59-484c-8c50-ced6f4f78f6c",
+              "headerId": "d758c8a6-37d8-43da-9fdd-d2b3dff406c7",
+              "type": "text",
+              "text": "Each history row needs to store additional information thus making the payload larger"
+            },
+            {
+              "id": "bbe56d91-398a-4f35-beb7-e18b3b3375d3",
+              "rowId": "3c13b7e5-fd59-484c-8c50-ced6f4f78f6c",
+              "headerId": "2c7cc097-0038-4e9c-b4af-30c0967caed8",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "c58b3c1b-d137-4c28-803c-b59e04506a09",
+              "rowId": "d3e4b8a7-b23b-40cf-95ac-d2c956c775f6",
+              "headerId": "d758c8a6-37d8-43da-9fdd-d2b3dff406c7",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "34f47254-2279-4e54-b733-306cf2422655",
+              "rowId": "d3e4b8a7-b23b-40cf-95ac-d2c956c775f6",
+              "headerId": "2c7cc097-0038-4e9c-b4af-30c0967caed8",
+              "type": "text",
+              "text": ""
+            }
+          ],
+          "tags": []
+        },
+        "viewType": "live-preview",
+        "shouldUpdate": false
+      }
+    }
+  },
+  "focusedElement": {
+    "id": "-1",
+    "type": "unfocused"
+  },
+  "excludedFiles": []
+}

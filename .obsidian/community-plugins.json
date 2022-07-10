@@ -27,5 +27,9 @@
   "obsidian-minimal-settings",
   "obsidian-style-settings",
   "obsidian-dictionary-plugin",
-  "highlightr-plugin"
+  "highlightr-plugin",
+  "obsidian-plugin-toc",
+  "obsidian-dynamic-toc",
+  "notion-like-tables",
+  "table-extended"
 ]
