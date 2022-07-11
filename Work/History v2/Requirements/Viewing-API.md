@@ -1,4 +1,14 @@
+#history #requirements #viewing-api #kayo
 Service which provides the APIs to query and fetch a user's viewing history.
+
+Current implementations:
+- Ares:
+	- [API-doc](https://ares-viewing-api.content.platform-lb.streamotion-platform-prod.com.au/api-doc/index.html)
+	- [Github](https://github.com/fsa-streamotion/streamotion-platform-ares-viewing-api)
+- Flash:
+	- API-doc
+	- [Github](https://github.com/fsa-streamotion/streamotion-platform-flash-viewing-api)
+
 
 ### Requirements (per current design)
 _NOTE_: viewing history below could mean either resumable or watched content (or both).

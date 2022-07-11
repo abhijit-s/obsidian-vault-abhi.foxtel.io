@@ -1,4 +1,6 @@
-## Pagination
+#history #requirements 
+
+## 1. Pagination
 As an improvement, we may need to implement pagination for viewing history lookups. 
 
 #### Why do it?
@@ -12,10 +14,12 @@ Typically, for a case such as the 'Continue Binging' carousel, the viewable caro
 	- **NOTE**: as a part of the design, we may have to store all the 'visited' viewing history items along with the cursor since this would help in discarding the said items in further requests. 
 - The pagination item key is returned as a part of the API response, using which the client can make further requests for additional items (ex: `cursor=<base64 encoded cursor>&next=20`)
 
-#### TO NOTE
+### History Item Definition
 - The definition of a single item of viewing history would depend on the product's definition. However, simplistically, this would imply the highest level of aggregation applied to the profile's history items when returning the API response (viewing api). Thus, for example, in Binge this would mean that the single item is for a show or a movie.
 - Pagination implementation will therefore have to account for such semantics.]
 
 
-### Deleting History Items
+## 2. Deleting History Items
 In the future, we want to provide the ability to a user to remove individual items from a user's history. 
+These would again depend on the definition of a history item for a product.
+Example: In Binge, if a user wants to delete a particular show from history, that would probably mean removing history for all associated episodes within that show (TBD).

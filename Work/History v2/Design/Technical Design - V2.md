@@ -50,4 +50,4 @@ Will be split into 2 services:
 	- Does so by possibly performing additional lookups/co-ordination with other APIs, such as Content-API.
  
 ##### Framework: 
-Spring WebFlux on Kubernetes (Java v17 `rir:Question` )
+Spring WebFlux on Kubernetes (Java v17 `rir:Question`)
