@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
-      "FasPlus",
-      "FasPuzzlePiece",
-      "FasTape",
+      "RiCodeView",
+      "FasToriiGate",
       "RiListCheck2",
-      "FasToriiGate"
+      "FasTape",
+      "FasPuzzlePiece"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -27,5 +27,6 @@
   "Work/History v2/Requirements/XP-API.md": "FasToriiGate",
   "Work/History v2/Requirements/Content-API.md": "FasBookOpen",
   "Work/History v2/Requirements/Datalake.md": "FasDatabase",
-  "Work/History v2/Requirements/Additional Requirements.md": "FasPlus"
+  "Work/History v2/Requirements/Additional Requirements.md": "FasPlus",
+  "Work/History v2/Requirements/Viewing-API.md": "RiCodeView"
 }
