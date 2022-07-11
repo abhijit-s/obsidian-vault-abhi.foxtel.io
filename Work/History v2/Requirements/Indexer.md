@@ -1,6 +1,9 @@
 #history #requirements #kayo 
 
-Processing 
+### Processing 
+- Listen on a Kafka topic for viewing-history events.
+- ValidProcess these events by applying business rules.
+- Write processed viewing-history record to the repository (DynamoDB).
 
 ### Corner case: Duplicate Content with different asset IDs
 - Duplicate assets: Need another mechanism to update resume points for existing history

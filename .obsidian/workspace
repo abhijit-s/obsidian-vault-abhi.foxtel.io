@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Work/History v2/Design/Technical Design - V2.md",
+            "file": "Work/History v2/Requirements/Indexer.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Work/History v2/Design/Technical Design - V2.md",
+                "file": "Work/History v2/Requirements/Indexer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Work/History v2/Design/Technical Design - V2.md",
+                "file": "Work/History v2/Requirements/Indexer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Work/History v2/Design/Technical Design - V2.md"
+                "file": "Work/History v2/Requirements/Indexer.md"
               }
             }
           },
@@ -169,15 +169,15 @@
   },
   "active": "228dea5b42004143",
   "lastOpenFiles": [
+    "Work/History v2/Requirements/Indexer.md",
+    "Work/History v2/Requirements/Content-API.md",
+    "Work/History v2/Requirements/Additional Requirements.md",
     "Work/History v2/Design/Technical Design - V2.md",
     "Work/History v2/Design/Data Model - V2.md",
     "Work/History v2/Design/Efficient DynamoDB querying.md",
     "Work/History v2/Design/V2 (Future).md",
     "Work/History v2/Design/V1 (Current).md",
     "Work/History v2/My Tasks.md",
-    "Work/History v2/Requirements/Indexer.md",
-    "Work/History v2/Requirements/Content-API.md",
-    "Work/History v2/Requirements/XP-API.md",
-    "Work/History v2/zAttachments/Ares History Indexer + Viewing API - Ares History (v1).pdf"
+    "Work/History v2/Requirements/XP-API.md"
   ]
 }
