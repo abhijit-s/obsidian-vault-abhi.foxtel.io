@@ -6,7 +6,7 @@
         "data": {
           "headers": [
             {
-              "id": "e2532b8d-3940-4605-964a-bf7edb345ac1",
+              "id": "b1fc9483-41f5-417a-a30b-7878d02f320d",
               "initialIndex": 0,
               "content": "Pros",
               "sortName": "default",
@@ -14,7 +14,7 @@
               "type": "text"
             },
             {
-              "id": "b2f8e063-3057-4aaa-b2b1-b1c858531fcd",
+              "id": "2db69fcb-8c8d-4689-be21-e742276fcaef",
               "initialIndex": 1,
               "content": "Cons",
               "sortName": "default",
@@ -24,87 +24,87 @@
           ],
           "rows": [
             {
-              "id": "27665553-3f5f-4b4f-96c7-d20cb90f558c",
+              "id": "ec3e3d20-d146-44a2-97cb-9a888017a431",
               "initialIndex": 0,
               "creationTime": 1657497534334
             },
             {
-              "id": "2dc72240-294e-492a-a3f3-090843f9dda5",
+              "id": "42d58d94-d40a-4a5f-ac26-906083505147",
               "initialIndex": 1,
               "creationTime": 1657500503060
             },
             {
-              "id": "0d3befa3-26d5-4921-8055-c54ae5a7a571",
+              "id": "34e52c13-4948-47a7-af78-ccb983a3ff07",
               "initialIndex": 2,
-              "creationTime": 1657502029876
+              "creationTime": 1657501995625
             },
             {
-              "id": "56d9b2d5-ed3b-405f-88d9-92454fd343df",
+              "id": "676d47a4-3e98-4b89-b84c-e1c5d6d4fba6",
               "initialIndex": 3,
-              "creationTime": 1657502029630
+              "creationTime": 1657501995955
             }
           ],
           "cells": [
             {
-              "id": "d41f0023-9429-492e-9f8f-d0b5ea48257c",
-              "rowId": "27665553-3f5f-4b4f-96c7-d20cb90f558c",
-              "headerId": "e2532b8d-3940-4605-964a-bf7edb345ac1",
+              "id": "c6f44af8-2958-4a9c-97ed-28b0dc0d1e56",
+              "rowId": "ec3e3d20-d146-44a2-97cb-9a888017a431",
+              "headerId": "b1fc9483-41f5-417a-a30b-7878d02f320d",
               "type": "text",
               "text": "Provides a 'general' way of achieving the objective and thus can be thought of as a platform approach."
             },
             {
-              "id": "960686cc-5a53-4cc6-a19c-00ab4e89335b",
-              "rowId": "27665553-3f5f-4b4f-96c7-d20cb90f558c",
-              "headerId": "b2f8e063-3057-4aaa-b2b1-b1c858531fcd",
+              "id": "a013f511-4822-483d-abe6-fc9326312a3e",
+              "rowId": "ec3e3d20-d146-44a2-97cb-9a888017a431",
+              "headerId": "2db69fcb-8c8d-4689-be21-e742276fcaef",
               "type": "text",
               "text": "May warrant additional effort to build such a lookup mechanism to narrow down the list of resume points (assets)."
             },
             {
-              "id": "d5d98abf-c912-42f7-98a0-84ca5b959fa8",
-              "rowId": "2dc72240-294e-492a-a3f3-090843f9dda5",
-              "headerId": "e2532b8d-3940-4605-964a-bf7edb345ac1",
+              "id": "1ecf0adc-48f1-48cd-a1d3-b302617bed1c",
+              "rowId": "42d58d94-d40a-4a5f-ac26-906083505147",
+              "headerId": "b1fc9483-41f5-417a-a30b-7878d02f320d",
               "type": "text",
-              "text": "Can provide flexibility, by means of generalisation, meaning, tomorrow additional lookup methods can be added to facilitate newer requirements, whilst keeping the general flow the same.  `Lookup interested list of assetIds` -> `Fetch resume for those assets` -> `Post-process if needed` "
+              "text": "Can provide flexibility, by means of generalisation, meaning, tomorrow additional lookup methods can be added to facilitate newer requirements, whilst keeping the general flow the same.  Lookup interested list of assetIds -> Fetch resume for those asseets -> Post-process if needed"
             },
             {
-              "id": "1c614f5c-361a-42c5-b039-db9c30513e1d",
-              "rowId": "2dc72240-294e-492a-a3f3-090843f9dda5",
-              "headerId": "b2f8e063-3057-4aaa-b2b1-b1c858531fcd",
+              "id": "e7bc84f1-7a41-4039-b46a-eea227771fe5",
+              "rowId": "42d58d94-d40a-4a5f-ac26-906083505147",
+              "headerId": "2db69fcb-8c8d-4689-be21-e742276fcaef",
               "type": "text",
               "text": "Additional latency impact depending on the way this is achieved."
             },
             {
-              "id": "e02f53c3-fddb-492b-883e-3cd5334353e3",
-              "rowId": "0d3befa3-26d5-4921-8055-c54ae5a7a571",
-              "headerId": "e2532b8d-3940-4605-964a-bf7edb345ac1",
+              "id": "e9448d7a-a5e4-4cf0-8bce-e49ca21f5c1c",
+              "rowId": "34e52c13-4948-47a7-af78-ccb983a3ff07",
+              "headerId": "b1fc9483-41f5-417a-a30b-7878d02f320d",
               "type": "text",
-              "text": "There might already be an API we can leverage and utilise for this purpose -&amp;gt; VCC content discovery, which has the ability to fetch a set of assets using different flexible queries (lucene based)."
+              "text": "There might already be an API we can leverage and utilise for this purpose -> VCC content discovery, which has the ability to fetch a set of assets using different flexible queries (lucene based). "
             },
             {
-              "id": "2c973a92-0050-4d66-b2c6-3853ee277aca",
-              "rowId": "0d3befa3-26d5-4921-8055-c54ae5a7a571",
-              "headerId": "b2f8e063-3057-4aaa-b2b1-b1c858531fcd",
+              "id": "67485143-f394-4704-93f8-dd7f7a5d2b48",
+              "rowId": "34e52c13-4948-47a7-af78-ccb983a3ff07",
+              "headerId": "2db69fcb-8c8d-4689-be21-e742276fcaef",
               "type": "text",
               "text": "Implementing pagination may or may not be trivial (depends on implementation)."
             },
             {
-              "id": "75f447f3-db63-4ca2-b544-1796aa55a056",
-              "rowId": "56d9b2d5-ed3b-405f-88d9-92454fd343df",
-              "headerId": "e2532b8d-3940-4605-964a-bf7edb345ac1",
+              "id": "3f559a9b-32cd-46e5-87bc-ed461bf37e2b",
+              "rowId": "676d47a4-3e98-4b89-b84c-e1c5d6d4fba6",
+              "headerId": "b1fc9483-41f5-417a-a30b-7878d02f320d",
               "type": "text",
               "text": ""
             },
             {
-              "id": "16e481c9-23a9-4b84-b33c-7793c3e0932b",
-              "rowId": "56d9b2d5-ed3b-405f-88d9-92454fd343df",
-              "headerId": "b2f8e063-3057-4aaa-b2b1-b1c858531fcd",
+              "id": "4319f42e-4ffb-45de-8265-b6b8d1bc8c9d",
+              "rowId": "676d47a4-3e98-4b89-b84c-e1c5d6d4fba6",
+              "headerId": "2db69fcb-8c8d-4689-be21-e742276fcaef",
               "type": "text",
               "text": "The lookup mechanism (API) will need to be customised per product."
             }
           ],
           "tags": []
         },
-        "viewType": "reading",
+        "viewType": "live-preview",
         "shouldUpdate": false
       }
     }
