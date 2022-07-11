@@ -63,14 +63,12 @@ Sample event:
 | str-start   | playing     | Video playback started               |
 
 - `Start` (`playerEvent='str-start' & playerState='playing'`) and `End` (`playerEvent='end' & playerState='pause'`) events can be detected simply using the `playerEvent` attribute, and thus allows Datalake to send them immediately.
-- Similarly, the `Paused` events (`playerEvent='period' & playerState='pause'`) can be sent through immediately since those are an indication that the player has been explicitly paused.
+	- Similarly, the `Paused` events (`playerEvent='period' & playerState='pause'`) can be sent through immediately since those are an indication that the player has been explicitly paused.
 - The frontend also associates a  `session` to every login and subsequent interactions with the app - something that Datalake can use to perform stateful computations.
 - For the `Playing` events (`playerEvent='period' & playerState='playing'`), there is some ambiguity as to when they should be sent out to platform. This is where the windowing will be applicable. 
 	- As such a long window (5min) is alright as long as the video continues to play for that period. 
 	- If for some reason, ping events from the UI are lost and no subsequent events are received (with the last one indicating that the video was playing), Datalake can possibly track such out-of-the-ordinary states and transition the state explicitly if required.
-- The UI keeps sending the `Paused` even
+- The UI keeps sending the `Paused` event at regular intervals, no matter how long the pause duration. This can either be improved at the UI (not send them periodically when a pause is detected), or Datalake can choose to ignore repeated paused events where video is paused at the same location. 
 
 Furthermore, at present, Datalake enriches the player event to a certain degree after joining it with their copy of the master index in Binge. This mechanism is not needed and can be completely dropped.
 Platform will take care of enriching the event as required.
-
-🏗️  Under construction

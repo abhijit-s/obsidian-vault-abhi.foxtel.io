@@ -26,3 +26,6 @@ _NOTE_: viewing history below could mean either resumable or watched content (or
 
 #### Flash specific
 TBD
+
+
+The viewing history items inherently should be sorted per 

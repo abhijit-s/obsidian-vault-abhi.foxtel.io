@@ -91,12 +91,6 @@ Sample queries using VCC Discovery API:
 | Provides the best of both options in a way and a healthy balance could be achieved between the two. | It's not completely generalised, therefore still requires product specific data model customisations. |
 | Keeping the post-processing is kept minimal or small enough would imply faster lookups. |  |
 
- 
-## Efficient Querying in DynamoDB
-
-From the looks of it, it seems we may have to build a hierarchy evaluation mechanism - 
-- either using the table design, or 
-- externalising it (another API perhaps)
 
 
 #### 🚧   WIP:
