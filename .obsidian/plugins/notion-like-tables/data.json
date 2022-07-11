@@ -6,60 +6,117 @@
         "data": {
           "headers": [
             {
-              "id": "d758c8a6-37d8-43da-9fdd-d2b3dff406c7",
+              "id": "992709cb-c8ad-4bb5-bb25-dada26291c5f",
               "initialIndex": 0,
               "content": "Pros",
               "sortName": "default",
-              "width": "305px",
+              "width": "306px",
               "type": "text"
             },
             {
-              "id": "2c7cc097-0038-4e9c-b4af-30c0967caed8",
+              "id": "a9ab7501-f186-43e6-a436-93f93ff9aab6",
               "initialIndex": 1,
               "content": "Cons",
               "sortName": "default",
-              "width": "288px",
+              "width": "260px",
               "type": "text"
             }
           ],
           "rows": [
             {
-              "id": "3c13b7e5-fd59-484c-8c50-ced6f4f78f6c",
+              "id": "3929b4cc-6ae9-4b23-ab10-1721ba601ed6",
               "initialIndex": 0,
-              "creationTime": 1657496725152
+              "creationTime": 1657497534334
             },
             {
-              "id": "d3e4b8a7-b23b-40cf-95ac-d2c956c775f6",
+              "id": "862a68fe-1e88-4810-a783-970d85f8c9b8",
               "initialIndex": 1,
-              "creationTime": 1657496807608
+              "creationTime": 1657498195044
+            },
+            {
+              "id": "bd8ba031-5d00-48e5-ade5-5f26fcd645b9",
+              "initialIndex": 2,
+              "creationTime": 1657498586945
+            },
+            {
+              "id": "ee5f76ab-1d0e-4098-8421-390eb775d62e",
+              "initialIndex": 3,
+              "creationTime": 1657498586872
+            },
+            {
+              "id": "0a11a8cc-b51c-423a-ac96-0fddccb1e4ce",
+              "initialIndex": 4,
+              "creationTime": 1657498589027
             }
           ],
           "cells": [
             {
-              "id": "8d4a2fd4-d39c-4840-b51e-c72bf38c6220",
-              "rowId": "3c13b7e5-fd59-484c-8c50-ced6f4f78f6c",
-              "headerId": "d758c8a6-37d8-43da-9fdd-d2b3dff406c7",
+              "id": "9f0651b7-adc3-4b98-bc42-47f0e5d672f1",
+              "rowId": "3929b4cc-6ae9-4b23-ab10-1721ba601ed6",
+              "headerId": "992709cb-c8ad-4bb5-bb25-dada26291c5f",
               "type": "text",
-              "text": "Each history row needs to store additional information thus making the payload larger"
+              "text": "Additional API calls to Content-API are heavily cached so any -ve performance impact can be minimised. Additionally, we can come up with elaborate in-memory caching strategies to further reduce lookups."
             },
             {
-              "id": "bbe56d91-398a-4f35-beb7-e18b3b3375d3",
-              "rowId": "3c13b7e5-fd59-484c-8c50-ced6f4f78f6c",
-              "headerId": "2c7cc097-0038-4e9c-b4af-30c0967caed8",
+              "id": "d9e3cb31-facb-40fa-88b9-4c186f1d62a2",
+              "rowId": "3929b4cc-6ae9-4b23-ab10-1721ba601ed6",
+              "headerId": "a9ab7501-f186-43e6-a436-93f93ff9aab6",
+              "type": "text",
+              "text": "Requires sourcing of the additional attributes from somewhere - in our case it could be additional API calls to Content-API for every asset. Has a -ve latency impact."
+            },
+            {
+              "id": "7315eef2-f5ec-498e-b07d-7b9612e20636",
+              "rowId": "862a68fe-1e88-4810-a783-970d85f8c9b8",
+              "headerId": "992709cb-c8ad-4bb5-bb25-dada26291c5f",
+              "type": "text",
+              "text": "Provides flexibility. Any required attributes are readily available so slicing/dicing/aggregation can be done in any number of manners as supported by those attributes."
+            },
+            {
+              "id": "cb2ada0d-7b10-4362-ac9b-9bd33d7d46dd",
+              "rowId": "862a68fe-1e88-4810-a783-970d85f8c9b8",
+              "headerId": "a9ab7501-f186-43e6-a436-93f93ff9aab6",
+              "type": "text",
+              "text": "Requires storage of additional attributes within the history row, thus increasing the size of the row."
+            },
+            {
+              "id": "de0ef12c-7c16-4130-8fa5-2670710645c1",
+              "rowId": "bd8ba031-5d00-48e5-ade5-5f26fcd645b9",
+              "headerId": "992709cb-c8ad-4bb5-bb25-dada26291c5f",
               "type": "text",
               "text": ""
             },
             {
-              "id": "c58b3c1b-d137-4c28-803c-b59e04506a09",
-              "rowId": "d3e4b8a7-b23b-40cf-95ac-d2c956c775f6",
-              "headerId": "d758c8a6-37d8-43da-9fdd-d2b3dff406c7",
+              "id": "fb3364fb-bc59-44f7-9fff-309efb424266",
+              "rowId": "bd8ba031-5d00-48e5-ade5-5f26fcd645b9",
+              "headerId": "a9ab7501-f186-43e6-a436-93f93ff9aab6",
+              "type": "text",
+              "text": "In the future, if demand for such additional attributes increases, it would increase the size of the data row."
+            },
+            {
+              "id": "27bd94a9-d89f-4ace-889a-a36ce46c0fdf",
+              "rowId": "ee5f76ab-1d0e-4098-8421-390eb775d62e",
+              "headerId": "992709cb-c8ad-4bb5-bb25-dada26291c5f",
+              "type": "text",
+              "text": "Simpler to implement."
+            },
+            {
+              "id": "203a71f1-5818-4e0d-9c0d-1a1eb308649a",
+              "rowId": "ee5f76ab-1d0e-4098-8421-390eb775d62e",
+              "headerId": "a9ab7501-f186-43e6-a436-93f93ff9aab6",
+              "type": "text",
+              "text": "In general, this would mean we can fetch the entire viewing history of the profile as a first step and then post-process (similar to existing design) every time."
+            },
+            {
+              "id": "a5d81a17-c17b-4955-af17-d94cef4476cb",
+              "rowId": "0a11a8cc-b51c-423a-ac96-0fddccb1e4ce",
+              "headerId": "992709cb-c8ad-4bb5-bb25-dada26291c5f",
               "type": "text",
               "text": ""
             },
             {
-              "id": "34f47254-2279-4e54-b733-306cf2422655",
-              "rowId": "d3e4b8a7-b23b-40cf-95ac-d2c956c775f6",
-              "headerId": "2c7cc097-0038-4e9c-b4af-30c0967caed8",
+              "id": "321db766-4637-4245-b787-8370e09459a6",
+              "rowId": "0a11a8cc-b51c-423a-ac96-0fddccb1e4ce",
+              "headerId": "a9ab7501-f186-43e6-a436-93f93ff9aab6",
               "type": "text",
               "text": ""
             }

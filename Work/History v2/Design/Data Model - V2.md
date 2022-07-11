@@ -1,5 +1,7 @@
 #design #history #kayo
 
+
+## Summary
 Resume points & history summary will be stored for each profile, 
 - Fundamentally at the **ASSET** level. 
 - As disparate sets of assets in `IN_PROGRESS` and `COMPLETED` states
@@ -40,7 +42,7 @@ The governing aspects for the design would be:
 	- Therefore the attempt is to ensure we strike a balance between making keyed `GetItem` calls and post processing (filtering/sorting/aggregation)
 - We can possibly externalise certain pre-lookups (such as arriving at a limited set of asset IDs) to then get specific history items. 
 
-### How can we narrow down the set of assets that we have to get resume points for from DynamoDB?
+## How can we narrow down the set of assets that we have to get resume points for from DynamoDB?
 There can be a couple of different approaches to this depending on the use case (or across all use cases)
 
 Some known use cases (`rir:Information` with potentially more for Kayo and/or Flash):
@@ -49,21 +51,26 @@ Some known use cases (`rir:Information` with potentially more for Kayo and/or Fl
 3. `fas:FileImport`  Get the entire viewing history (Resume/Watched) - Special case wherein no identifiers or contextual information is known. This would perhaps be addressed using a two-step approach involving:
 	- Fetch all history (`IN_PROGRESS` or `COMPLETED`) for a profile
 	- Apply any aggregation/filtering/sorting rules to it
-	
-	#### Approach 1
-	- Ensure that we have enough information within the history row so that we can 'post-process' in order to achieve the desired viewing history output. This would mean embedding additional attributes which would then facilitate aggregation/filtering/sorting of the retrieved history rows. 
 
-| Pros                                                                                  | Cons |
-| ------------------------------------------------------------------------------------- | ---- |
-| Each history row needs to store additional information thus making the payload larger |      |
-|                                                                                       |      |
+### Approach 1
+- Ensure that we have enough information within the history row so that we can 'post-process' in order to achieve the desired viewing history output. This would mean embedding additional attributes which would then facilitate aggregation/filtering/sorting of the retrieved history rows. 
 
+| Pros                                                                                                                                                                                                       | Cons                                                                                                                                                                   |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Additional API calls to Content-API are heavily cached so any -ve performance impact can be minimised. Additionally, we can come up with elaborate in-memory caching strategies to further reduce lookups. | Requires sourcing of the additional attributes from somewhere - in our case it could be additional API calls to Content-API for every asset. Has a -ve latency impact. |
+| Provides flexibility. Any required attributes are readily available so slicing/dicing/aggregation can be done in any number of manners as supported by those attributes.                                   | Requires storage of additional attributes within the history row, thus increasing the size of the row.                                                                 |
+|                                                                                                                                                                                                            | In the future, if demand for such additional attributes increases, it would increase the size of the data row.                                                         |
+| Simpler to implement.                                                                                                                                                                                      | In general, this would mean we can fetch the entire viewing history of the profile as a first step and then post-process (similar to existing design) every time.      |
+|                                                                                                                                                                                                            |                                                                                                                                                                        |
 
-	
-	#### Approach 2
-	- Ensure that we have enough information within the history row so that we can 'post-process' in order to achieve the desired viewing history output. This would mean embedding additional attributes which would then facilitate aggregation/filtering/sorting of the retrieved history rows. 
-	- Pros:
-	- Cons
+### Approach 2
+- Include minimal information (mostly pertaining to the resume point & status) within the history row, but establish a mechanism elsewhere (*prior*) to _reach specific history rows (assets)_ for a given profile. 
+- This could be done in any manner that's suitable, such as, having an API that can provide such a service for every use case, or by having some summary/meta information within DynamoDB itself that can help with such a navigation.
+
+| Pros | Cons |
+| ---- | ---- |
+| Provides a 'general' way of achieving the objective and thus can be thought of as a platform approach. |      |
+
 
  
 ## Efficient Querying in DynamoDB
@@ -73,7 +80,7 @@ From the looks of it, it seems we may have to build a hierarchy evaluation mecha
 - externalising it (another API perhaps)
 
 
-### 🚧  WIP:
+#### 🚧   WIP:
 
 - 🤔  Can we look at storing assets using hierarchical keys such that we can make range queries efficiently. See: [DynamoDB: Best Practices for using sort keys to organise data](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-sort-keys.html)
 - 🤔  Can we utilise Global or Local Secondary Indexes to provide for dimensional queries (hierarchical perhaps). See: [DynamoDB: General guidelines for secondary indexes in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-indexes-general.html)
