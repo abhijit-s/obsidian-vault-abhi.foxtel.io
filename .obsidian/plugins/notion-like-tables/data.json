@@ -6,7 +6,7 @@
         "data": {
           "headers": [
             {
-              "id": "992709cb-c8ad-4bb5-bb25-dada26291c5f",
+              "id": "9fb8dcc8-72b5-4eda-9d00-fa070a284fa1",
               "initialIndex": 0,
               "content": "Pros",
               "sortName": "default",
@@ -14,111 +14,187 @@
               "type": "text"
             },
             {
-              "id": "a9ab7501-f186-43e6-a436-93f93ff9aab6",
+              "id": "1c664f98-6261-49f5-851d-3e35854fc65f",
               "initialIndex": 1,
               "content": "Cons",
               "sortName": "default",
-              "width": "260px",
+              "width": "305px",
               "type": "text"
             }
           ],
           "rows": [
             {
-              "id": "3929b4cc-6ae9-4b23-ab10-1721ba601ed6",
+              "id": "642ad6db-907f-4e29-b8e1-521b53e36642",
               "initialIndex": 0,
               "creationTime": 1657497534334
             },
             {
-              "id": "862a68fe-1e88-4810-a783-970d85f8c9b8",
-              "initialIndex": 1,
-              "creationTime": 1657498195044
-            },
-            {
-              "id": "bd8ba031-5d00-48e5-ade5-5f26fcd645b9",
+              "id": "dd335888-77b3-4807-8dc2-997f2078c1c8",
               "initialIndex": 2,
-              "creationTime": 1657498586945
+              "creationTime": 1657500336873
             },
             {
-              "id": "ee5f76ab-1d0e-4098-8421-390eb775d62e",
+              "id": "3b8b93ed-946e-4332-b8b5-554e50928e56",
               "initialIndex": 3,
-              "creationTime": 1657498586872
+              "creationTime": 1657500336485
             },
             {
-              "id": "0a11a8cc-b51c-423a-ac96-0fddccb1e4ce",
+              "id": "47e6ffd7-408f-4cd5-a2f1-e10da672e45c",
               "initialIndex": 4,
-              "creationTime": 1657498589027
+              "creationTime": 1657500336569
+            },
+            {
+              "id": "a24c4235-ee90-40bf-aa7e-843b1b2acdb5",
+              "initialIndex": 5,
+              "creationTime": 1657500336730
+            },
+            {
+              "id": "09752a9f-5741-4a85-afcd-b39b11edbdf8",
+              "initialIndex": 6,
+              "creationTime": 1657500336870
+            },
+            {
+              "id": "527b4343-be7e-4888-8b13-7ccf189b4574",
+              "initialIndex": 7,
+              "creationTime": 1657500336698
+            },
+            {
+              "id": "122a3b56-911d-4433-9bbb-6a46c2dc7506",
+              "initialIndex": 8,
+              "creationTime": 1657500336178
+            },
+            {
+              "id": "53f00903-78d1-47c5-85d9-03519c477a5f",
+              "initialIndex": 9,
+              "creationTime": 1657500336549
             }
           ],
           "cells": [
             {
-              "id": "9f0651b7-adc3-4b98-bc42-47f0e5d672f1",
-              "rowId": "3929b4cc-6ae9-4b23-ab10-1721ba601ed6",
-              "headerId": "992709cb-c8ad-4bb5-bb25-dada26291c5f",
+              "id": "8ce9eb9a-72ca-4c31-84ac-ddad871cd702",
+              "rowId": "642ad6db-907f-4e29-b8e1-521b53e36642",
+              "headerId": "9fb8dcc8-72b5-4eda-9d00-fa070a284fa1",
               "type": "text",
-              "text": "Additional API calls to Content-API are heavily cached so any -ve performance impact can be minimised. Additionally, we can come up with elaborate in-memory caching strategies to further reduce lookups."
+              "text": "Provides a 'general' way of achieving the objective and thus can be thought of as a platform approach."
             },
             {
-              "id": "d9e3cb31-facb-40fa-88b9-4c186f1d62a2",
-              "rowId": "3929b4cc-6ae9-4b23-ab10-1721ba601ed6",
-              "headerId": "a9ab7501-f186-43e6-a436-93f93ff9aab6",
+              "id": "4c618097-3be8-46d0-88e0-458af312950b",
+              "rowId": "642ad6db-907f-4e29-b8e1-521b53e36642",
+              "headerId": "1c664f98-6261-49f5-851d-3e35854fc65f",
               "type": "text",
-              "text": "Requires sourcing of the additional attributes from somewhere - in our case it could be additional API calls to Content-API for every asset. Has a -ve latency impact."
+              "text": "We'd have to build support for performing such a lookup to get the list of candidate assets to retrieve history."
             },
             {
-              "id": "7315eef2-f5ec-498e-b07d-7b9612e20636",
-              "rowId": "862a68fe-1e88-4810-a783-970d85f8c9b8",
-              "headerId": "992709cb-c8ad-4bb5-bb25-dada26291c5f",
+              "id": "aa951200-2827-471c-8e84-72b7c5204adb",
+              "rowId": "dd335888-77b3-4807-8dc2-997f2078c1c8",
+              "headerId": "9fb8dcc8-72b5-4eda-9d00-fa070a284fa1",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "4c4866f4-cd16-40f0-86cf-9d5104bf7cee",
+              "rowId": "dd335888-77b3-4807-8dc2-997f2078c1c8",
+              "headerId": "1c664f98-6261-49f5-851d-3e35854fc65f",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "dd90742d-1914-4eb9-88a4-d1f4e151bdf0",
+              "rowId": "3b8b93ed-946e-4332-b8b5-554e50928e56",
+              "headerId": "9fb8dcc8-72b5-4eda-9d00-fa070a284fa1",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "c2982646-f839-46b4-b71d-f11c132b8848",
+              "rowId": "3b8b93ed-946e-4332-b8b5-554e50928e56",
+              "headerId": "1c664f98-6261-49f5-851d-3e35854fc65f",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "9baddbc5-40b7-46d6-9093-35bd616c879d",
+              "rowId": "47e6ffd7-408f-4cd5-a2f1-e10da672e45c",
+              "headerId": "9fb8dcc8-72b5-4eda-9d00-fa070a284fa1",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "4741e0a0-b6e8-4970-bbf2-18a0f0ec2633",
+              "rowId": "47e6ffd7-408f-4cd5-a2f1-e10da672e45c",
+              "headerId": "1c664f98-6261-49f5-851d-3e35854fc65f",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "e3abd61f-09dd-473e-aea2-0076ccf0d276",
+              "rowId": "a24c4235-ee90-40bf-aa7e-843b1b2acdb5",
+              "headerId": "9fb8dcc8-72b5-4eda-9d00-fa070a284fa1",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "50dd2725-d7b2-42fe-87c9-7f69acac8a63",
+              "rowId": "a24c4235-ee90-40bf-aa7e-843b1b2acdb5",
+              "headerId": "1c664f98-6261-49f5-851d-3e35854fc65f",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "461d0020-1640-457c-8afd-379fa4efc187",
+              "rowId": "09752a9f-5741-4a85-afcd-b39b11edbdf8",
+              "headerId": "9fb8dcc8-72b5-4eda-9d00-fa070a284fa1",
               "type": "text",
               "text": "Provides flexibility. Any required attributes are readily available so slicing/dicing/aggregation can be done in any number of manners as supported by those attributes."
             },
             {
-              "id": "cb2ada0d-7b10-4362-ac9b-9bd33d7d46dd",
-              "rowId": "862a68fe-1e88-4810-a783-970d85f8c9b8",
-              "headerId": "a9ab7501-f186-43e6-a436-93f93ff9aab6",
+              "id": "35dde320-9017-44f6-9bd5-a9dc28454fc6",
+              "rowId": "09752a9f-5741-4a85-afcd-b39b11edbdf8",
+              "headerId": "1c664f98-6261-49f5-851d-3e35854fc65f",
               "type": "text",
               "text": "Requires storage of additional attributes within the history row, thus increasing the size of the row."
             },
             {
-              "id": "de0ef12c-7c16-4130-8fa5-2670710645c1",
-              "rowId": "bd8ba031-5d00-48e5-ade5-5f26fcd645b9",
-              "headerId": "992709cb-c8ad-4bb5-bb25-dada26291c5f",
+              "id": "f9417a78-66c9-4589-9027-38e05e7f0ca8",
+              "rowId": "527b4343-be7e-4888-8b13-7ccf189b4574",
+              "headerId": "9fb8dcc8-72b5-4eda-9d00-fa070a284fa1",
               "type": "text",
-              "text": ""
+              "text": "Simpler to implement. Even on the write-path, we just have to 'enrich' the history enough to include the additional attributes."
             },
             {
-              "id": "fb3364fb-bc59-44f7-9fff-309efb424266",
-              "rowId": "bd8ba031-5d00-48e5-ade5-5f26fcd645b9",
-              "headerId": "a9ab7501-f186-43e6-a436-93f93ff9aab6",
+              "id": "0f8ffbf8-ccd8-4d80-b679-8a0ac7d36f64",
+              "rowId": "527b4343-be7e-4888-8b13-7ccf189b4574",
+              "headerId": "1c664f98-6261-49f5-851d-3e35854fc65f",
               "type": "text",
               "text": "In the future, if demand for such additional attributes increases, it would increase the size of the data row."
             },
             {
-              "id": "27bd94a9-d89f-4ace-889a-a36ce46c0fdf",
-              "rowId": "ee5f76ab-1d0e-4098-8421-390eb775d62e",
-              "headerId": "992709cb-c8ad-4bb5-bb25-dada26291c5f",
+              "id": "1ca693a4-6772-4d7b-bfd7-921d1aaa09b6",
+              "rowId": "122a3b56-911d-4433-9bbb-6a46c2dc7506",
+              "headerId": "9fb8dcc8-72b5-4eda-9d00-fa070a284fa1",
               "type": "text",
-              "text": "Simpler to implement."
+              "text": ""
             },
             {
-              "id": "203a71f1-5818-4e0d-9c0d-1a1eb308649a",
-              "rowId": "ee5f76ab-1d0e-4098-8421-390eb775d62e",
-              "headerId": "a9ab7501-f186-43e6-a436-93f93ff9aab6",
+              "id": "83a7e454-8383-4e9e-9480-eb1bb94aa981",
+              "rowId": "122a3b56-911d-4433-9bbb-6a46c2dc7506",
+              "headerId": "1c664f98-6261-49f5-851d-3e35854fc65f",
               "type": "text",
               "text": "In general, this would mean we can fetch the entire viewing history of the profile as a first step and then post-process (similar to existing design) every time."
             },
             {
-              "id": "a5d81a17-c17b-4955-af17-d94cef4476cb",
-              "rowId": "0a11a8cc-b51c-423a-ac96-0fddccb1e4ce",
-              "headerId": "992709cb-c8ad-4bb5-bb25-dada26291c5f",
+              "id": "c8adfe84-d76e-42c4-bff1-85715ab938c7",
+              "rowId": "53f00903-78d1-47c5-85d9-03519c477a5f",
+              "headerId": "9fb8dcc8-72b5-4eda-9d00-fa070a284fa1",
               "type": "text",
               "text": ""
             },
             {
-              "id": "321db766-4637-4245-b787-8370e09459a6",
-              "rowId": "0a11a8cc-b51c-423a-ac96-0fddccb1e4ce",
-              "headerId": "a9ab7501-f186-43e6-a436-93f93ff9aab6",
+              "id": "9446aa52-9296-42a3-af47-d4d8dbdbd7e1",
+              "rowId": "53f00903-78d1-47c5-85d9-03519c477a5f",
+              "headerId": "1c664f98-6261-49f5-851d-3e35854fc65f",
               "type": "text",
-              "text": ""
+              "text": "If pagination is to be supported, would make it cumbersome to implement such a feature."
             }
           ],
           "tags": []
