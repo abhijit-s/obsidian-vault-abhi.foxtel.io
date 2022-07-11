@@ -52,25 +52,39 @@ Some known use cases (`rir:Information` with potentially more for Kayo and/or Fl
 	- Fetch all history (`IN_PROGRESS` or `COMPLETED`) for a profile
 	- Apply any aggregation/filtering/sorting rules to it
 
+
 ### Approach 1
 - Ensure that we have enough information within the history row so that we can 'post-process' in order to achieve the desired viewing history output. This would mean embedding additional attributes which would then facilitate aggregation/filtering/sorting of the retrieved history rows. 
 
-| Pros                                                                                                                                                                     | Cons                                                                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Provides a 'general' way of achieving the objective and thus can be thought of as a platform approach.                                                                   | We'd have to build support for performing such a lookup to get the list of candidate assets to retrieve history.                                                  |
-| Provides flexibility. Any required attributes are readily available so slicing/dicing/aggregation can be done in any number of manners as supported by those attributes. | Requires storage of additional attributes within the history row, thus increasing the size of the row.                                                            |
-| Simpler to implement. Even on the write-path, we just have to 'enrich' the history enough to include the additional attributes.                                          | In the future, if demand for such additional attributes increases, it would increase the size of the data row.                                                    |
-|                                                                                                                                                                          | In general, this would mean we can fetch the entire viewing history of the profile as a first step and then post-process (similar to existing design) every time. |
+| Pros                                                                                                                                                                                                                                                                                            | Cons                                                                                                              |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Provides a 'general' way of achieving the objective and thus can be thought of as a platform approach.                                                                                                                                                                                          | May warrant additional effort to build such a lookup mechanism to narrow down the list of resume points (assets). |
+| Can provide flexibility, by means of generalisation, meaning, tomorrow additional lookup methods can be added to facilitate newer requirements, whilst keeping the general flow the same.  `Lookup interested list of assetIds` -> `Fetch resume for those assets` -> `Post-process if needed`  | Additional latency impact depending on the way this is achieved.                                                  |
+| There might already be an API we can leverage and utilise for this purpose -&amp;gt; VCC content discovery, which has the ability to fetch a set of assets using different flexible queries (lucene based).                                                                                     | Implementing pagination may or may not be trivial (depends on implementation).                                    |
+|                                                                                                                                                                                                                                                                                                 | The lookup mechanism (API) will need to be customised per product.                                                |
 |                                                                                                                                                                          | If pagination is to be supported, would make it cumbersome to implement such a feature.                                                                           |
+|                                                                                                                                                                          | Requires the data model to be customised per product (since looking up viewing history may be different for different products).                                  |
+
 
 ### Approach 2
 - Include minimal information (mostly pertaining to the resume point & status) within the history row, but establish a mechanism elsewhere (*prior*) to _reach specific history rows (assets)_ for a given profile. 
 - This could be done in any manner that's suitable, such as, having an API that can provide such a service for every use case, or by having some summary/meta information within DynamoDB itself that can help with such a navigation.
 
-| Pros | Cons |
-| ---- | ---- |
-| Provides a 'general' way of achieving the objective and thus can be thought of as a platform approach. |      |
+| Pros                                                                                                                                                                     | Cons                                                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Provides a 'general' way of achieving the objective and thus can be thought of as a platform approach. | May warrant additional effort to build such a lookup mechanism to narrow down the list of resume points (assets). |
+| Can provide flexibility, by means of generalisation, meaning, tomorrow additional lookup methods can be added to facilitate newer requirements, whilst keeping the general flow the same.  `Lookup interested list of assetIds` -> `Fetch resume for those assets` -> `Post-process if needed` | Additional latency impact depending on the way this is achieved. | 
+| There might already be an API we can leverage and utilise for this purpose -> VCC content discovery, which has the ability to fetch a set of assets using different flexible queries (lucene based). | Implementing pagination may or may not be trivial (depends on implementation). | 
+|  | The lookup mechanism (API) will need to be customised per product. | 
 
+
+### Approach 3
+- As a compromise, we could have combination of Option 1 and Option 2, wherein we partly do pre-lookups to narrow down the resume points (assets) based on the lookup flow and additionally perform post-processing to aggregate/filter/sort as required.
+
+| Pros                                                                                                                                                                     | Cons                                                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Provides the best of both options in a way and a healthy balance could be achieved between the two. | It's not completely generalised, therefore still requires product specific data model customisations. |
+| Keeping the post-processing is kept minimal or small enough would imply faster lookups. |  |
 
  
 ## Efficient Querying in DynamoDB
