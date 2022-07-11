@@ -94,6 +94,17 @@ Sample queries using VCC Discovery API:
 
 ## Proposed
 
+A single data record for a viewing history entry needs to contain 2 sets of fields:
+- The viewing history related information
+- Any extended set of attributes which assist in performing post-processing over history - aggregation/sorting/filtering.
+- A _summary_ list of 
+
+### Kayo Data Model
+
+Sample viewing history entry:
+
+
+
 
 
 
