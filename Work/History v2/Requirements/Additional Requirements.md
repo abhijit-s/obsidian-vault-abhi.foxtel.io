@@ -23,3 +23,13 @@ Typically, for a case such as the 'Continue Binging' carousel, the viewable caro
 In the future, we want to provide the ability to a user to remove individual items from a user's history. 
 These would again depend on the definition of a history item for a product.
 Example: In Binge, if a user wants to delete a particular show from history, that would probably mean removing history for all associated episodes within that show (TBD).
+
+
+## 3. Record history comprehensively (previously watched content)
+To elaborate, what this means is whether we would like to record viewing history as a complete record that includes the number of times the user (profile) has watched the content and the list of timestamps correlating to those. This could mean that an asset (content) is both in a `FINISHED` and `IN_PROGRESS` state - `FINISHED` by virtue of past completions.
+
+This can be useful in:
+- Determining user behaviour.
+- Applying additional business rules to determine how to treat such content.
+
+	NOTE: Vimond Resume solution had such a feature in place.

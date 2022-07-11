@@ -107,6 +107,123 @@
         "viewType": "live-preview",
         "shouldUpdate": false
       }
+    },
+    "Work/History v2/Requirements/Datalake.md": {
+      "0": {
+        "data": {
+          "headers": [
+            {
+              "id": "16b733f1-4bec-45cf-882a-4a164548c197",
+              "initialIndex": 0,
+              "content": "playerEvent",
+              "sortName": "default",
+              "width": "100px",
+              "type": "text"
+            },
+            {
+              "id": "0af6eb9c-d141-42b4-8c72-4ee6c4956353",
+              "initialIndex": 1,
+              "content": "playerEvent",
+              "sortName": "default",
+              "width": "100px",
+              "type": "text"
+            },
+            {
+              "id": "03c51da2-7023-4e69-aad3-114554e971f5",
+              "initialIndex": 2,
+              "content": "Received when",
+              "sortName": "default",
+              "width": "192px",
+              "type": "text"
+            }
+          ],
+          "rows": [
+            {
+              "id": "388cae36-addd-4d5f-ad89-5eccb0e3e999",
+              "initialIndex": 0,
+              "creationTime": 1657513866776
+            },
+            {
+              "id": "0d0ed1a2-a1bd-4755-9ccd-b99b6908bbaf",
+              "initialIndex": 1,
+              "creationTime": 1657513959399
+            },
+            {
+              "id": "023c25c4-1b37-44cd-9f1c-b1bc509a9ce8",
+              "initialIndex": 2,
+              "creationTime": 1657513976676
+            }
+          ],
+          "cells": [
+            {
+              "id": "d9646eea-a6a3-4579-abfd-ac867bc8b95c",
+              "rowId": "388cae36-addd-4d5f-ad89-5eccb0e3e999",
+              "headerId": "16b733f1-4bec-45cf-882a-4a164548c197",
+              "type": "text",
+              "text": "period"
+            },
+            {
+              "id": "bc75fa1e-df72-4679-83bb-904e65616875",
+              "rowId": "388cae36-addd-4d5f-ad89-5eccb0e3e999",
+              "headerId": "0af6eb9c-d141-42b4-8c72-4ee6c4956353",
+              "type": "text",
+              "text": "playing"
+            },
+            {
+              "id": "2b66099b-1a14-4fdc-a381-d22e552372e8",
+              "rowId": "388cae36-addd-4d5f-ad89-5eccb0e3e999",
+              "headerId": "03c51da2-7023-4e69-aad3-114554e971f5",
+              "type": "text",
+              "text": "Video is playing"
+            },
+            {
+              "id": "66d59f6f-97e4-473c-a2d2-9f2b8e76e34e",
+              "rowId": "0d0ed1a2-a1bd-4755-9ccd-b99b6908bbaf",
+              "headerId": "16b733f1-4bec-45cf-882a-4a164548c197",
+              "type": "text",
+              "text": "period"
+            },
+            {
+              "id": "16e6991d-cb3c-41d1-8f2d-1522e05e2f3a",
+              "rowId": "0d0ed1a2-a1bd-4755-9ccd-b99b6908bbaf",
+              "headerId": "0af6eb9c-d141-42b4-8c72-4ee6c4956353",
+              "type": "text",
+              "text": "pause"
+            },
+            {
+              "id": "47961b15-cb53-4c11-ae83-b8bc1fd78f4c",
+              "rowId": "0d0ed1a2-a1bd-4755-9ccd-b99b6908bbaf",
+              "headerId": "03c51da2-7023-4e69-aad3-114554e971f5",
+              "type": "text",
+              "text": "Video is paused"
+            },
+            {
+              "id": "179e2258-3010-4578-ad7f-c543475d3f7f",
+              "rowId": "023c25c4-1b37-44cd-9f1c-b1bc509a9ce8",
+              "headerId": "16b733f1-4bec-45cf-882a-4a164548c197",
+              "type": "text",
+              "text": "end"
+            },
+            {
+              "id": "2eba953c-1ff4-4924-be22-100bdb5a3ca9",
+              "rowId": "023c25c4-1b37-44cd-9f1c-b1bc509a9ce8",
+              "headerId": "0af6eb9c-d141-42b4-8c72-4ee6c4956353",
+              "type": "text",
+              "text": "pause"
+            },
+            {
+              "id": "12dd5e56-730a-4b82-b313-432e693703f6",
+              "rowId": "023c25c4-1b37-44cd-9f1c-b1bc509a9ce8",
+              "headerId": "03c51da2-7023-4e69-aad3-114554e971f5",
+              "type": "text",
+              "text": "Player exited (midway through video)"
+            }
+          ],
+          "tags": []
+        },
+        "viewType": "live-preview",
+        "shouldUpdate": false
+      }
     }
   },
   "focusedElement": {
