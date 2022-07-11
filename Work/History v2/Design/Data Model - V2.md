@@ -92,6 +92,11 @@ Sample queries using VCC Discovery API:
 | Keeping the post-processing is kept minimal or small enough would imply faster lookups. |  |
 
 
+## Proposed
+
+
+
+
 
 #### 🚧   WIP:
 
