@@ -113,7 +113,7 @@
         "data": {
           "headers": [
             {
-              "id": "16b733f1-4bec-45cf-882a-4a164548c197",
+              "id": "f3e3975d-b7ae-4edf-ab76-dfda056683eb",
               "initialIndex": 0,
               "content": "playerEvent",
               "sortName": "default",
@@ -121,15 +121,15 @@
               "type": "text"
             },
             {
-              "id": "0af6eb9c-d141-42b4-8c72-4ee6c4956353",
+              "id": "a33992d8-4ebd-40d6-b3ee-4c518966eb59",
               "initialIndex": 1,
-              "content": "playerEvent",
+              "content": "playerState",
               "sortName": "default",
               "width": "100px",
               "type": "text"
             },
             {
-              "id": "03c51da2-7023-4e69-aad3-114554e971f5",
+              "id": "fcc68244-f940-4000-aba6-a24ddc8dc644",
               "initialIndex": 2,
               "content": "Received when",
               "sortName": "default",
@@ -139,84 +139,110 @@
           ],
           "rows": [
             {
-              "id": "388cae36-addd-4d5f-ad89-5eccb0e3e999",
+              "id": "ec6b4c7e-9cea-478f-b9ff-65073b1958f3",
               "initialIndex": 0,
               "creationTime": 1657513866776
             },
             {
-              "id": "0d0ed1a2-a1bd-4755-9ccd-b99b6908bbaf",
+              "id": "62a80773-dbf6-47ca-b1a6-486e9921c9e6",
               "initialIndex": 1,
               "creationTime": 1657513959399
             },
             {
-              "id": "023c25c4-1b37-44cd-9f1c-b1bc509a9ce8",
+              "id": "85a72145-1821-4efa-b828-d4b089352063",
               "initialIndex": 2,
               "creationTime": 1657513976676
+            },
+            {
+              "id": "e3de9545-44c8-4a1f-9d37-be9ccad56a49",
+              "initialIndex": 3,
+              "creationTime": 1657516578128
             }
           ],
           "cells": [
             {
-              "id": "d9646eea-a6a3-4579-abfd-ac867bc8b95c",
-              "rowId": "388cae36-addd-4d5f-ad89-5eccb0e3e999",
-              "headerId": "16b733f1-4bec-45cf-882a-4a164548c197",
+              "id": "6b0d07da-8373-4662-b325-e8b4e6ce6686",
+              "rowId": "ec6b4c7e-9cea-478f-b9ff-65073b1958f3",
+              "headerId": "f3e3975d-b7ae-4edf-ab76-dfda056683eb",
               "type": "text",
               "text": "period"
             },
             {
-              "id": "bc75fa1e-df72-4679-83bb-904e65616875",
-              "rowId": "388cae36-addd-4d5f-ad89-5eccb0e3e999",
-              "headerId": "0af6eb9c-d141-42b4-8c72-4ee6c4956353",
+              "id": "5ac5b5bd-435b-46c5-82f5-8efc38b890af",
+              "rowId": "ec6b4c7e-9cea-478f-b9ff-65073b1958f3",
+              "headerId": "a33992d8-4ebd-40d6-b3ee-4c518966eb59",
               "type": "text",
               "text": "playing"
             },
             {
-              "id": "2b66099b-1a14-4fdc-a381-d22e552372e8",
-              "rowId": "388cae36-addd-4d5f-ad89-5eccb0e3e999",
-              "headerId": "03c51da2-7023-4e69-aad3-114554e971f5",
+              "id": "8b746cae-df8d-45d2-a183-d7edd5754ec4",
+              "rowId": "ec6b4c7e-9cea-478f-b9ff-65073b1958f3",
+              "headerId": "fcc68244-f940-4000-aba6-a24ddc8dc644",
               "type": "text",
               "text": "Video is playing"
             },
             {
-              "id": "66d59f6f-97e4-473c-a2d2-9f2b8e76e34e",
-              "rowId": "0d0ed1a2-a1bd-4755-9ccd-b99b6908bbaf",
-              "headerId": "16b733f1-4bec-45cf-882a-4a164548c197",
+              "id": "21f146d0-1eaf-4855-988f-6a4878583f25",
+              "rowId": "62a80773-dbf6-47ca-b1a6-486e9921c9e6",
+              "headerId": "f3e3975d-b7ae-4edf-ab76-dfda056683eb",
               "type": "text",
               "text": "period"
             },
             {
-              "id": "16e6991d-cb3c-41d1-8f2d-1522e05e2f3a",
-              "rowId": "0d0ed1a2-a1bd-4755-9ccd-b99b6908bbaf",
-              "headerId": "0af6eb9c-d141-42b4-8c72-4ee6c4956353",
+              "id": "bec8eeb4-8d08-4d2d-840f-09122b301e34",
+              "rowId": "62a80773-dbf6-47ca-b1a6-486e9921c9e6",
+              "headerId": "a33992d8-4ebd-40d6-b3ee-4c518966eb59",
               "type": "text",
               "text": "pause"
             },
             {
-              "id": "47961b15-cb53-4c11-ae83-b8bc1fd78f4c",
-              "rowId": "0d0ed1a2-a1bd-4755-9ccd-b99b6908bbaf",
-              "headerId": "03c51da2-7023-4e69-aad3-114554e971f5",
+              "id": "392a22e5-9258-465e-9101-e53e77d8d3a4",
+              "rowId": "62a80773-dbf6-47ca-b1a6-486e9921c9e6",
+              "headerId": "fcc68244-f940-4000-aba6-a24ddc8dc644",
               "type": "text",
               "text": "Video is paused"
             },
             {
-              "id": "179e2258-3010-4578-ad7f-c543475d3f7f",
-              "rowId": "023c25c4-1b37-44cd-9f1c-b1bc509a9ce8",
-              "headerId": "16b733f1-4bec-45cf-882a-4a164548c197",
+              "id": "f7c20712-b3bc-40e8-bd18-bb36d2105c08",
+              "rowId": "85a72145-1821-4efa-b828-d4b089352063",
+              "headerId": "f3e3975d-b7ae-4edf-ab76-dfda056683eb",
               "type": "text",
               "text": "end"
             },
             {
-              "id": "2eba953c-1ff4-4924-be22-100bdb5a3ca9",
-              "rowId": "023c25c4-1b37-44cd-9f1c-b1bc509a9ce8",
-              "headerId": "0af6eb9c-d141-42b4-8c72-4ee6c4956353",
+              "id": "df750aaf-17c4-40f3-93d2-bdde334e3ffd",
+              "rowId": "85a72145-1821-4efa-b828-d4b089352063",
+              "headerId": "a33992d8-4ebd-40d6-b3ee-4c518966eb59",
               "type": "text",
               "text": "pause"
             },
             {
-              "id": "12dd5e56-730a-4b82-b313-432e693703f6",
-              "rowId": "023c25c4-1b37-44cd-9f1c-b1bc509a9ce8",
-              "headerId": "03c51da2-7023-4e69-aad3-114554e971f5",
+              "id": "82e0416e-6f9f-4837-be79-2509ec249405",
+              "rowId": "85a72145-1821-4efa-b828-d4b089352063",
+              "headerId": "fcc68244-f940-4000-aba6-a24ddc8dc644",
               "type": "text",
               "text": "Player exited (midway through video)"
+            },
+            {
+              "id": "0b9a1fcd-4821-4389-9e07-8b34f3e46df1",
+              "rowId": "e3de9545-44c8-4a1f-9d37-be9ccad56a49",
+              "headerId": "f3e3975d-b7ae-4edf-ab76-dfda056683eb",
+              "type": "text",
+              "text": "str-start"
+            },
+            {
+              "id": "e36c0846-1fe0-4c1e-9e12-a5cd1a059e52",
+              "rowId": "e3de9545-44c8-4a1f-9d37-be9ccad56a49",
+              "headerId": "a33992d8-4ebd-40d6-b3ee-4c518966eb59",
+              "type": "text",
+              "text": "playing"
+            },
+            {
+              "id": "671dc39f-f47d-450c-870e-0a7b66a63b77",
+              "rowId": "e3de9545-44c8-4a1f-9d37-be9ccad56a49",
+              "headerId": "fcc68244-f940-4000-aba6-a24ddc8dc644",
+              "type": "text",
+              "text": "Video playback started"
             }
           ],
           "tags": []
