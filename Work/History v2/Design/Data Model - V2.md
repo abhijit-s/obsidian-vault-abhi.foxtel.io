@@ -103,6 +103,8 @@ A single data record for a viewing history entry needs to contain 2 sets of fiel
 
 Sample viewing history entry:
 
+A json representation
+
 ```json
 {
 	"attr": {
@@ -119,9 +121,21 @@ Sample viewing history entry:
 		"sport": "cricket",
 		"series-id": "4",
 		"team-ids": "60091,60092"
+	}, 
+	"paths" : {
+	
 	}
 }
 ```
+
+DynamoDB doesn't really have a JSON datatype, so we'd have to flatten out the structure like this:
+
+```json
+{
+	"a.assetId"
+}
+```
+
 
 Sample summary row of assets:
 
