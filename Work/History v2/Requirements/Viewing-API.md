@@ -6,7 +6,7 @@ Current implementations:
 	- [API-doc](https://ares-viewing-api.content.platform-lb.streamotion-platform-prod.com.au/api-doc/index.html)
 	- [Github](https://github.com/fsa-streamotion/streamotion-platform-ares-viewing-api)
 - Flash:
-	- API-doc
+	- [API-doc](https://flash-viewing-api.content-flash.platform-lb.streamotion-platform-prod.com.au/api-doc/index.html)
 	- [Github](https://github.com/fsa-streamotion/streamotion-platform-flash-viewing-api)
 
 
