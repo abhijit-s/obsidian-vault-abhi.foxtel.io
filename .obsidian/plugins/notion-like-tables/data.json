@@ -1,113 +1,6 @@
 {
   "appData": {},
   "state": {
-    "Work/History v2/Design/Data Model - V2.md": {
-      "0": {
-        "data": {
-          "headers": [
-            {
-              "id": "b1fc9483-41f5-417a-a30b-7878d02f320d",
-              "initialIndex": 0,
-              "content": "Pros",
-              "sortName": "default",
-              "width": "306px",
-              "type": "text"
-            },
-            {
-              "id": "2db69fcb-8c8d-4689-be21-e742276fcaef",
-              "initialIndex": 1,
-              "content": "Cons",
-              "sortName": "default",
-              "width": "260px",
-              "type": "text"
-            }
-          ],
-          "rows": [
-            {
-              "id": "ec3e3d20-d146-44a2-97cb-9a888017a431",
-              "initialIndex": 0,
-              "creationTime": 1657497534334
-            },
-            {
-              "id": "42d58d94-d40a-4a5f-ac26-906083505147",
-              "initialIndex": 1,
-              "creationTime": 1657500503060
-            },
-            {
-              "id": "34e52c13-4948-47a7-af78-ccb983a3ff07",
-              "initialIndex": 2,
-              "creationTime": 1657501995625
-            },
-            {
-              "id": "676d47a4-3e98-4b89-b84c-e1c5d6d4fba6",
-              "initialIndex": 3,
-              "creationTime": 1657501995955
-            }
-          ],
-          "cells": [
-            {
-              "id": "c6f44af8-2958-4a9c-97ed-28b0dc0d1e56",
-              "rowId": "ec3e3d20-d146-44a2-97cb-9a888017a431",
-              "headerId": "b1fc9483-41f5-417a-a30b-7878d02f320d",
-              "type": "text",
-              "text": "Provides a 'general' way of achieving the objective and thus can be thought of as a platform approach."
-            },
-            {
-              "id": "a013f511-4822-483d-abe6-fc9326312a3e",
-              "rowId": "ec3e3d20-d146-44a2-97cb-9a888017a431",
-              "headerId": "2db69fcb-8c8d-4689-be21-e742276fcaef",
-              "type": "text",
-              "text": "May warrant additional effort to build such a lookup mechanism to narrow down the list of resume points (assets)."
-            },
-            {
-              "id": "1ecf0adc-48f1-48cd-a1d3-b302617bed1c",
-              "rowId": "42d58d94-d40a-4a5f-ac26-906083505147",
-              "headerId": "b1fc9483-41f5-417a-a30b-7878d02f320d",
-              "type": "text",
-              "text": "Can provide flexibility, by means of generalisation, meaning, tomorrow additional lookup methods can be added to facilitate newer requirements, whilst keeping the general flow the same.  Lookup interested list of assetIds -> Fetch resume for those asseets -> Post-process if needed"
-            },
-            {
-              "id": "e7bc84f1-7a41-4039-b46a-eea227771fe5",
-              "rowId": "42d58d94-d40a-4a5f-ac26-906083505147",
-              "headerId": "2db69fcb-8c8d-4689-be21-e742276fcaef",
-              "type": "text",
-              "text": "Additional latency impact depending on the way this is achieved."
-            },
-            {
-              "id": "e9448d7a-a5e4-4cf0-8bce-e49ca21f5c1c",
-              "rowId": "34e52c13-4948-47a7-af78-ccb983a3ff07",
-              "headerId": "b1fc9483-41f5-417a-a30b-7878d02f320d",
-              "type": "text",
-              "text": "There might already be an API we can leverage and utilise for this purpose -> VCC content discovery, which has the ability to fetch a set of assets using different flexible queries (lucene based). "
-            },
-            {
-              "id": "67485143-f394-4704-93f8-dd7f7a5d2b48",
-              "rowId": "34e52c13-4948-47a7-af78-ccb983a3ff07",
-              "headerId": "2db69fcb-8c8d-4689-be21-e742276fcaef",
-              "type": "text",
-              "text": "Implementing pagination may or may not be trivial (depends on implementation)."
-            },
-            {
-              "id": "3f559a9b-32cd-46e5-87bc-ed461bf37e2b",
-              "rowId": "676d47a4-3e98-4b89-b84c-e1c5d6d4fba6",
-              "headerId": "b1fc9483-41f5-417a-a30b-7878d02f320d",
-              "type": "text",
-              "text": ""
-            },
-            {
-              "id": "4319f42e-4ffb-45de-8265-b6b8d1bc8c9d",
-              "rowId": "676d47a4-3e98-4b89-b84c-e1c5d6d4fba6",
-              "headerId": "2db69fcb-8c8d-4689-be21-e742276fcaef",
-              "type": "text",
-              "text": "The lookup mechanism (API) will need to be customised per product."
-            }
-          ],
-          "tags": []
-        },
-        "viewType": "live-preview",
-        "shouldUpdate": false
-      }
-    },
     "Work/History v2/Requirements/Datalake.md": {
       "0": {
         "data": {
@@ -243,6 +136,113 @@
               "headerId": "fcc68244-f940-4000-aba6-a24ddc8dc644",
               "type": "text",
               "text": "Video playback started"
+            }
+          ],
+          "tags": []
+        },
+        "viewType": "live-preview",
+        "shouldUpdate": false
+      }
+    },
+    "Work/History v2/Design/Data Model/Data Model - V2.md": {
+      "0": {
+        "data": {
+          "headers": [
+            {
+              "id": "b1fc9483-41f5-417a-a30b-7878d02f320d",
+              "initialIndex": 0,
+              "content": "Pros",
+              "sortName": "default",
+              "width": "306px",
+              "type": "text"
+            },
+            {
+              "id": "2db69fcb-8c8d-4689-be21-e742276fcaef",
+              "initialIndex": 1,
+              "content": "Cons",
+              "sortName": "default",
+              "width": "260px",
+              "type": "text"
+            }
+          ],
+          "rows": [
+            {
+              "id": "ec3e3d20-d146-44a2-97cb-9a888017a431",
+              "initialIndex": 0,
+              "creationTime": 1657497534334
+            },
+            {
+              "id": "42d58d94-d40a-4a5f-ac26-906083505147",
+              "initialIndex": 1,
+              "creationTime": 1657500503060
+            },
+            {
+              "id": "34e52c13-4948-47a7-af78-ccb983a3ff07",
+              "initialIndex": 2,
+              "creationTime": 1657501995625
+            },
+            {
+              "id": "676d47a4-3e98-4b89-b84c-e1c5d6d4fba6",
+              "initialIndex": 3,
+              "creationTime": 1657501995955
+            }
+          ],
+          "cells": [
+            {
+              "id": "c6f44af8-2958-4a9c-97ed-28b0dc0d1e56",
+              "rowId": "ec3e3d20-d146-44a2-97cb-9a888017a431",
+              "headerId": "b1fc9483-41f5-417a-a30b-7878d02f320d",
+              "type": "text",
+              "text": "Provides a 'general' way of achieving the objective and thus can be thought of as a platform approach."
+            },
+            {
+              "id": "a013f511-4822-483d-abe6-fc9326312a3e",
+              "rowId": "ec3e3d20-d146-44a2-97cb-9a888017a431",
+              "headerId": "2db69fcb-8c8d-4689-be21-e742276fcaef",
+              "type": "text",
+              "text": "May warrant additional effort to build such a lookup mechanism to narrow down the list of resume points (assets)."
+            },
+            {
+              "id": "1ecf0adc-48f1-48cd-a1d3-b302617bed1c",
+              "rowId": "42d58d94-d40a-4a5f-ac26-906083505147",
+              "headerId": "b1fc9483-41f5-417a-a30b-7878d02f320d",
+              "type": "text",
+              "text": "Can provide flexibility, by means of generalisation, meaning, tomorrow additional lookup methods can be added to facilitate newer requirements, whilst keeping the general flow the same.  Lookup interested list of assetIds -> Fetch resume for those asseets -> Post-process if needed"
+            },
+            {
+              "id": "e7bc84f1-7a41-4039-b46a-eea227771fe5",
+              "rowId": "42d58d94-d40a-4a5f-ac26-906083505147",
+              "headerId": "2db69fcb-8c8d-4689-be21-e742276fcaef",
+              "type": "text",
+              "text": "Additional latency impact depending on the way this is achieved."
+            },
+            {
+              "id": "e9448d7a-a5e4-4cf0-8bce-e49ca21f5c1c",
+              "rowId": "34e52c13-4948-47a7-af78-ccb983a3ff07",
+              "headerId": "b1fc9483-41f5-417a-a30b-7878d02f320d",
+              "type": "text",
+              "text": "There might already be an API we can leverage and utilise for this purpose -> VCC content discovery, which has the ability to fetch a set of assets using different flexible queries (lucene based). "
+            },
+            {
+              "id": "67485143-f394-4704-93f8-dd7f7a5d2b48",
+              "rowId": "34e52c13-4948-47a7-af78-ccb983a3ff07",
+              "headerId": "2db69fcb-8c8d-4689-be21-e742276fcaef",
+              "type": "text",
+              "text": "Implementing pagination may or may not be trivial (depends on implementation)."
+            },
+            {
+              "id": "3f559a9b-32cd-46e5-87bc-ed461bf37e2b",
+              "rowId": "676d47a4-3e98-4b89-b84c-e1c5d6d4fba6",
+              "headerId": "b1fc9483-41f5-417a-a30b-7878d02f320d",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "4319f42e-4ffb-45de-8265-b6b8d1bc8c9d",
+              "rowId": "676d47a4-3e98-4b89-b84c-e1c5d6d4fba6",
+              "headerId": "2db69fcb-8c8d-4689-be21-e742276fcaef",
+              "type": "text",
+              "text": "The lookup mechanism (API) will need to be customised per product."
             }
           ],
           "tags": []
