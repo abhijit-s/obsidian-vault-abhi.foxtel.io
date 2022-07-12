@@ -97,15 +97,44 @@ Sample queries using VCC Discovery API:
 A single data record for a viewing history entry needs to contain 2 sets of fields:
 - The viewing history related information
 - Any extended set of attributes which assist in performing post-processing over history - aggregation/sorting/filtering.
-- A _summary_ list of 
+- A _summary_ list of identifiers (`assetId`s) stored as a separate row for the profile key.
 
 ### Kayo Data Model
 
 Sample viewing history entry:
 
+```json
+{
+	"attr": {
+	    "assetId": "1981",    
+	    "assetType": "tv-episode",
+	    "totalTime": 6604,
+	    "state": "IN_PROGRESS",
+	    "progress": 2518,
+	    "updateTime": "2021-01-27T23:37:42.155Z"
+	},
+	"ext" : {
+		"showCategoryId": "1446",
+		"seasonCategoryId": "1450",
+		"sport": "cricket",
+		"series-id": "4",
+		"team-ids": "60091,60092"
+	}
+}
+```
+
+Sample summary row of assets:
+
+```json
+{
+	"assetIds" : [ "1981", "1988", "20034", "10011", .... ]
+}
+```
 
 
+Table Design:
 
+![[Data Model - V2 2022-07-11 19.09.56.excalidraw]]
 
 
 

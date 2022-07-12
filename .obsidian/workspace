@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "228dea5b42004143",
+        "id": "7730d8119755da53",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
             "file": "Work/History v2/Design/Data Model - V2.md",
-            "mode": "source",
+            "mode": "preview",
             "backlinks": true,
             "source": false
           }
@@ -167,9 +167,10 @@
     "direction": "horizontal",
     "width": 166.5
   },
-  "active": "228dea5b42004143",
+  "active": "7730d8119755da53",
   "lastOpenFiles": [
     "Work/History v2/Design/Data Model - V2.md",
+    "Work/History v2/zAttachments/Data Model - V2 2022-07-11 19.09.56.excalidraw.md",
     "Work/History v2/Design/Technical Design - V2.md",
     "Work/History v2/Requirements/Datalake.md",
     "Work/History v2/Requirements/Additional Requirements.md",
@@ -177,7 +178,6 @@
     "Work/History v2/Requirements/Viewing-API.md",
     "Work/History v2/Design/V1 (Current).md",
     "Work/History v2/Requirements/Content-API.md",
-    "Work/History v2/Requirements/XP-API.md",
-    "Work/History v2/Requirements/Indexer.md"
+    "Work/History v2/Requirements/XP-API.md"
   ]
 }
