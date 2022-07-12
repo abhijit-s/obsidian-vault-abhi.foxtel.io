@@ -18,12 +18,12 @@ A json representation
 ```json
 {
 	"attr": {
-	    "assetId": "1981",    
-	    "assetType": "tv-episode",
-	    "totalTime": 6604,
-	    "state": "IN_PROGRESS",
-	    "progress": 2518,
-	    "updateTime": "2021-01-27T23:37:42.155Z"
+		"assetId": "1981",    
+		"assetType": "tv-episode",
+		"totalTime": 6604,
+		"state": "IN_PROGRESS",
+		"progress": 2518,
+		"updateTime": "2021-01-27T23:37:42.155Z"
 	},
 	"ext" : {
 		"showCategoryId": "1446",
@@ -31,9 +31,6 @@ A json representation
 		"sport": "cricket",
 		"series-id": "4",
 		"team-ids": "60091,60092"
-	}, 
-	"paths" : {
-	
 	}
 }
 ```
@@ -43,20 +40,30 @@ DynamoDB doesn't really have a JSON datatype, so we'd have to flatten out the st
 ```json
 {
 	"a.assetId": "1981",    
-    "a.assetType": "tv-episode",
-    "a.totalTime": 6604,
-    "a.state": "IN_PROGRESS",
-    "a.progress": 2518,
-    "a.updateTime": "2021-01-27T23:37:42.155Z",
+	"a.assetType": "tv-episode",
+	"a.totalTime": 6604,
+	"a.state": "IN_PROGRESS",
+	"a.progress": 2518,
+	"a.updateTime": "2021-01-27T23:37:42.155Z",
 	"e.showCategoryId": "1446",
 	"e.seasonCategoryId": "1450",
 	"e.sport": "cricket",
 	"e.series-id": "4",
-	"e.team-ids": "60091,60092",
-	"path.hierarchy": "/1446/1450"
-	"path.sport": "/cricket/4"
+	"e.team-ids": "60091,60092"
 }
 ```
+
+Additionally, we need to be able to retrieve history using certain other set of dimensions; which could be hierarchical in nature as well.
+
+*Example*: retrieve the viewing history for a particular sport, series and team.
+
+For this purpose we intend to additionally create items in DynamoDB that can assist in such a search.
+
+| Primary Key |
+| ----------- |
+| ---- | ------ |
+
+
 
 _NOTE_: 
 - The whole idea of including pre-computed `path.*` fields is to perform pivoted lookups. We can have LCIs (local secondary indexes) oh these fields and use them for efficient querying for use cases that don't directly deal with `assetId`s (ex: fetch all history for a given sport & series).

@@ -250,6 +250,56 @@
         "viewType": "live-preview",
         "shouldUpdate": false
       }
+    },
+    "Work/History v2/Design/Data Model/Kayo Data Model - Proposed.md": {
+      "0": {
+        "data": {
+          "headers": [
+            {
+              "id": "3acfe4d0-af9b-42f8-910e-b9628c521f24",
+              "initialIndex": 0,
+              "content": "",
+              "sortName": "default",
+              "width": "100px",
+              "type": "text"
+            },
+            {
+              "id": "cd647e61-420d-4b48-9ebd-b1ac9e8fc6ea",
+              "initialIndex": 1,
+              "content": "------",
+              "sortName": "default",
+              "width": "100px",
+              "type": "text"
+            }
+          ],
+          "rows": [
+            {
+              "id": "e1bde601-d93f-4c84-bec9-cd3497d463a9",
+              "initialIndex": 0,
+              "creationTime": 1657605711268
+            }
+          ],
+          "cells": [
+            {
+              "id": "825ff2bd-1e17-4cff-ae57-f7297d76c0a7",
+              "rowId": "e1bde601-d93f-4c84-bec9-cd3497d463a9",
+              "headerId": "3acfe4d0-af9b-42f8-910e-b9628c521f24",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "396ee160-652f-465c-958e-f35343ebdee1",
+              "rowId": "e1bde601-d93f-4c84-bec9-cd3497d463a9",
+              "headerId": "cd647e61-420d-4b48-9ebd-b1ac9e8fc6ea",
+              "type": "text",
+              "text": ""
+            }
+          ],
+          "tags": []
+        },
+        "viewType": "live-preview",
+        "shouldUpdate": false
+      }
     }
   },
   "focusedElement": {
