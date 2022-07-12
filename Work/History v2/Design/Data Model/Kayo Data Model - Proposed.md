@@ -59,10 +59,15 @@ Additionally, we need to be able to retrieve history using certain other set of 
 
 For this purpose we intend to additionally create items in DynamoDB that can assist in such a search.
 
-| Primary Key |
-| ----------- |
-| ---- | ------ |
+| Primary Key | Sort Key                  | Value              |
+| ----------- | ------------------------- | ------------------ |
+| profileId   | /{sport}/{series}/{teamA} | [list of assetIds] |
+| profileId   | /{sport}/{series}/{teamB} | [list of assetIds] |
+| profileId   | /show/season              | [list of assetIds] |
 
+- Every viewing history update will also incur writes to the above summary rows where the `assetId` will be added to the list if not already present, along with its own item row as above.
+
+`fas:Question` How do we track when an asset changes hierarchy (show/season) using the above design? 
 
 
 _NOTE_: 

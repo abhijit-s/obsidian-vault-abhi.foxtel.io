@@ -256,48 +256,115 @@
         "data": {
           "headers": [
             {
-              "id": "3acfe4d0-af9b-42f8-910e-b9628c521f24",
+              "id": "f7956c70-acf2-465d-861f-b6a4d192034d",
               "initialIndex": 0,
-              "content": "",
+              "content": "Primary Key",
               "sortName": "default",
               "width": "100px",
               "type": "text"
             },
             {
-              "id": "cd647e61-420d-4b48-9ebd-b1ac9e8fc6ea",
+              "id": "14ede7cc-4f97-4648-a983-477c8620b8fa",
               "initialIndex": 1,
-              "content": "------",
+              "content": "Sort Key",
               "sortName": "default",
-              "width": "100px",
+              "width": "188px",
+              "type": "text"
+            },
+            {
+              "id": "660dd001-d662-4d4e-be60-0376e732eefa",
+              "initialIndex": 2,
+              "content": "Value",
+              "sortName": "default",
+              "width": "158px",
               "type": "text"
             }
           ],
           "rows": [
             {
-              "id": "e1bde601-d93f-4c84-bec9-cd3497d463a9",
+              "id": "a21c6898-b8d3-407a-adce-6d3cf2575347",
               "initialIndex": 0,
-              "creationTime": 1657605711268
+              "creationTime": 1657607216849
+            },
+            {
+              "id": "f73ddc33-9fbf-444c-a5e0-60ad669bc059",
+              "initialIndex": 1,
+              "creationTime": 1657607290588
+            },
+            {
+              "id": "b07686df-5a7c-471c-80ef-a59d2a738c34",
+              "initialIndex": 2,
+              "creationTime": 1657607356086
             }
           ],
           "cells": [
             {
-              "id": "825ff2bd-1e17-4cff-ae57-f7297d76c0a7",
-              "rowId": "e1bde601-d93f-4c84-bec9-cd3497d463a9",
-              "headerId": "3acfe4d0-af9b-42f8-910e-b9628c521f24",
+              "id": "0a21e4b7-c8e0-42b3-a2bf-0252dd49b8d1",
+              "rowId": "a21c6898-b8d3-407a-adce-6d3cf2575347",
+              "headerId": "f7956c70-acf2-465d-861f-b6a4d192034d",
               "type": "text",
-              "text": ""
+              "text": "profileId"
             },
             {
-              "id": "396ee160-652f-465c-958e-f35343ebdee1",
-              "rowId": "e1bde601-d93f-4c84-bec9-cd3497d463a9",
-              "headerId": "cd647e61-420d-4b48-9ebd-b1ac9e8fc6ea",
+              "id": "2d16caf5-115e-4843-a4f5-ebac3d7a6534",
+              "rowId": "a21c6898-b8d3-407a-adce-6d3cf2575347",
+              "headerId": "14ede7cc-4f97-4648-a983-477c8620b8fa",
               "type": "text",
-              "text": ""
+              "text": "/{sport}/{series}/{teamA}"
+            },
+            {
+              "id": "4c94464c-d780-443d-814c-c588d627e1a2",
+              "rowId": "a21c6898-b8d3-407a-adce-6d3cf2575347",
+              "headerId": "660dd001-d662-4d4e-be60-0376e732eefa",
+              "type": "text",
+              "text": "[list of assetIds]"
+            },
+            {
+              "id": "a021e08b-9872-4cce-96e8-aef1df7a71c8",
+              "rowId": "f73ddc33-9fbf-444c-a5e0-60ad669bc059",
+              "headerId": "f7956c70-acf2-465d-861f-b6a4d192034d",
+              "type": "text",
+              "text": "profileId"
+            },
+            {
+              "id": "551f920f-5153-461c-9438-abf44cb2d403",
+              "rowId": "f73ddc33-9fbf-444c-a5e0-60ad669bc059",
+              "headerId": "14ede7cc-4f97-4648-a983-477c8620b8fa",
+              "type": "text",
+              "text": "/{sport}/{series}/{teamB}"
+            },
+            {
+              "id": "a50328a6-89d5-49ce-86ec-a6ffd767bf35",
+              "rowId": "f73ddc33-9fbf-444c-a5e0-60ad669bc059",
+              "headerId": "660dd001-d662-4d4e-be60-0376e732eefa",
+              "type": "text",
+              "text": "[list of assetIds]"
+            },
+            {
+              "id": "70763240-6da8-40fb-ba10-dc81c13935b3",
+              "rowId": "b07686df-5a7c-471c-80ef-a59d2a738c34",
+              "headerId": "f7956c70-acf2-465d-861f-b6a4d192034d",
+              "type": "text",
+              "text": "profileId"
+            },
+            {
+              "id": "aeeb508d-d13d-4d67-ab45-88c58443113a",
+              "rowId": "b07686df-5a7c-471c-80ef-a59d2a738c34",
+              "headerId": "14ede7cc-4f97-4648-a983-477c8620b8fa",
+              "type": "text",
+              "text": "/{show}/{season}"
+            },
+            {
+              "id": "31110098-01ce-480b-86da-cfb12196cdb6",
+              "rowId": "b07686df-5a7c-471c-80ef-a59d2a738c34",
+              "headerId": "660dd001-d662-4d4e-be60-0376e732eefa",
+              "type": "text",
+              "text": "[list of assetIds]"
             }
           ],
           "tags": []
         },
-        "viewType": "live-preview",
+        "viewType": "reading",
         "shouldUpdate": false
       }
     }
