@@ -16,9 +16,8 @@ _NOTE_: viewing history below could mean either resumable or watched content (or
 - Ability to fetch a user's (profile) viewing history for specific assets and/or categories.
 
 #### Kayo specific
-- Ability to fetch a user's (profile) viewing history for a team.
-- Ability to fetch a user's (profile) viewing history for a sport.
-- Ability to fetch a user's (profile) viewing history for a league.
+- Ability to fetch a user's (profile) viewing history for a `sport` and `series`
+- Ability to fetch a user's (profile) viewing history for a `sport`, `series` and `team`
 
 #### ARES Specific
 - Ability to fetch a user's (profile) viewing history for a show.
