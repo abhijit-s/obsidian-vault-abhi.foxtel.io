@@ -1,5 +1,4 @@
-#design #history #kayo
-
+#design #history #kayo #datamodel 
 
 ## Summary
 Resume points & history summary will be stored for each profile, 
@@ -13,7 +12,7 @@ The primary set of attributes for an asset resume point will be:
 {
     "assetId": "1981",
     "assetType": "tv-episode",
-    "totalTime": "PT1H50.04S",
+    "totalTime": 6604,
     "state": "In progress",
     "progress": 2518,
     "updateTime": "2021-01-27T23:37:42.155Z"
