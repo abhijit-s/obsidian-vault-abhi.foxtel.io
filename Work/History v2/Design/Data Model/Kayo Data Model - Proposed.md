@@ -12,7 +12,9 @@ A single data record for a viewing history entry needs to contain 2 sets of fiel
 ### Queries
 The type of lookups into viewing history that we need to support can be classified as below:
 - Get entire history.
-- Show assets: Lookup using the show, and optionally the season.
+- Show assets: Lookup using the show -> [season]
+- Sports assets: Lookup using the sport -> [series] -> [team]
+- Get history for specific `assetId`s.
 - 
 
 ### Kayo Data Model
