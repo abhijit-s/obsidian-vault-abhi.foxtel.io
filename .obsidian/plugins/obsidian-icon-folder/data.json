@@ -5,11 +5,11 @@
     "fontSize": 16,
     "iconColor": null,
     "recentlyUsedIcons": [
-      "RiDatabase2Line",
-      "FasToriiGate",
-      "RiListCheck2",
+      "FasPuzzlePiece",
       "FasTape",
-      "FasPuzzlePiece"
+      "RiListCheck2",
+      "FasToriiGate",
+      "RiDatabase2Line"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -30,5 +30,6 @@
   "Work/History v2/Requirements/Additional Requirements.md": "FasPlus",
   "Work/History v2/Requirements/Viewing-API.md": "RiCodeView",
   "Work/History v2/Requirements/Definition of a History Item.md": "FabDiaspora",
-  "Work/History v2/Design/Data Model": "RiDatabase2Line"
+  "Work/History v2/Design/Data Model": "RiDatabase2Line",
+  "Work/Redis": "RiDatabase2Line"
 }

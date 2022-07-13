@@ -12,13 +12,16 @@ A single data record for a viewing history entry needs to contain 2 sets of fiel
 ### Queries
 The type of lookups into viewing history that we need to support can be classified as below:
 - Get entire history.
-- Show assets: Lookup using the show -> [season]
-- Sports assets: Lookup using the sport -> [series] -> [team]
+- Show assets: Lookup using the show -> [season] <sup>#</sup>
+- Sports assets: Lookup using the sport -> [series] -> [team] <sup>#</sup>
 - Get history for specific `assetId`s.
-- 
+- ✏️  Get history for specific `categoryId`s. <sup>#</sup>
+- ✏️  Get history for specific `assetIds` & `categoryIds`. <sup>#</sup>
+
+<sup>#</sup> : Requires some logic for aggregation of history into designated level.
+✏️  : For Kayo this might not be needed as long as we can always have the `assetId` to lookup by.
 
 ### Kayo Data Model
-
 Sample viewing history entry:
 
 A json representation
@@ -45,8 +48,6 @@ A json representation
 
 DynamoDB doesn't really have a JSON datatype, so we'd have to flatten out the structure like this:
 
-`rir:Information` This is merely a structural representation using JSON. It would imply associated data types to be used for the DynamoDB item.
-
 ```json
 {
 	"a.assetId": "1981",    
@@ -65,12 +66,17 @@ DynamoDB doesn't really have a JSON datatype, so we'd have to flatten out the st
 }
 ```
 
+`rir:Information` This is merely a structural representation using JSON. It would imply associated data types to be used for the DynamoDB item.
+
+
 #### Considerations
-- There are a couple of `path.*` fields which would be indexed and used for performing lookups. 
+- Dimensional lookups: There are a couple of `path.*` fields included, which are done with the sole purpose of assisting certain dimensional lookups. These will be indexed (LCIs).
 - `path.hierarchy`: used when querying for assets associated with shows (and seasons). 
 	- *NOTE* : In order to query using only the show category-id, we can use a `begins_with (a, substr)` expression that can then fetch assets belonging to the same show across season category-ids.
 - `path.sport`: used when querying for assets using the sport / series categorisation. 
 	- Similar hierarchical querying mechanism can be employed like that with the `path.hierarchy`, i.e. prefix based search to get all assets for the top level (i.e. `sport`)
+
+
 
 Additionally, we need to be able to retrieve history using certain other set of dimensions; which could be hierarchical in nature as well.
 
