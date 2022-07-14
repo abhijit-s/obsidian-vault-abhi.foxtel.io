@@ -40,7 +40,7 @@
 - Number of topic partitions TBD based on current and projected capacity (can go with current configuration - `64`)
 
 #### Services & APIs
-Will be split into 2 services:
+Will be split into 3 services:
 - **History Recorder** (write-path): 
 	- Listens to kafka topic(s) and indexes the resume points, after applying business logic. 
 	- Needs to perform quick writes and therefore can use DDB conditional writes for this purpose
@@ -49,6 +49,7 @@ Will be split into 2 services:
 - **Viewing API** (read-path): 
 	- Provides APIs necessary to lookup and/or retrieve viewing-history for profiles.
 	- Does so by possibly performing additional lookups/co-ordination with other APIs, such as Content-API.
- 
+ - **History API** (read-path):
+ - 
 ##### Framework: 
 Spring WebFlux on Kubernetes (Java v17 `rir:Question`)
