@@ -49,12 +49,19 @@
 
 #### READ PATH
  - **History API**:
-	 - Provides basic APIs necessary to fetch history items from the repository
-	 - Hides the complexity of navigating through the DB 
+	 - Provides basic APIs necessary to fetch history items from the repository.
+	 - Hides the complexity of navigating through the DB.
+	 - Provides lookup & filtering using `assetId` 
+	 - Provides lookups using category paths.
+	 - Provides lookups using dimensional hierarchies.
+	 - Pagination when required.
 	
-- **Viewing API** (read-path): 
+- **Viewing API**:
 	- Provides APIs necessary to lookup and/or retrieve viewing-history for profiles.
-	- Does so by possibly performing additional lookups/co-ordination with other APIs, such as Content-API.
+	- Interfaces with History API to fetch relevant history for the profile and performs any post-processing that's needed.
+	- It may require to do so by performing additional lookups/co-ordination with other APIs, such as Content-API.
 
-##### Framework: 
-Spring WebFlux on Kubernetes (Java v17 `rir:Question`)
+#### DEV & Deployment Framework
+- Spring WebFlux (Java v17 `rir:Question`)
+- Kubernetes for deployment
+- Github Actions for CI
