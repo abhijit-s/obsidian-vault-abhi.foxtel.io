@@ -3094,6 +3094,7 @@ const DEFAULT_SETTINGS = {
     jugglLayout: "hierarchy",
     limitWriteBCCheckboxes: [],
     CHECKBOX_STATES_OVERWRITTEN: false,
+    gridDefaultDepth: 25,
     gridHeatmap: false,
     heatmapColour: getComputedStyle(document.body).getPropertyValue("--text-accent"),
     hierarchyNotes: [""],
@@ -5208,6 +5209,7 @@ function escapeRegex(string) {
     return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&");
 }
 
+const getCurrFile = () => { var _a; return (_a = app.workspace.getActiveFile()) !== null && _a !== void 0 ? _a : app.workspace.getMostRecentlyActiveFile(); };
 /**
  * Get basename from a **Markdown** `path`
  * @param  {string} path
@@ -5318,13 +5320,13 @@ function getAlt(node, plugin) {
         return null;
 }
 async function waitForCache(plugin) {
-    var _a, _b;
+    var _a;
     const { app } = plugin;
     if (app.plugins.enabledPlugins.has("dataview")) {
         let basename;
         while (!basename || !app.plugins.plugins.dataview.api.page(basename)) {
             await wait(100);
-            basename = (_b = (_a = app === null || app === void 0 ? void 0 : app.workspace) === null || _a === void 0 ? void 0 : _a.getActiveFile()) === null || _b === void 0 ? void 0 : _b.basename;
+            basename = (_a = getCurrFile()) === null || _a === void 0 ? void 0 : _a.basename;
         }
     }
     else {
@@ -5340,7 +5342,7 @@ function isInsideYaml(app) {
     if (mode !== "source")
         return null;
     const { editor } = activeLeaf.view;
-    const file = workspace.getActiveFile();
+    const file = getCurrFile();
     if (!file)
         return null;
     const { frontmatter } = metadataCache.getFileCache(file);
@@ -14971,24 +14973,24 @@ function add_css$c() {
 
 function get_each_context$8(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
+	child_ctx[25] = list[i];
+	child_ctx[27] = i;
 	return child_ctx;
 }
 
 function get_each_context_1$5(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[27] = list[i].value;
-	child_ctx[28] = list[i].first;
-	child_ctx[29] = list[i].last;
+	child_ctx[28] = list[i].value;
+	child_ctx[29] = list[i].first;
+	child_ctx[30] = list[i].last;
 	return child_ctx;
 }
 
-// (44:6) {#each allRuns[i] as { value, first, last }}
+// (45:6) {#each allRuns[i] as { value, first, last }}
 function create_each_block_1$5(ctx) {
 	let div1;
 	let div0;
-	let t0_value = (getAlt(/*value*/ ctx[27], /*plugin*/ ctx[0]) ?? dropDendron(/*value*/ ctx[27], /*settings*/ ctx[5])) + "";
+	let t0_value = (getAlt(/*value*/ ctx[28], /*plugin*/ ctx[0]) ?? dropDendron(/*value*/ ctx[28], /*settings*/ ctx[5])) + "";
 	let t0;
 	let div0_class_value;
 	let t1;
@@ -14998,11 +15000,11 @@ function create_each_block_1$5(ctx) {
 	let dispose;
 
 	function click_handler(...args) {
-		return /*click_handler*/ ctx[13](/*value*/ ctx[27], ...args);
+		return /*click_handler*/ ctx[13](/*value*/ ctx[28], ...args);
 	}
 
 	function mouseover_handler(...args) {
-		return /*mouseover_handler*/ ctx[14](/*value*/ ctx[27], ...args);
+		return /*mouseover_handler*/ ctx[14](/*value*/ ctx[28], ...args);
 	}
 
 	return {
@@ -15011,11 +15013,11 @@ function create_each_block_1$5(ctx) {
 			div0 = element("div");
 			t0 = text(t0_value);
 			t1 = space();
-			attr(div0, "class", div0_class_value = "" + (null_to_empty(linkClass(/*app*/ ctx[6], /*value*/ ctx[27])) + " svelte-c6w3ih"));
-			attr(div1, "class", div1_class_value = "BC-trail-grid-item " + (/*value*/ ctx[27] === "" ? "BC-filler" : "") + " svelte-c6w3ih");
+			attr(div0, "class", div0_class_value = "" + (null_to_empty(linkClass(/*app*/ ctx[6], /*value*/ ctx[28])) + " svelte-c6w3ih"));
+			attr(div1, "class", div1_class_value = "BC-trail-grid-item " + (/*value*/ ctx[28] === "" ? "BC-filler" : "") + " svelte-c6w3ih");
 
-			attr(div1, "style", div1_style_value = "\r\n              grid-area: " + (/*first*/ ctx[28] + 1) + " / " + (/*i*/ ctx[26] + 1) + " /\r\n                  " + (/*last*/ ctx[29] + 2) + " / " + (/*i*/ ctx[26] + 2) + ";\r\n              " + (/*gridHeatmap*/ ctx[7]
-			? `background-color: ${/*toColour*/ ctx[10](/*value*/ ctx[27])}`
+			attr(div1, "style", div1_style_value = "\r\n              grid-area: " + (/*first*/ ctx[29] + 1) + " / " + (/*i*/ ctx[27] + 1) + " /\r\n                  " + (/*last*/ ctx[30] + 2) + " / " + (/*i*/ ctx[27] + 2) + ";\r\n              " + (/*gridHeatmap*/ ctx[7]
+			? `background-color: ${/*toColour*/ ctx[10](/*value*/ ctx[28])}`
 			: ""));
 		},
 		m(target, anchor) {
@@ -15035,18 +15037,18 @@ function create_each_block_1$5(ctx) {
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
-			if (dirty[0] & /*allRuns, plugin*/ 17 && t0_value !== (t0_value = (getAlt(/*value*/ ctx[27], /*plugin*/ ctx[0]) ?? dropDendron(/*value*/ ctx[27], /*settings*/ ctx[5])) + "")) set_data(t0, t0_value);
+			if (dirty[0] & /*allRuns, plugin*/ 17 && t0_value !== (t0_value = (getAlt(/*value*/ ctx[28], /*plugin*/ ctx[0]) ?? dropDendron(/*value*/ ctx[28], /*settings*/ ctx[5])) + "")) set_data(t0, t0_value);
 
-			if (dirty[0] & /*allRuns*/ 16 && div0_class_value !== (div0_class_value = "" + (null_to_empty(linkClass(/*app*/ ctx[6], /*value*/ ctx[27])) + " svelte-c6w3ih"))) {
+			if (dirty[0] & /*allRuns*/ 16 && div0_class_value !== (div0_class_value = "" + (null_to_empty(linkClass(/*app*/ ctx[6], /*value*/ ctx[28])) + " svelte-c6w3ih"))) {
 				attr(div0, "class", div0_class_value);
 			}
 
-			if (dirty[0] & /*allRuns*/ 16 && div1_class_value !== (div1_class_value = "BC-trail-grid-item " + (/*value*/ ctx[27] === "" ? "BC-filler" : "") + " svelte-c6w3ih")) {
+			if (dirty[0] & /*allRuns*/ 16 && div1_class_value !== (div1_class_value = "BC-trail-grid-item " + (/*value*/ ctx[28] === "" ? "BC-filler" : "") + " svelte-c6w3ih")) {
 				attr(div1, "class", div1_class_value);
 			}
 
-			if (dirty[0] & /*allRuns*/ 16 && div1_style_value !== (div1_style_value = "\r\n              grid-area: " + (/*first*/ ctx[28] + 1) + " / " + (/*i*/ ctx[26] + 1) + " /\r\n                  " + (/*last*/ ctx[29] + 2) + " / " + (/*i*/ ctx[26] + 2) + ";\r\n              " + (/*gridHeatmap*/ ctx[7]
-			? `background-color: ${/*toColour*/ ctx[10](/*value*/ ctx[27])}`
+			if (dirty[0] & /*allRuns*/ 16 && div1_style_value !== (div1_style_value = "\r\n              grid-area: " + (/*first*/ ctx[29] + 1) + " / " + (/*i*/ ctx[27] + 1) + " /\r\n                  " + (/*last*/ ctx[30] + 2) + " / " + (/*i*/ ctx[27] + 2) + ";\r\n              " + (/*gridHeatmap*/ ctx[7]
+			? `background-color: ${/*toColour*/ ctx[10](/*value*/ ctx[28])}`
 			: ""))) {
 				attr(div1, "style", div1_style_value);
 			}
@@ -15059,10 +15061,10 @@ function create_each_block_1$5(ctx) {
 	};
 }
 
-// (43:4) {#each transposedTrails as col, i}
+// (44:4) {#each transposedTrails as col, i}
 function create_each_block$8(ctx) {
 	let each_1_anchor;
-	let each_value_1 = /*allRuns*/ ctx[4][/*i*/ ctx[26]];
+	let each_value_1 = /*allRuns*/ ctx[4][/*i*/ ctx[27]];
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value_1.length; i += 1) {
@@ -15086,7 +15088,7 @@ function create_each_block$8(ctx) {
 		},
 		p(ctx, dirty) {
 			if (dirty[0] & /*allRuns, gridHeatmap, toColour, app, activeLeafView, plugin, settings*/ 1521) {
-				each_value_1 = /*allRuns*/ ctx[4][/*i*/ ctx[26]];
+				each_value_1 = /*allRuns*/ ctx[4][/*i*/ ctx[27]];
 				let i;
 
 				for (i = 0; i < each_value_1.length; i += 1) {
@@ -15273,7 +15275,7 @@ function instance$l($$self, $$props, $$invalidate) {
 	let { sortedTrails } = $$props;
 	let { plugin } = $$props;
 	const { settings, app, mainG } = plugin;
-	const { userHiers, gridHeatmap, heatmapColour } = settings;
+	const { userHiers, gridHeatmap, heatmapColour, gridDefaultDepth } = settings;
 	const activeLeafView = app.workspace.activeLeaf.view;
 	const allCells = [...new Set(sortedTrails.flat())];
 	const closedParents = getReflexiveClosure(getSubInDirs(mainG, "up", "down"), userHiers);
@@ -15286,7 +15288,10 @@ function instance$l($$self, $$props, $$invalidate) {
 	});
 
 	const maxLength = sortedTrails.last().length;
-	let depth = maxLength;
+
+	// Use the user setting to limit the initial depth
+	let depth = Math.min(maxLength, gridDefaultDepth);
+
 	let slicedTrails = sortedTrails;
 	const toColour = value => heatmapColour + Math.round(children[value] * 200 + 55).toString(16);
 	const click_handler = async (value, e) => await openOrSwitch(app, value, e);
@@ -33031,7 +33036,7 @@ function createIndex(allPaths, asWikilinks) {
 async function copyLocalIndex(plugin) {
     const { settings, closedG } = plugin;
     const { wikilinkIndex } = settings;
-    const { basename } = plugin.app.workspace.getActiveFile();
+    const { basename } = getCurrFile();
     const onlyDowns = getSubInDirs(closedG, "down");
     const allPaths = dfsAllPaths(onlyDowns, basename);
     const index = addAliasesToIndex(plugin, createIndex(allPaths, wikilinkIndex));
@@ -35192,7 +35197,7 @@ class MatrixView extends obsidian.ItemView {
             db.start2G("Draw Matrix View");
             contentEl.empty();
             const { userHiers } = plugin.settings;
-            const currFile = this.app.workspace.getActiveFile();
+            const currFile = getCurrFile();
             if (!currFile)
                 return;
             const hierSquares = this.getHierSquares(userHiers, currFile).filter((squareArr) => squareArr.some((sq) => sq.realItems.length + sq.impliedItems.length > 0));
@@ -35217,9 +35222,9 @@ class BCAPI {
         this.refreshIndex = async () => await refreshIndex(this.plugin);
         this.getSubInDirs = (dirs, g = this.mainG) => getSubInDirs(g, ...dirs);
         this.getSubForFields = (fields, g = this.mainG) => getSubForFields(g, fields);
-        this.dfsAllPaths = (fromNode, g) => { var _a; if (fromNode === void 0) { fromNode = (_a = this.app.workspace.getActiveFile()) === null || _a === void 0 ? void 0 : _a.basename; } if (g === void 0) { g = this.mainG; } return dfsAllPaths(g, fromNode); };
+        this.dfsAllPaths = (fromNode, g) => { var _a; if (fromNode === void 0) { fromNode = (_a = getCurrFile()) === null || _a === void 0 ? void 0 : _a.basename; } if (g === void 0) { g = this.mainG; } return dfsAllPaths(g, fromNode); };
         this.createIndex = (allPaths, wikilinks = false) => createIndex(allPaths, wikilinks);
-        this.getMatrixNeighbours = (fromNode) => { var _a; if (fromNode === void 0) { fromNode = (_a = this.app.workspace.getActiveFile()) === null || _a === void 0 ? void 0 : _a.basename; } return getMatrixNeighbours(this.plugin, fromNode); };
+        this.getMatrixNeighbours = (fromNode) => { var _a; if (fromNode === void 0) { fromNode = (_a = getCurrFile()) === null || _a === void 0 ? void 0 : _a.basename; } return getMatrixNeighbours(this.plugin, fromNode); };
         this.getOppDir = (dir) => getOppDir(dir);
         this.getOppFields = (field) => {
             const { fieldDir } = getFieldInfo(this.plugin.settings.userHiers, field);
@@ -36638,7 +36643,7 @@ function createdJugglCB(plugin, target, args, lines, froms, source, min, max) {
 async function jumpToFirstDir(plugin, dir) {
     var _a;
     const { limitJumpToFirstFields } = plugin.settings;
-    const file = plugin.app.workspace.getActiveFile();
+    const file = getCurrFile();
     if (!file) {
         new obsidian.Notice("You need to be focussed on a Markdown file");
         return;
@@ -36693,7 +36698,7 @@ async function thread(plugin, field) {
     var _a;
     const { app, settings } = plugin;
     const { userHiers, threadingTemplate, dateFormat, threadIntoNewPane, threadingDirTemplates, threadUnderCursor, writeBCsInline, } = settings;
-    const currFile = app.workspace.getActiveFile();
+    const currFile = getCurrFile();
     if (!currFile)
         return;
     const newFileParent = app.fileManager.getNewFileParent(currFile.path);
@@ -36761,7 +36766,7 @@ async function thread(plugin, field) {
 
 async function writeBCToFile(plugin, currFile) {
     const { app, settings, mainG } = plugin;
-    const file = currFile !== null && currFile !== void 0 ? currFile : app.workspace.getActiveFile();
+    const file = currFile !== null && currFile !== void 0 ? currFile : getCurrFile();
     const { limitWriteBCCheckboxes, writeBCsInline, userHiers } = settings;
     const succInfo = mainG.mapInEdges(file.basename, (k, a, s, t) => {
         const { field, dir } = a;
@@ -38858,9 +38863,25 @@ function addTrailViewSettings(plugin, viewDetails) {
         });
     }
     new obsidian.Setting(trailDetails)
+        .setName('Grid view depth')
+        .setDesc('Limit the initial depth of the grid view')
+        .addSlider((slider) => {
+        slider
+            .setLimits(0, 25, 1)
+            .setValue(settings.gridDefaultDepth)
+            .setDynamicTooltip();
+        slider.sliderEl.onblur = async () => {
+            settings.gridDefaultDepth = slider.getValue();
+            await plugin.saveSettings();
+            await drawTrail(plugin);
+        };
+    });
+    new obsidian.Setting(trailDetails)
         .setName("Grid view heatmap")
         .setDesc("Change the background colour of Grid View squares based on the number of children leaving that note.")
-        .addToggle((toggle) => toggle.setValue(settings.gridHeatmap).onChange(async (value) => {
+        .addToggle((toggle) => toggle
+        .setValue(settings.gridHeatmap)
+        .onChange(async (value) => {
         settings.gridHeatmap = value;
         await plugin.saveSettings();
         await drawTrail(plugin);
@@ -39810,7 +39831,7 @@ function get_each_context_1$1(ctx, list, i) {
 	return child_ctx;
 }
 
-// (46:2) {:else}
+// (48:2) {:else}
 function create_else_block(ctx) {
 	let fafire;
 	let current;
@@ -39839,7 +39860,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (44:2) {#if frozen}
+// (46:2) {#if frozen}
 function create_if_block_1(ctx) {
 	let faregsnowflake;
 	let current;
@@ -39868,7 +39889,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (62:2) {#each DIRECTIONS as direction}
+// (64:2) {#each DIRECTIONS as direction}
 function create_each_block_1$1(ctx) {
 	let option;
 	let t_value = /*direction*/ ctx[17] + "";
@@ -39893,7 +39914,7 @@ function create_each_block_1$1(ctx) {
 	};
 }
 
-// (69:4) {#if line.length > 1}
+// (71:4) {#if line.length > 1}
 function create_if_block(ctx) {
 	let div;
 	let pre;
@@ -39973,7 +39994,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (68:2) {#each lines as line}
+// (70:2) {#each lines as line}
 function create_each_block$1(ctx) {
 	let if_block_anchor;
 	let if_block = /*line*/ ctx[14].length > 1 && create_if_block(ctx);
@@ -40226,18 +40247,22 @@ function instance$1($$self, $$props, $$invalidate) {
 	const { settings, app, closedG } = plugin;
 	let dir = "down";
 	let frozen = false;
-	let { basename } = app.workspace.getActiveFile();
+	let { basename } = getCurrFile();
 
 	plugin.registerEvent(app.workspace.on("active-leaf-change", () => {
+		var _a;
 		if (frozen) return;
-		$$invalidate(3, basename = app.workspace.getActiveFile().basename);
+
+		$$invalidate(3, basename = (_a = getCurrFile()) === null || _a === void 0
+		? void 0
+		: _a.basename);
 	}));
 
 	let lines;
 
 	const click_handler = () => {
 		$$invalidate(4, frozen = !frozen);
-		if (!frozen) $$invalidate(3, basename = app.workspace.getActiveFile().basename);
+		if (!frozen) $$invalidate(3, basename = getCurrFile()?.basename);
 	};
 
 	const click_handler_1 = async () => {
@@ -60843,7 +60868,7 @@ const circlePacking = (graph, app, currFile, modal, width, height) => {
         .style("stroke-width", 4);
     node.attr("aria-label", (d) => d.name);
     const nodeClick = (event, dest) => {
-        app.workspace.getActiveFile();
+        getCurrFile();
         openOrSwitch(app, dest, event);
         modal.close();
     };
@@ -61830,7 +61855,7 @@ function get_each_context_1(ctx, list, i) {
 	return child_ctx;
 }
 
-// (138:8) {#each options as op}
+// (139:8) {#each options as op}
 function create_each_block_1(ctx) {
 	let option;
 	let t_value = /*op*/ ctx[29] + "";
@@ -61862,7 +61887,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (134:2) {#each selectors as { text, options, val }}
+// (135:2) {#each selectors as { text, options, val }}
 function create_each_block(ctx) {
 	let span;
 	let t0_value = /*text*/ ctx[24] + "";
@@ -62031,7 +62056,7 @@ function instance($$self, $$props, $$invalidate) {
 	const { app, plugin } = modal;
 	const { mainG, settings } = plugin;
 	const { visGraph, visRelation, visClosed, visAll } = settings;
-	const currFile = app.workspace.getActiveFile();
+	const currFile = getCurrFile();
 
 	const selectors = [
 		{
@@ -62321,7 +62346,7 @@ class BCPlugin extends obsidian.Plugin {
         this.saveSettings = async () => await this.saveData(this.settings);
     }
     registerActiveLeafChangeEvent() {
-        this.activeLeafChange = this.app.workspace.on("active-leaf-change", async () => {
+        this.activeLeafChange = this.app.workspace.on("file-open", async () => {
             if (this.settings.refreshOnNoteChange) {
                 await refreshIndex(this);
             }

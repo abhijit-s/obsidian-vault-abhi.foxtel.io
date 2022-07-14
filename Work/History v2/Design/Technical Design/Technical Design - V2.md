@@ -1,6 +1,7 @@
 ## Considerations
-- Fast lookups
 - Fast writes
+- Fast lookups
+- Limited variations for lookups
 - Scalable
 
 ## Choices
@@ -40,7 +41,7 @@
 
 #### Services & APIs
 Will be split into 2 services:
-- **History Indexer** (write-path): 
+- **History Recorder** (write-path): 
 	- Listens to kafka topic(s) and indexes the resume points, after applying business logic. 
 	- Needs to perform quick writes and therefore can use DDB conditional writes for this purpose
 	- needs to implement retry mechanisms such that events are not lost.

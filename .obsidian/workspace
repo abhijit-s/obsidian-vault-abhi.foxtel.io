@@ -4,12 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "d9c37ae4c46607ec",
+        "id": "afab65ddafc655b5",
         "type": "leaf",
         "state": {
-          "type": "excalidraw",
+          "type": "markdown",
           "state": {
-            "file": "Excalidraw/Drawing 2022-07-13 16.24.34.excalidraw.md"
+            "file": "Work/History v2/Design/Technical Design/Technical Design - V2.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
           }
         }
       }
@@ -28,8 +31,10 @@
             "id": "c8f1100bed139de9",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {}
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2022-07-13 19.51.50.excalidraw.md"
+              }
             }
           },
           {
@@ -46,8 +51,17 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "24025feb5b36b2b2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -67,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2022-07-13 16.24.34.excalidraw.md",
+                "file": "Work/History v2/Design/Technical Design/Technical Design - V2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -92,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2022-07-13 16.24.34.excalidraw.md",
+                "file": "Work/History v2/Design/Technical Design/Technical Design - V2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -115,24 +129,8 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2022-07-13 16.24.34.excalidraw.md"
+                "file": "Work/History v2/Design/Technical Design/Technical Design - V2.md"
               }
-            }
-          },
-          {
-            "id": "7d2812d802999265",
-            "type": "leaf",
-            "state": {
-              "type": "BC-matrix",
-              "state": {}
-            }
-          },
-          {
-            "id": "bcde155de5fbbeed",
-            "type": "leaf",
-            "state": {
-              "type": "BC-tree",
-              "state": {}
             }
           },
           {
@@ -142,9 +140,25 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "6365b71d23c1ec9f",
+            "type": "leaf",
+            "state": {
+              "type": "BC-matrix",
+              "state": {}
+            }
+          },
+          {
+            "id": "9965a22b5fc16278",
+            "type": "leaf",
+            "state": {
+              "type": "BC-tree",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 5
       },
       {
         "id": "e786a0a90374a3a0",
@@ -164,17 +178,17 @@
     "direction": "horizontal",
     "width": 166.5
   },
-  "active": "d9c37ae4c46607ec",
+  "active": "9965a22b5fc16278",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2022-07-13 16.24.34.excalidraw.md",
+    "Work/History v2/Design/Technical Design/History Recorder.md",
+    "Work/History v2/Design/Technical Design/Technical Design - V2.md",
     "Work/History v2/Design/Data Model/Kayo/Kayo Viewing History Data Model.md",
-    "Work/History v2/Design/Data Model/Kayo/Kayo Viewing History Model - Reading.md",
-    "Work/History v2/Design/Data Model/Kayo/Kayo Viewing History Model - Writing.md",
-    "Work/History v2/zAttachments/Pasted Image 20220713162641_989.png",
-    "Work/History v2/zAttachments/Ares History Indexer + Viewing API - Ares History (v1).pdf",
-    "Work/History v2/zAttachments/Proposed design v2.png",
-    "Work/History v2/zAttachments/Kayo Data Model - Table Design.excalidraw.md",
+    "Excalidraw/Drawing 2022-07-13 19.51.50.excalidraw.md",
+    "Untitled Diagram.svg",
     "Work/History v2/Design/Data Model/Data Model - V2.md",
-    "Excalidraw/Drawing 2022-07-13 16.17.41.excalidraw.md"
+    "Work/History v2/zAttachments/History Recorder Sequence.svg",
+    "Work/History v2/zAttachments/Kafka Icon.png",
+    "Work/History v2/zAttachments/Kayo Data Model - Table Design.excalidraw.md",
+    "Work/History v2/zAttachments/Proposed design v2.png"
   ]
 }

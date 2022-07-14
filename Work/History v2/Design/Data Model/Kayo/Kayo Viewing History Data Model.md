@@ -1,6 +1,17 @@
-See : [[Data Model - V2]]
-
 #history #design #kayo #datamodel 
+
+- [[#Proposed|Proposed]]
+- [[#Queries|Queries]]
+- [[#Kayo Data Model|Kayo Data Model]]
+	- [[#Kayo Data Model#Viewing history item|Viewing history item]]
+		- [[#Viewing history item#Detailed Explanation|Detailed Explanation]]
+	- [[#Kayo Data Model#Summary row|Summary row]]
+- [[#DynamoDB Table Design|DynamoDB Table Design]]
+	- [[#DynamoDB Table Design#Indexes|Indexes]]
+- [[#Writing Viewing History to DynamoDB|Writing Viewing History to DynamoDB]]
+		- [[#Indexes#`IN_PROGRESS` state:|`IN_PROGRESS` state:]]
+		- [[#Indexes#`COMPLETED` state:|`COMPLETED` state:]]
+
 
 ## Proposed
 
@@ -34,6 +45,7 @@ A json representation
 		"totalTime": 6604,
 		"state": "IN_PROGRESS",
 		"progress": 2518,
+		"progressPercentage": 38.12,
 		"updateTime": "2021-01-27T23:37:42.155Z"
 	},
 	"ext" : {
@@ -54,6 +66,7 @@ DynamoDB doesn't really have a JSON datatype, so we'd have to flatten out the st
 	"a.totalTime": 6604,
 	"a.state": "IN_PROGRESS",
 	"a.progress": 2518,
+	"a.progressPercentage": 38.12,
 	"a.updateTime": "2021-01-27T23:37:42.155Z",
 	"e.showCategoryId": "1446",
 	"e.seasonCategoryId": "1450",
@@ -67,6 +80,27 @@ DynamoDB doesn't really have a JSON datatype, so we'd have to flatten out the st
 
 `rir:Information` This is merely a structural representation using JSON. It would imply associated data types to be used for the DynamoDB item.
 
+🆕  For `COMPLETED` viewing history items, we will modify the data structure slightly to include a list of timestamps which indicate the times when the asset was completely watched.
+
+```json
+{
+	"a.assetId": "1981",    
+	"a.assetType": "tv-episode",
+	"a.totalTime": 6604,
+	"a.state": "COMPLETED",
+	"a.progress": 6530,
+	"a.progressPercentage": 98.87,	
+	"a.updateTime": "2021-01-27T23:37:42.155Z",
+	"e.showCategoryId": "1446",
+	"e.seasonCategoryId": "1450",
+	"e.sport": "cricket",
+	"e.series-id": "4",
+	"e.team-ids": "60091,60092",
+	"path.hierarchy": "/1446/1450"
+	"path.sport": "/cricket/4",
+	"m.timestamps" ["2021-01-20T11:20:00.155Z", "2021-01-27T23:37:42.155Z"]
+}
+```
 
 #### Detailed Explanation
 - Dimensional lookups: There are a couple of `path.*` fields included, which are done with the sole purpose of assisting certain dimensional lookups. These will be indexed (LSIs).
@@ -102,6 +136,5 @@ Since DynamoDB limits the number of Local Secondary Indexes (LSI)  on a table, w
 - `path.sport`
 
 
-## Writing Viewing History to DynamoDB
-
-![[Drawing 2022-07-13 16.24.34.excalidraw]]
+## Related Links
+[[Data Model - V2]]
