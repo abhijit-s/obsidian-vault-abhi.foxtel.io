@@ -50,6 +50,6 @@ Will be split into 3 services:
 	- Provides APIs necessary to lookup and/or retrieve viewing-history for profiles.
 	- Does so by possibly performing additional lookups/co-ordination with other APIs, such as Content-API.
  - **History API** (read-path):
- 
+	 - Provides APIs necessary to fetch history
 ##### Framework: 
 Spring WebFlux on Kubernetes (Java v17 `rir:Question`)
