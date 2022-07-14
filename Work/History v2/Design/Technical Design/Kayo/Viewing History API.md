@@ -15,4 +15,6 @@ Service to fetch the viewing history for a user profile.
 ## API Endpoints
 
 1. `/viewing/profiles/{profile}` : Get complete viewing history for a `{profile}`
-2. 
+	- Parameters:
+		- `{profile}``
+1. 

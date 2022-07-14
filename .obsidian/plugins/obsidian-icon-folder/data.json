@@ -28,9 +28,9 @@
   "Work/History v2/Requirements/Content-API.md": "FasBookOpen",
   "Work/History v2/Requirements/Datalake.md": "FasDatabase",
   "Work/History v2/Requirements/Additional Requirements.md": "FasPlus",
-  "Work/History v2/Requirements/Viewing-API.md": "RiCodeView",
   "Work/History v2/Requirements/Definition of a History Item.md": "FabDiaspora",
   "Work/History v2/Design/Data Model": "RiDatabase2Line",
   "Work/Redis": "RiDatabase2Line",
-  "Work/History v2/Design/Technical Design": "FasGears"
+  "Work/History v2/Design/Technical Design": "FasGears",
+  "Work/History v2/Requirements/Viewing History-API.md": "RiCodeView"
 }
