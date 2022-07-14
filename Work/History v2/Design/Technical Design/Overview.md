@@ -5,15 +5,15 @@
 - Scalable
 
 ## Choices
-#### Database : DynamoDB
-##### Why? 
+### Database : DynamoDB
+#### Why? 
 - Very fast writes when using the primary keys (partition key + sort key).
 - Fast lookups when using primary keys.
 - Scalable and also can provide high throughput since it's distributed.
 - Can be autoscaled (on-demand + provisioned capacity).
 - Batch operations can help in efficient reads and writes.
 
-##### Limitations
+#### Limitations
 - Data Storage:
 	- DynamoDB's limit on the size of each record is 400KB.
 	- GSIs are limited to 20 per table.
@@ -33,23 +33,28 @@
 	- ConditionExpression, ProjectionExpression, UpdateExpression & FilterExpression length - up to 4KB
 	-  `DescribeLimits` API operation should be called no more than once a minute.
 
-#### Transport
+### Transport
 **Message broker**: Kafka
 - Topics will be partitioned using the viewing profile ID (Datalake producer's responsibility)
 - Dedicated dead-letter retry topic to accomodate any workflows resulting in failure. 
 - Number of topic partitions TBD based on current and projected capacity (can go with current configuration - `64`)
 
-#### Services & APIs
-Will be split into 3 services:
-- **History Recorder** (write-path): 
-	- Listens to kafka topic(s) and indexes the resume points, after applying business logic. 
-	- Needs to perform quick writes and therefore can use DDB conditional writes for this purpose
-	- needs to implement retry mechanisms such that events are not lost.
-	- retries can be 
+### Services & APIs
+
+#### Write Path
+- **History Recorder**: 
+	- Listens to Kafka topic(s) and indexes the resume points, after applying business logic. 
+	- Needs to perform quick writes and therefore can potentially use DDB conditional writes for this purpose
+	- Needs to implement retry mechanisms such that events are not lost.
+
+#### READ PATH
+ - **History API**:
+	 - Provides basic APIs necessary to fetch history items from the repository
+	 - Hides the complexity of navigating through the DB 
+	
 - **Viewing API** (read-path): 
 	- Provides APIs necessary to lookup and/or retrieve viewing-history for profiles.
 	- Does so by possibly performing additional lookups/co-ordination with other APIs, such as Content-API.
- - **History API** (read-path):
-	 - Provides APIs necessary to fetch history
+
 ##### Framework: 
 Spring WebFlux on Kubernetes (Java v17 `rir:Question`)
