@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Work/History v2/Design/Technical Design/Kayo/Viewing History API.md",
+            "file": "Work/Redis/Jupyter/Redis Test.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Work/History v2/Design/Technical Design/Kayo/Viewing History API.md",
+                "file": "Work/Redis/Jupyter/Redis Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Work/History v2/Design/Technical Design/Kayo/Viewing History API.md",
+                "file": "Work/Redis/Jupyter/Redis Test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Work/History v2/Design/Technical Design/Kayo/Viewing History API.md"
+                "file": "Work/Redis/Jupyter/Redis Test.md"
               }
             }
           },
@@ -180,15 +180,15 @@
   },
   "active": "fe3e8de76d733cc6",
   "lastOpenFiles": [
-    "Work/History v2/Requirements/Datalake.md",
+    "Work/History v2/Design/Data Model/Kayo/Kayo Viewing History Data Model.md",
     "Work/History v2/Design/Technical Design/Kayo/Viewing History API.md",
-    "Work/History v2/Requirements/Viewing History-API.md",
-    "Work/History v2/Design/Technical Design/Kayo/History Recorder.md",
     "Work/History v2/Design/Technical Design/Overview.md",
+    "Work/History v2/Design/Technical Design/Kayo/History Recorder.md",
+    "Work/History v2/Requirements/Datalake.md",
+    "Work/History v2/Requirements/Viewing History-API.md",
     "().md",
     "Excalidraw/Drawing 2022-07-13 19.51.50.excalidraw.md",
     "Work/History v2/zAttachments/History Recorder Sequence.svg",
-    "Work/History v2/zAttachments/Viewing History - Write.svg",
-    "Work/History v2/Design/Data Model/Data Model - V2.md"
+    "Work/History v2/zAttachments/Viewing History - Write.svg"
   ]
 }

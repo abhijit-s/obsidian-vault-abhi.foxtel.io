@@ -31,5 +31,6 @@
   "obsidian-plugin-toc",
   "obsidian-dynamic-toc",
   "notion-like-tables",
-  "table-extended"
+  "table-extended",
+  "obsidian-jupyter"
 ]

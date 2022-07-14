@@ -4,14 +4,10 @@
 - [[#Queries|Queries]]
 - [[#Kayo Data Model|Kayo Data Model]]
 	- [[#Kayo Data Model#Viewing history item|Viewing history item]]
-		- [[#Viewing history item#Detailed Explanation|Detailed Explanation]]
 	- [[#Kayo Data Model#Summary row|Summary row]]
 - [[#DynamoDB Table Design|DynamoDB Table Design]]
 	- [[#DynamoDB Table Design#Indexes|Indexes]]
-- [[#Writing Viewing History to DynamoDB|Writing Viewing History to DynamoDB]]
-		- [[#Indexes#`IN_PROGRESS` state:|`IN_PROGRESS` state:]]
-		- [[#Indexes#`COMPLETED` state:|`COMPLETED` state:]]
-
+- [[#Related Links|Related Links]]
 
 ## Proposed
 
