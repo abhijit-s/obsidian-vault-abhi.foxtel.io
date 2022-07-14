@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "fe3e8de76d733cc6",
+        "id": "a6dfd71473733aa4",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
             "file": "Work/Redis/Jupyter/Redis Test.md",
-            "mode": "source",
+            "mode": "preview",
             "backlinks": true,
             "source": false
           }
@@ -178,8 +178,10 @@
     "direction": "horizontal",
     "width": 166.5
   },
-  "active": "fe3e8de76d733cc6",
+  "active": "a6dfd71473733aa4",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2022-07-13 19.51.50.excalidraw.md",
+    "Work/Redis/Jupyter/Redis Test.md",
     "Work/History v2/Design/Data Model/Kayo/Kayo Viewing History Data Model.md",
     "Work/History v2/Design/Technical Design/Kayo/Viewing History API.md",
     "Work/History v2/Design/Technical Design/Overview.md",
@@ -187,8 +189,6 @@
     "Work/History v2/Requirements/Datalake.md",
     "Work/History v2/Requirements/Viewing History-API.md",
     "().md",
-    "Excalidraw/Drawing 2022-07-13 19.51.50.excalidraw.md",
-    "Work/History v2/zAttachments/History Recorder Sequence.svg",
-    "Work/History v2/zAttachments/Viewing History - Write.svg"
+    "Work/History v2/zAttachments/History Recorder Sequence.svg"
   ]
 }
