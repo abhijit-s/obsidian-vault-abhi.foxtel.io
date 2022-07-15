@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Work/Redis/Jupyter/Redis Test.md",
+            "file": "Work/History v2/Design/Data Model/Kayo/Kayo Viewing History Data Model.md",
             "mode": "preview",
             "backlinks": true,
             "source": false
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Work/Redis/Jupyter/Redis Test.md",
+                "file": "Work/History v2/Design/Data Model/Kayo/Kayo Viewing History Data Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Work/Redis/Jupyter/Redis Test.md",
+                "file": "Work/History v2/Design/Data Model/Kayo/Kayo Viewing History Data Model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Work/Redis/Jupyter/Redis Test.md"
+                "file": "Work/History v2/Design/Data Model/Kayo/Kayo Viewing History Data Model.md"
               }
             }
           },
@@ -180,8 +180,8 @@
   },
   "active": "a6dfd71473733aa4",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2022-07-13 19.51.50.excalidraw.md",
     "Work/Redis/Jupyter/Redis Test.md",
+    "Excalidraw/Drawing 2022-07-13 19.51.50.excalidraw.md",
     "Work/History v2/Design/Data Model/Kayo/Kayo Viewing History Data Model.md",
     "Work/History v2/Design/Technical Design/Kayo/Viewing History API.md",
     "Work/History v2/Design/Technical Design/Overview.md",
