@@ -133,7 +133,27 @@ Since DynamoDB limits the number of Local Secondary Indexes (LSI)  on a table, w
 ### Limiting Factors
 #### Data Storage:
 - DynamoDB's limit on the size of each record is 400KB.
-- 
+	- If we intend to store the history as a list (as is done currently,) then, this implies:
+		- we'd have to assess and restrict the number of history items that can be contained in a single record/row, and
+		- also ensure that the shape of the individual items within the record list is known and kept constrained.
+	- Therefore we'd have to go with a data model that stores history items individually (per asset) for a given profile.
+
+
+| New Column               | New Column                                | Disadvantages                                                           |
+| ------------------------ | ----------------------------------------- | ----------------------------------------------------------------------- |
+| History as a List        | GETs and PUTs become simpler and quicker. | History will have to be processed in memory (similar to current design) |
+| Individual History Items |                                           |                                                                         |
+|                          |                                           |                                                                         |
+|                          |                                           |                                                                         |
+|                          |                                           |                                                                         |
+
+
+#### SECONDARY INDXES
+- LSIs are limited to 5 per table.
+	- Given that we want to support lookups on the history 
+- GSIs are limited to 20 per table.
+	- This doesn't really affect our solution.
+
 - GSIs are limited to 20 per table.
 - Usage of LSIs on a table imposes a 10 GB size limit per partition key value.
 

@@ -256,116 +256,168 @@
         "data": {
           "headers": [
             {
-              "id": "f7956c70-acf2-465d-861f-b6a4d192034d",
+              "id": "9ab9c358-4f63-4dc6-b0bb-7086555c676e",
               "initialIndex": 0,
-              "content": "Primary Key",
+              "content": "New Column",
               "sortName": "default",
-              "width": "100px",
+              "width": "154px",
               "type": "text"
             },
             {
-              "id": "14ede7cc-4f97-4648-a983-477c8620b8fa",
+              "id": "0b571a39-065e-47dd-bcfd-c8499b1dc978",
               "initialIndex": 1,
-              "content": "Sort Key",
+              "content": "New Column",
               "sortName": "default",
-              "width": "188px",
+              "width": "319px",
               "type": "text"
             },
             {
-              "id": "660dd001-d662-4d4e-be60-0376e732eefa",
+              "id": "a3395e43-cec8-4d89-b0ce-0b2c5d867014",
               "initialIndex": 2,
-              "content": "Value",
+              "content": "Disadvantages",
               "sortName": "default",
-              "width": "158px",
+              "width": "303px",
               "type": "text"
             }
           ],
           "rows": [
             {
-              "id": "a21c6898-b8d3-407a-adce-6d3cf2575347",
+              "id": "15cbf9fc-ecb2-439b-a2f0-26ac6ddea0b1",
               "initialIndex": 0,
-              "creationTime": 1657607216849
+              "creationTime": 1658107949530
             },
             {
-              "id": "f73ddc33-9fbf-444c-a5e0-60ad669bc059",
+              "id": "261bffb0-eb91-48e3-a4dd-5ade6b5a95a6",
               "initialIndex": 1,
-              "creationTime": 1657607290588
+              "creationTime": 1658107958458
             },
             {
-              "id": "b07686df-5a7c-471c-80ef-a59d2a738c34",
+              "id": "f0ef58a1-dab2-4be3-9259-853908388adb",
               "initialIndex": 2,
-              "creationTime": 1657607356086
+              "creationTime": 1658107996115
+            },
+            {
+              "id": "abadf036-1b73-485d-935b-c9e45e860f5d",
+              "initialIndex": 3,
+              "creationTime": 1658108062188
+            },
+            {
+              "id": "3e0e4ca8-945c-4663-94f1-b1c4c282948b",
+              "initialIndex": 4,
+              "creationTime": 1658108062916
             }
           ],
           "cells": [
             {
-              "id": "0a21e4b7-c8e0-42b3-a2bf-0252dd49b8d1",
-              "rowId": "a21c6898-b8d3-407a-adce-6d3cf2575347",
-              "headerId": "f7956c70-acf2-465d-861f-b6a4d192034d",
+              "id": "c3058f8f-c738-49a8-bdaa-8042bc3a58c8",
+              "rowId": "15cbf9fc-ecb2-439b-a2f0-26ac6ddea0b1",
+              "headerId": "9ab9c358-4f63-4dc6-b0bb-7086555c676e",
               "type": "text",
-              "text": "profileId"
+              "text": "History as a List"
             },
             {
-              "id": "2d16caf5-115e-4843-a4f5-ebac3d7a6534",
-              "rowId": "a21c6898-b8d3-407a-adce-6d3cf2575347",
-              "headerId": "14ede7cc-4f97-4648-a983-477c8620b8fa",
+              "id": "edb75f70-25f7-4c1c-a049-a1ddf0dd2017",
+              "rowId": "15cbf9fc-ecb2-439b-a2f0-26ac6ddea0b1",
+              "headerId": "0b571a39-065e-47dd-bcfd-c8499b1dc978",
               "type": "text",
-              "text": "/{sport}/{series}/{teamA}"
+              "text": "GETs and PUTs become simpler and quicker."
             },
             {
-              "id": "4c94464c-d780-443d-814c-c588d627e1a2",
-              "rowId": "a21c6898-b8d3-407a-adce-6d3cf2575347",
-              "headerId": "660dd001-d662-4d4e-be60-0376e732eefa",
+              "id": "c7324390-6036-4249-bdce-6112e645bf00",
+              "rowId": "15cbf9fc-ecb2-439b-a2f0-26ac6ddea0b1",
+              "headerId": "a3395e43-cec8-4d89-b0ce-0b2c5d867014",
               "type": "text",
-              "text": "[list of assetIds]"
+              "text": "History will have to be processed in memory (similar to current design)"
             },
             {
-              "id": "a021e08b-9872-4cce-96e8-aef1df7a71c8",
-              "rowId": "f73ddc33-9fbf-444c-a5e0-60ad669bc059",
-              "headerId": "f7956c70-acf2-465d-861f-b6a4d192034d",
+              "id": "06571cf9-8252-4b63-adb9-0ea925689a11",
+              "rowId": "261bffb0-eb91-48e3-a4dd-5ade6b5a95a6",
+              "headerId": "9ab9c358-4f63-4dc6-b0bb-7086555c676e",
               "type": "text",
-              "text": "profileId"
+              "text": "Individual History Items"
             },
             {
-              "id": "551f920f-5153-461c-9438-abf44cb2d403",
-              "rowId": "f73ddc33-9fbf-444c-a5e0-60ad669bc059",
-              "headerId": "14ede7cc-4f97-4648-a983-477c8620b8fa",
+              "id": "07f2940d-4100-414d-84e3-49a2ac6a2945",
+              "rowId": "261bffb0-eb91-48e3-a4dd-5ade6b5a95a6",
+              "headerId": "0b571a39-065e-47dd-bcfd-c8499b1dc978",
               "type": "text",
-              "text": "/{sport}/{series}/{teamB}"
+              "text": ""
             },
             {
-              "id": "a50328a6-89d5-49ce-86ec-a6ffd767bf35",
-              "rowId": "f73ddc33-9fbf-444c-a5e0-60ad669bc059",
-              "headerId": "660dd001-d662-4d4e-be60-0376e732eefa",
+              "id": "7c2319bf-893e-4c11-84e9-d5cde9eb7a90",
+              "rowId": "261bffb0-eb91-48e3-a4dd-5ade6b5a95a6",
+              "headerId": "a3395e43-cec8-4d89-b0ce-0b2c5d867014",
               "type": "text",
-              "text": "[list of assetIds]"
+              "text": ""
             },
             {
-              "id": "70763240-6da8-40fb-ba10-dc81c13935b3",
-              "rowId": "b07686df-5a7c-471c-80ef-a59d2a738c34",
-              "headerId": "f7956c70-acf2-465d-861f-b6a4d192034d",
+              "id": "4fa60022-c733-44b9-ab40-191ecba96c19",
+              "rowId": "f0ef58a1-dab2-4be3-9259-853908388adb",
+              "headerId": "9ab9c358-4f63-4dc6-b0bb-7086555c676e",
               "type": "text",
-              "text": "profileId"
+              "text": ""
             },
             {
-              "id": "aeeb508d-d13d-4d67-ab45-88c58443113a",
-              "rowId": "b07686df-5a7c-471c-80ef-a59d2a738c34",
-              "headerId": "14ede7cc-4f97-4648-a983-477c8620b8fa",
+              "id": "673e2ea9-3e2e-4220-9eda-0ae6b016b1a1",
+              "rowId": "f0ef58a1-dab2-4be3-9259-853908388adb",
+              "headerId": "0b571a39-065e-47dd-bcfd-c8499b1dc978",
               "type": "text",
-              "text": "/{show}/{season}"
+              "text": ""
             },
             {
-              "id": "31110098-01ce-480b-86da-cfb12196cdb6",
-              "rowId": "b07686df-5a7c-471c-80ef-a59d2a738c34",
-              "headerId": "660dd001-d662-4d4e-be60-0376e732eefa",
+              "id": "4505dcdc-4722-43ba-8901-1eb344bc6725",
+              "rowId": "f0ef58a1-dab2-4be3-9259-853908388adb",
+              "headerId": "a3395e43-cec8-4d89-b0ce-0b2c5d867014",
               "type": "text",
-              "text": "[list of assetIds]"
+              "text": ""
+            },
+            {
+              "id": "b9a21cd8-46f5-494c-b361-f7892825cbd8",
+              "rowId": "abadf036-1b73-485d-935b-c9e45e860f5d",
+              "headerId": "9ab9c358-4f63-4dc6-b0bb-7086555c676e",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "71cfc636-fb8a-4051-be2d-9a658c23ab13",
+              "rowId": "abadf036-1b73-485d-935b-c9e45e860f5d",
+              "headerId": "0b571a39-065e-47dd-bcfd-c8499b1dc978",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "eefe56fc-0e89-4ebe-a15f-abddb1af4d84",
+              "rowId": "abadf036-1b73-485d-935b-c9e45e860f5d",
+              "headerId": "a3395e43-cec8-4d89-b0ce-0b2c5d867014",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "fd977107-5ff4-4c79-9eac-2c4c5f1af120",
+              "rowId": "3e0e4ca8-945c-4663-94f1-b1c4c282948b",
+              "headerId": "9ab9c358-4f63-4dc6-b0bb-7086555c676e",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "ea7b3279-c67f-46e0-ab9a-325ae54778f5",
+              "rowId": "3e0e4ca8-945c-4663-94f1-b1c4c282948b",
+              "headerId": "0b571a39-065e-47dd-bcfd-c8499b1dc978",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "16fdeafe-e382-4aa1-9706-39338a15b36e",
+              "rowId": "3e0e4ca8-945c-4663-94f1-b1c4c282948b",
+              "headerId": "a3395e43-cec8-4d89-b0ce-0b2c5d867014",
+              "type": "text",
+              "text": ""
             }
           ],
           "tags": []
         },
         "viewType": "reading",
-        "shouldUpdate": false
+        "shouldUpdate": true
       }
     }
   },
