@@ -137,9 +137,27 @@ Since DynamoDB limits the number of Local Secondary Indexes (LSI)  on a table, w
 		- we'd have to assess and restrict the number of history items that can be contained in a single record/row, and
 		- also ensure that the shape of the individual items within the record list is known and kept constrained.
 	- Therefore we'd have to go with a data model that stores history items individually (per asset) for a given profile.
+		- Storing individual history items as separate rows would require us to use complicated mechanisms to fetch relevant rows based on the lookups requested.
+		- In some cases, these could be direct GETs and in some case these could mean having to perform Queries. 
+		- Lookups requiring queries can potentially be translated to multiple GETs (by means of having summary rows) but this would increase the write complexity.
 
-#### SECONDARY INDXES
+#### SECONDARY INDeXES
 -   LSIs are limited to 5 per table.
+	- This imposes restrictions on the number of ways in which lookups can be performed and we'll have to be cognisant of it when designing the model. If we wish to perform lookups using hierarchical groups, then those will have to be precomputed and saved as additional attributes during writes to dynamoDB.
+
+#### Data Retrieval
+
+- Scans & Queries are restricted to fetch 1 MB in a single request. Requires pagination if data is not present in the first request's response by using (`NextPageToken` = `LastEvaluatedKey`) in the subsequent request.
+	- Given a typical history item size ~500B, we can therefore fetch a max of 2000 items in a single request. There are some profiles in production right now that exceed items > 3500. In such a case we'd need to perform multiple requests to get all the items - this can still be managed in Viewing API.
+	- DynamoDB also, does not provide a response that contains information such as the total number of matches for a Query.  If we have to support pagination at the Viewing API level, then we would have to devise an elaborate cursor based mechanism to manage this api aspect. This is because DynamoDB does not provide a response that contains information such as the total number of matches for a particular query, which conventionally is a mechanism used to implement pagination. 
+
+
+#### DAX Limitations
+- Item Cache vs Query Cache:
+	- DAX manages Item and Query caches separately. 
+	- Item cache is essentially a write-through cache and therefore updates are reflected immediately. Query cache on the other hand is not.
+		- This means that if we employ Queries for certain lookups, then we may not see the updated items within the result set until the cache for that query expires.
+
 
 |                          | Advantages                                                                                 | Disadvantages                                                                                                                                                                                                                                                                                        |
 | ------------------------ | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
