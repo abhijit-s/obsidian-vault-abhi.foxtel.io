@@ -256,7 +256,7 @@
         "data": {
           "headers": [
             {
-              "id": "1a1657cf-31ee-4141-acf5-89bf9a844cdd",
+              "id": "a628181c-a7d3-4ad0-85c2-51e32286f784",
               "initialIndex": 0,
               "content": "",
               "sortName": "default",
@@ -264,7 +264,7 @@
               "type": "text"
             },
             {
-              "id": "0fab4db0-25e9-4d31-8565-c600d905c1e7",
+              "id": "ee9328cd-97ef-4226-8d90-d3038aaa4870",
               "initialIndex": 1,
               "content": "Advantages",
               "sortName": "default",
@@ -272,7 +272,7 @@
               "type": "text"
             },
             {
-              "id": "a4063674-1c94-4c44-9db7-4dbde1abe844",
+              "id": "9bd33d6c-8b2a-472d-9b98-c943ead7cd7f",
               "initialIndex": 2,
               "content": "Disadvantages",
               "sortName": "default",
@@ -282,134 +282,134 @@
           ],
           "rows": [
             {
-              "id": "5774c7e1-bae1-4a6c-9398-93e8f633a299",
+              "id": "e8f6912a-6be5-4c82-896c-2c74ee499cea",
               "initialIndex": 0,
               "creationTime": 1658107949530
             },
             {
-              "id": "0a51a86c-1faf-433b-8776-4c2d405cd9cc",
+              "id": "eb14a0ed-3e71-49a3-9c93-279082063ccc",
               "initialIndex": 1,
               "creationTime": 1658107958458
             },
             {
-              "id": "2c5ae0c5-0dbd-4770-99b8-374f3e2eb491",
+              "id": "311591f5-bb53-4122-8ca8-0950c4c27437",
               "initialIndex": 2,
               "creationTime": 1658107996115
             },
             {
-              "id": "da2d7fd3-81d2-4e2c-8c10-2c3cb2409b7d",
+              "id": "8e621311-b906-485a-a45c-a412fc22b4bb",
               "initialIndex": 3,
-              "creationTime": 1658113436362
+              "creationTime": 1658113850676
             },
             {
-              "id": "ae4ad0cb-a070-4b5b-b319-e0269e23f0d7",
+              "id": "2920ab8d-e840-4032-b64d-0ae0fe64d66a",
               "initialIndex": 4,
-              "creationTime": 1658113436789
+              "creationTime": 1658113851139
             }
           ],
           "cells": [
             {
-              "id": "8056b806-02d5-4196-b78b-91ae637f1aac",
-              "rowId": "5774c7e1-bae1-4a6c-9398-93e8f633a299",
-              "headerId": "1a1657cf-31ee-4141-acf5-89bf9a844cdd",
+              "id": "86703606-e891-40a9-a821-456930c5cca6",
+              "rowId": "e8f6912a-6be5-4c82-896c-2c74ee499cea",
+              "headerId": "a628181c-a7d3-4ad0-85c2-51e32286f784",
               "type": "text",
               "text": "History as a List"
             },
             {
-              "id": "5ff18170-ea8d-4c4b-9a07-f087d4a97037",
-              "rowId": "5774c7e1-bae1-4a6c-9398-93e8f633a299",
-              "headerId": "0fab4db0-25e9-4d31-8565-c600d905c1e7",
+              "id": "6e50dd25-12c9-48bf-9099-fa2f4d36f066",
+              "rowId": "e8f6912a-6be5-4c82-896c-2c74ee499cea",
+              "headerId": "ee9328cd-97ef-4226-8d90-d3038aaa4870",
               "type": "text",
               "text": "GETs and PUTs become simpler and quicker."
             },
             {
-              "id": "d7ee01c1-03ef-4a2f-9160-889321110b72",
-              "rowId": "5774c7e1-bae1-4a6c-9398-93e8f633a299",
-              "headerId": "a4063674-1c94-4c44-9db7-4dbde1abe844",
+              "id": "818cfb61-1921-49ce-8330-ccce178d77e7",
+              "rowId": "e8f6912a-6be5-4c82-896c-2c74ee499cea",
+              "headerId": "9bd33d6c-8b2a-472d-9b98-c943ead7cd7f",
               "type": "text",
-              "text": "History will have to be processed in memory (similar to current design) adding to processing cost"
+              "text": "History will have to be processed in memory (similar to current design) adding to processing cost."
             },
             {
-              "id": "836da0dd-69b6-46db-8959-2b527a8bb412",
-              "rowId": "0a51a86c-1faf-433b-8776-4c2d405cd9cc",
-              "headerId": "1a1657cf-31ee-4141-acf5-89bf9a844cdd",
+              "id": "b4ae8bfb-367f-4ec1-b9b8-92830e8db9a4",
+              "rowId": "eb14a0ed-3e71-49a3-9c93-279082063ccc",
+              "headerId": "a628181c-a7d3-4ad0-85c2-51e32286f784",
               "type": "text",
               "text": "Individual History Items"
             },
             {
-              "id": "b7e7a9a2-f5d6-499d-a7b9-58931c03e65f",
-              "rowId": "0a51a86c-1faf-433b-8776-4c2d405cd9cc",
-              "headerId": "0fab4db0-25e9-4d31-8565-c600d905c1e7",
+              "id": "bc557904-236e-47de-a449-2f60f53a611c",
+              "rowId": "eb14a0ed-3e71-49a3-9c93-279082063ccc",
+              "headerId": "ee9328cd-97ef-4226-8d90-d3038aaa4870",
               "type": "text",
               "text": "Processing history in memory (service) may not be as expensive"
             },
             {
-              "id": "f4ad2ac7-0f31-45b8-bcfe-b28765d6f464",
-              "rowId": "0a51a86c-1faf-433b-8776-4c2d405cd9cc",
-              "headerId": "a4063674-1c94-4c44-9db7-4dbde1abe844",
+              "id": "b37f81b8-4189-4c1c-8988-b51f8d36501e",
+              "rowId": "eb14a0ed-3e71-49a3-9c93-279082063ccc",
+              "headerId": "9bd33d6c-8b2a-472d-9b98-c943ead7cd7f",
               "type": "text",
-              "text": "Filtering/Aggregation and Sorting "
+              "text": "Need product approval to limit the number of history items (assets). For product, an item would mean an aggregation (example, at the show level) or for a sport. This is very difficult to manage within a single list."
             },
             {
-              "id": "74db4524-9f27-4792-bbfd-4ab31baef589",
-              "rowId": "2c5ae0c5-0dbd-4770-99b8-374f3e2eb491",
-              "headerId": "1a1657cf-31ee-4141-acf5-89bf9a844cdd",
+              "id": "fcef13b6-0774-49a1-8294-63a212f5b1e3",
+              "rowId": "311591f5-bb53-4122-8ca8-0950c4c27437",
+              "headerId": "a628181c-a7d3-4ad0-85c2-51e32286f784",
               "type": "text",
               "text": ""
             },
             {
-              "id": "383f1e2c-6806-4838-8dbf-bf4d1e147ba6",
-              "rowId": "2c5ae0c5-0dbd-4770-99b8-374f3e2eb491",
-              "headerId": "0fab4db0-25e9-4d31-8565-c600d905c1e7",
+              "id": "195a8b2e-d19c-42a7-b03d-7617b1345b26",
+              "rowId": "311591f5-bb53-4122-8ca8-0950c4c27437",
+              "headerId": "ee9328cd-97ef-4226-8d90-d3038aaa4870",
               "type": "text",
               "text": "Filtering/Aggregation and Sorting logic can be customised for any purpose at the API layer"
             },
             {
-              "id": "58af7ddb-91b3-4dd3-bf95-cd60c1ae4f2d",
-              "rowId": "2c5ae0c5-0dbd-4770-99b8-374f3e2eb491",
-              "headerId": "a4063674-1c94-4c44-9db7-4dbde1abe844",
+              "id": "be53454e-baeb-498c-a916-b92edddfd71b",
+              "rowId": "311591f5-bb53-4122-8ca8-0950c4c27437",
+              "headerId": "9bd33d6c-8b2a-472d-9b98-c943ead7cd7f",
               "type": "text",
               "text": ""
             },
             {
-              "id": "5059571a-c44d-4389-9edb-c6b080cc5eec",
-              "rowId": "da2d7fd3-81d2-4e2c-8c10-2c3cb2409b7d",
-              "headerId": "1a1657cf-31ee-4141-acf5-89bf9a844cdd",
+              "id": "4e817aaa-1700-481f-99be-fc0104b31546",
+              "rowId": "8e621311-b906-485a-a45c-a412fc22b4bb",
+              "headerId": "a628181c-a7d3-4ad0-85c2-51e32286f784",
               "type": "text",
               "text": ""
             },
             {
-              "id": "a45a79eb-c0c4-4a69-91c6-a55cd74d2581",
-              "rowId": "da2d7fd3-81d2-4e2c-8c10-2c3cb2409b7d",
-              "headerId": "0fab4db0-25e9-4d31-8565-c600d905c1e7",
+              "id": "329955a8-041c-4048-af91-47ec1f7b92d8",
+              "rowId": "8e621311-b906-485a-a45c-a412fc22b4bb",
+              "headerId": "ee9328cd-97ef-4226-8d90-d3038aaa4870",
               "type": "text",
               "text": ""
             },
             {
-              "id": "8d866583-ef2c-41fb-80f7-0e407f8ab441",
-              "rowId": "da2d7fd3-81d2-4e2c-8c10-2c3cb2409b7d",
-              "headerId": "a4063674-1c94-4c44-9db7-4dbde1abe844",
+              "id": "c2926057-0369-4eef-9d9b-d510a3c008f8",
+              "rowId": "8e621311-b906-485a-a45c-a412fc22b4bb",
+              "headerId": "9bd33d6c-8b2a-472d-9b98-c943ead7cd7f",
               "type": "text",
               "text": ""
             },
             {
-              "id": "fc34bcd7-6e36-4df2-ae07-5f99aba112c5",
-              "rowId": "ae4ad0cb-a070-4b5b-b319-e0269e23f0d7",
-              "headerId": "1a1657cf-31ee-4141-acf5-89bf9a844cdd",
+              "id": "c109323d-0f31-4eb3-b6ce-8d470bf7da02",
+              "rowId": "2920ab8d-e840-4032-b64d-0ae0fe64d66a",
+              "headerId": "a628181c-a7d3-4ad0-85c2-51e32286f784",
               "type": "text",
               "text": ""
             },
             {
-              "id": "15314b6f-e0ad-4903-be4e-212028237f31",
-              "rowId": "ae4ad0cb-a070-4b5b-b319-e0269e23f0d7",
-              "headerId": "0fab4db0-25e9-4d31-8565-c600d905c1e7",
+              "id": "aea4304b-81ca-419e-8f31-abba4186d1f7",
+              "rowId": "2920ab8d-e840-4032-b64d-0ae0fe64d66a",
+              "headerId": "ee9328cd-97ef-4226-8d90-d3038aaa4870",
               "type": "text",
               "text": ""
             },
             {
-              "id": "53a9b47d-42da-428e-b313-adc9652dc09e",
-              "rowId": "ae4ad0cb-a070-4b5b-b319-e0269e23f0d7",
-              "headerId": "a4063674-1c94-4c44-9db7-4dbde1abe844",
+              "id": "b1d13f30-aa4d-4ef9-a04b-126e010b8244",
+              "rowId": "2920ab8d-e840-4032-b64d-0ae0fe64d66a",
+              "headerId": "9bd33d6c-8b2a-472d-9b98-c943ead7cd7f",
               "type": "text",
               "text": ""
             }
