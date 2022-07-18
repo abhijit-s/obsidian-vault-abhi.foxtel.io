@@ -54,7 +54,7 @@ A json representation
 }
 ```
 
-DynamoDB doesn't really have a JSON datatype, so we'd have to flatten out the structure like this:
+DynamoDB doesn't really have a JSON datatype, so we'd have to flatten out the structure like this (`rir:Information` This is merely a structural representation using JSON. It would imply associated data types to be used for the DynamoDB item):
 ```json
 {
 	"a.assetId": "1981",    
@@ -73,8 +73,6 @@ DynamoDB doesn't really have a JSON datatype, so we'd have to flatten out the st
 	"path.sport": "/cricket/4"
 }
 ```
-
-`rir:Information` This is merely a structural representation using JSON. It would imply associated data types to be used for the DynamoDB item.
 
 🆕  For `COMPLETED` viewing history items, we will modify the data structure slightly to include a list of timestamps which indicate the times when the asset was completely watched.
 
@@ -130,6 +128,20 @@ Sample summary row of assets:
 Since DynamoDB limits the number of Local Secondary Indexes (LSI)  on a table, we will restrict them to the below fields:
 - `path.hierarchy`
 - `path.sport`
+
+
+### Limiting Factors
+#### Data Storage:
+- DynamoDB's limit on the size of each record is 400KB.
+- 
+- GSIs are limited to 20 per table.
+- Usage of LSIs on a table imposes a 10 GB size limit per partition key value.
+
+- Data Retrieval: 
+	- Scans & Queries are restricted to fetch 1 MB in a single request. Requires pagination if data is not present in the first request's response by using (`NextPageToken` = `LastEvaluatedKey`) in the subsequent request.
+- Partition Throughput:
+	- Each partition has its own throughput limit, it is set to 3,000 [RCUs (Read Capacity Units)](https://dynobase.dev/dynamodb-pricing-calculator/) and 1,000 [WCUs (Write Capacity Units)](https://dynobase.dev/dynamodb-pricing-calculator/) _per second_. This would allow you to read 12MB of strongly-consistent data or 24MB of eventually-consistent data _per second_, as well as to write 1MB of data per second.
+
 
 
 ## Related Links
