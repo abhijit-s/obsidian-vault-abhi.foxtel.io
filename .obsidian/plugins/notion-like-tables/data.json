@@ -256,23 +256,23 @@
         "data": {
           "headers": [
             {
-              "id": "9ab9c358-4f63-4dc6-b0bb-7086555c676e",
+              "id": "1a1657cf-31ee-4141-acf5-89bf9a844cdd",
               "initialIndex": 0,
-              "content": "New Column",
+              "content": "",
               "sortName": "default",
               "width": "154px",
               "type": "text"
             },
             {
-              "id": "0b571a39-065e-47dd-bcfd-c8499b1dc978",
+              "id": "0fab4db0-25e9-4d31-8565-c600d905c1e7",
               "initialIndex": 1,
-              "content": "New Column",
+              "content": "Advantages",
               "sortName": "default",
               "width": "319px",
               "type": "text"
             },
             {
-              "id": "a3395e43-cec8-4d89-b0ce-0b2c5d867014",
+              "id": "a4063674-1c94-4c44-9db7-4dbde1abe844",
               "initialIndex": 2,
               "content": "Disadvantages",
               "sortName": "default",
@@ -282,134 +282,134 @@
           ],
           "rows": [
             {
-              "id": "15cbf9fc-ecb2-439b-a2f0-26ac6ddea0b1",
+              "id": "5774c7e1-bae1-4a6c-9398-93e8f633a299",
               "initialIndex": 0,
               "creationTime": 1658107949530
             },
             {
-              "id": "261bffb0-eb91-48e3-a4dd-5ade6b5a95a6",
+              "id": "0a51a86c-1faf-433b-8776-4c2d405cd9cc",
               "initialIndex": 1,
               "creationTime": 1658107958458
             },
             {
-              "id": "f0ef58a1-dab2-4be3-9259-853908388adb",
+              "id": "2c5ae0c5-0dbd-4770-99b8-374f3e2eb491",
               "initialIndex": 2,
               "creationTime": 1658107996115
             },
             {
-              "id": "abadf036-1b73-485d-935b-c9e45e860f5d",
+              "id": "da2d7fd3-81d2-4e2c-8c10-2c3cb2409b7d",
               "initialIndex": 3,
-              "creationTime": 1658108062188
+              "creationTime": 1658113436362
             },
             {
-              "id": "3e0e4ca8-945c-4663-94f1-b1c4c282948b",
+              "id": "ae4ad0cb-a070-4b5b-b319-e0269e23f0d7",
               "initialIndex": 4,
-              "creationTime": 1658108062916
+              "creationTime": 1658113436789
             }
           ],
           "cells": [
             {
-              "id": "c3058f8f-c738-49a8-bdaa-8042bc3a58c8",
-              "rowId": "15cbf9fc-ecb2-439b-a2f0-26ac6ddea0b1",
-              "headerId": "9ab9c358-4f63-4dc6-b0bb-7086555c676e",
+              "id": "8056b806-02d5-4196-b78b-91ae637f1aac",
+              "rowId": "5774c7e1-bae1-4a6c-9398-93e8f633a299",
+              "headerId": "1a1657cf-31ee-4141-acf5-89bf9a844cdd",
               "type": "text",
               "text": "History as a List"
             },
             {
-              "id": "edb75f70-25f7-4c1c-a049-a1ddf0dd2017",
-              "rowId": "15cbf9fc-ecb2-439b-a2f0-26ac6ddea0b1",
-              "headerId": "0b571a39-065e-47dd-bcfd-c8499b1dc978",
+              "id": "5ff18170-ea8d-4c4b-9a07-f087d4a97037",
+              "rowId": "5774c7e1-bae1-4a6c-9398-93e8f633a299",
+              "headerId": "0fab4db0-25e9-4d31-8565-c600d905c1e7",
               "type": "text",
               "text": "GETs and PUTs become simpler and quicker."
             },
             {
-              "id": "c7324390-6036-4249-bdce-6112e645bf00",
-              "rowId": "15cbf9fc-ecb2-439b-a2f0-26ac6ddea0b1",
-              "headerId": "a3395e43-cec8-4d89-b0ce-0b2c5d867014",
+              "id": "d7ee01c1-03ef-4a2f-9160-889321110b72",
+              "rowId": "5774c7e1-bae1-4a6c-9398-93e8f633a299",
+              "headerId": "a4063674-1c94-4c44-9db7-4dbde1abe844",
               "type": "text",
-              "text": "History will have to be processed in memory (similar to current design)"
+              "text": "History will have to be processed in memory (similar to current design) adding to processing cost"
             },
             {
-              "id": "06571cf9-8252-4b63-adb9-0ea925689a11",
-              "rowId": "261bffb0-eb91-48e3-a4dd-5ade6b5a95a6",
-              "headerId": "9ab9c358-4f63-4dc6-b0bb-7086555c676e",
+              "id": "836da0dd-69b6-46db-8959-2b527a8bb412",
+              "rowId": "0a51a86c-1faf-433b-8776-4c2d405cd9cc",
+              "headerId": "1a1657cf-31ee-4141-acf5-89bf9a844cdd",
               "type": "text",
               "text": "Individual History Items"
             },
             {
-              "id": "07f2940d-4100-414d-84e3-49a2ac6a2945",
-              "rowId": "261bffb0-eb91-48e3-a4dd-5ade6b5a95a6",
-              "headerId": "0b571a39-065e-47dd-bcfd-c8499b1dc978",
+              "id": "b7e7a9a2-f5d6-499d-a7b9-58931c03e65f",
+              "rowId": "0a51a86c-1faf-433b-8776-4c2d405cd9cc",
+              "headerId": "0fab4db0-25e9-4d31-8565-c600d905c1e7",
+              "type": "text",
+              "text": "Processing history in memory (service) may not be as expensive"
+            },
+            {
+              "id": "f4ad2ac7-0f31-45b8-bcfe-b28765d6f464",
+              "rowId": "0a51a86c-1faf-433b-8776-4c2d405cd9cc",
+              "headerId": "a4063674-1c94-4c44-9db7-4dbde1abe844",
+              "type": "text",
+              "text": "Filtering/Aggregation and Sorting "
+            },
+            {
+              "id": "74db4524-9f27-4792-bbfd-4ab31baef589",
+              "rowId": "2c5ae0c5-0dbd-4770-99b8-374f3e2eb491",
+              "headerId": "1a1657cf-31ee-4141-acf5-89bf9a844cdd",
               "type": "text",
               "text": ""
             },
             {
-              "id": "7c2319bf-893e-4c11-84e9-d5cde9eb7a90",
-              "rowId": "261bffb0-eb91-48e3-a4dd-5ade6b5a95a6",
-              "headerId": "a3395e43-cec8-4d89-b0ce-0b2c5d867014",
+              "id": "383f1e2c-6806-4838-8dbf-bf4d1e147ba6",
+              "rowId": "2c5ae0c5-0dbd-4770-99b8-374f3e2eb491",
+              "headerId": "0fab4db0-25e9-4d31-8565-c600d905c1e7",
+              "type": "text",
+              "text": "Filtering/Aggregation and Sorting logic can be customised for any purpose at the API layer"
+            },
+            {
+              "id": "58af7ddb-91b3-4dd3-bf95-cd60c1ae4f2d",
+              "rowId": "2c5ae0c5-0dbd-4770-99b8-374f3e2eb491",
+              "headerId": "a4063674-1c94-4c44-9db7-4dbde1abe844",
               "type": "text",
               "text": ""
             },
             {
-              "id": "4fa60022-c733-44b9-ab40-191ecba96c19",
-              "rowId": "f0ef58a1-dab2-4be3-9259-853908388adb",
-              "headerId": "9ab9c358-4f63-4dc6-b0bb-7086555c676e",
+              "id": "5059571a-c44d-4389-9edb-c6b080cc5eec",
+              "rowId": "da2d7fd3-81d2-4e2c-8c10-2c3cb2409b7d",
+              "headerId": "1a1657cf-31ee-4141-acf5-89bf9a844cdd",
               "type": "text",
               "text": ""
             },
             {
-              "id": "673e2ea9-3e2e-4220-9eda-0ae6b016b1a1",
-              "rowId": "f0ef58a1-dab2-4be3-9259-853908388adb",
-              "headerId": "0b571a39-065e-47dd-bcfd-c8499b1dc978",
+              "id": "a45a79eb-c0c4-4a69-91c6-a55cd74d2581",
+              "rowId": "da2d7fd3-81d2-4e2c-8c10-2c3cb2409b7d",
+              "headerId": "0fab4db0-25e9-4d31-8565-c600d905c1e7",
               "type": "text",
               "text": ""
             },
             {
-              "id": "4505dcdc-4722-43ba-8901-1eb344bc6725",
-              "rowId": "f0ef58a1-dab2-4be3-9259-853908388adb",
-              "headerId": "a3395e43-cec8-4d89-b0ce-0b2c5d867014",
+              "id": "8d866583-ef2c-41fb-80f7-0e407f8ab441",
+              "rowId": "da2d7fd3-81d2-4e2c-8c10-2c3cb2409b7d",
+              "headerId": "a4063674-1c94-4c44-9db7-4dbde1abe844",
               "type": "text",
               "text": ""
             },
             {
-              "id": "b9a21cd8-46f5-494c-b361-f7892825cbd8",
-              "rowId": "abadf036-1b73-485d-935b-c9e45e860f5d",
-              "headerId": "9ab9c358-4f63-4dc6-b0bb-7086555c676e",
+              "id": "fc34bcd7-6e36-4df2-ae07-5f99aba112c5",
+              "rowId": "ae4ad0cb-a070-4b5b-b319-e0269e23f0d7",
+              "headerId": "1a1657cf-31ee-4141-acf5-89bf9a844cdd",
               "type": "text",
               "text": ""
             },
             {
-              "id": "71cfc636-fb8a-4051-be2d-9a658c23ab13",
-              "rowId": "abadf036-1b73-485d-935b-c9e45e860f5d",
-              "headerId": "0b571a39-065e-47dd-bcfd-c8499b1dc978",
+              "id": "15314b6f-e0ad-4903-be4e-212028237f31",
+              "rowId": "ae4ad0cb-a070-4b5b-b319-e0269e23f0d7",
+              "headerId": "0fab4db0-25e9-4d31-8565-c600d905c1e7",
               "type": "text",
               "text": ""
             },
             {
-              "id": "eefe56fc-0e89-4ebe-a15f-abddb1af4d84",
-              "rowId": "abadf036-1b73-485d-935b-c9e45e860f5d",
-              "headerId": "a3395e43-cec8-4d89-b0ce-0b2c5d867014",
-              "type": "text",
-              "text": ""
-            },
-            {
-              "id": "fd977107-5ff4-4c79-9eac-2c4c5f1af120",
-              "rowId": "3e0e4ca8-945c-4663-94f1-b1c4c282948b",
-              "headerId": "9ab9c358-4f63-4dc6-b0bb-7086555c676e",
-              "type": "text",
-              "text": ""
-            },
-            {
-              "id": "ea7b3279-c67f-46e0-ab9a-325ae54778f5",
-              "rowId": "3e0e4ca8-945c-4663-94f1-b1c4c282948b",
-              "headerId": "0b571a39-065e-47dd-bcfd-c8499b1dc978",
-              "type": "text",
-              "text": ""
-            },
-            {
-              "id": "16fdeafe-e382-4aa1-9706-39338a15b36e",
-              "rowId": "3e0e4ca8-945c-4663-94f1-b1c4c282948b",
-              "headerId": "a3395e43-cec8-4d89-b0ce-0b2c5d867014",
+              "id": "53a9b47d-42da-428e-b313-adc9652dc09e",
+              "rowId": "ae4ad0cb-a070-4b5b-b319-e0269e23f0d7",
+              "headerId": "a4063674-1c94-4c44-9db7-4dbde1abe844",
               "type": "text",
               "text": ""
             }
@@ -417,7 +417,7 @@
           "tags": []
         },
         "viewType": "reading",
-        "shouldUpdate": true
+        "shouldUpdate": false
       }
     }
   },

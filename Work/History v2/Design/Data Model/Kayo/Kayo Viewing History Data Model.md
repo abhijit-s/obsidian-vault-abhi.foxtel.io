@@ -139,13 +139,13 @@ Since DynamoDB limits the number of Local Secondary Indexes (LSI)  on a table, w
 	- Therefore we'd have to go with a data model that stores history items individually (per asset) for a given profile.
 
 
-| New Column               | New Column                                | Disadvantages                                                           |
-| ------------------------ | ----------------------------------------- | ----------------------------------------------------------------------- |
-| History as a List        | GETs and PUTs become simpler and quicker. | History will have to be processed in memory (similar to current design) |
-| Individual History Items |                                           |                                                                         |
-|                          |                                           |                                                                         |
-|                          |                                           |                                                                         |
-|                          |                                           |                                                                         |
+|                          | Advantages                                                                                 | Disadvantages                                                                                     |
+| ------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
+| History as a List        | GETs and PUTs become simpler and quicker.                                                  | History will have to be processed in memory (similar to current design) adding to processing cost |
+| Individual History Items | Processing history in memory (service) may not be as expensive                             | Filtering/Aggregation and Sorting                                                                 |
+|                          | Filtering/Aggregation and Sorting logic can be customised for any purpose at the API layer |                                                                                                   |
+|                          |                                                                                            |                                                                                                   |
+|                          |                                                                                            |                                                                                                   |
 
 
 #### SECONDARY INDXES
