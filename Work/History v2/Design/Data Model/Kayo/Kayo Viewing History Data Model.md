@@ -169,21 +169,6 @@ Since DynamoDB limits the number of Local Secondary Indexes (LSI)  on a table, w
 |                          | The set of attributes that can be stored in a single row can be extended significantly.    |                                                                                                                                                                                                                                                                                                      |
 
 
-#### SECONDARY INDXES
-- LSIs are limited to 5 per table.
-	- Given that we want to support lookups on the history 
-- GSIs are limited to 20 per table.
-	- This doesn't really affect our solution.
-
-- GSIs are limited to 20 per table.
-- Usage of LSIs on a table imposes a 10 GB size limit per partition key value.
-
-- Data Retrieval: 
-	- Scans & Queries are restricted to fetch 1 MB in a single request. Requires pagination if data is not present in the first request's response by using (`NextPageToken` = `LastEvaluatedKey`) in the subsequent request.
-- Partition Throughput:
-	- Each partition has its own throughput limit, it is set to 3,000 [RCUs (Read Capacity Units)](https://dynobase.dev/dynamodb-pricing-calculator/) and 1,000 [WCUs (Write Capacity Units)](https://dynobase.dev/dynamodb-pricing-calculator/) _per second_. This would allow you to read 12MB of strongly-consistent data or 24MB of eventually-consistent data _per second_, as well as to write 1MB of data per second.
-
-
 
 ## Related Links
 [[Data Model - V2]]
