@@ -445,6 +445,149 @@
         "viewType": "reading",
         "shouldUpdate": false
       }
+    },
+    "Work/z_Miscellaneous/Secrets/History POC.md": {
+      "0": {
+        "data": {
+          "headers": [
+            {
+              "id": "c637e1b4-4500-410c-b424-efb2a51caf0b",
+              "initialIndex": 0,
+              "content": "playerEvent",
+              "sortName": "default",
+              "width": "100px",
+              "type": "text"
+            },
+            {
+              "id": "9017faf9-36f5-44d5-a0fb-a3b808e5e599",
+              "initialIndex": 1,
+              "content": "playerState",
+              "sortName": "default",
+              "width": "100px",
+              "type": "text"
+            },
+            {
+              "id": "25a84f4e-8476-4e29-9bf2-fbfbfa27952d",
+              "initialIndex": 2,
+              "content": "Received when",
+              "sortName": "default",
+              "width": "100px",
+              "type": "text"
+            }
+          ],
+          "rows": [
+            {
+              "id": "e779b5ff-4fba-4b44-8d07-00f9905d064b",
+              "initialIndex": 0,
+              "creationTime": 1658760274754
+            },
+            {
+              "id": "6936847d-f369-4eab-a8c7-3cffbcf93490",
+              "initialIndex": 1,
+              "creationTime": 1658760274707
+            },
+            {
+              "id": "4a52ee02-a55f-4557-9d7f-9da0e902a6fc",
+              "initialIndex": 2,
+              "creationTime": 1658760274489
+            },
+            {
+              "id": "128b4f23-5379-4d04-bbdb-a190a465918a",
+              "initialIndex": 3,
+              "creationTime": 1658760274368
+            }
+          ],
+          "cells": [
+            {
+              "id": "17af2f7a-6a55-40c8-869b-f5f8ea4d59e9",
+              "rowId": "e779b5ff-4fba-4b44-8d07-00f9905d064b",
+              "headerId": "c637e1b4-4500-410c-b424-efb2a51caf0b",
+              "type": "text",
+              "text": "period"
+            },
+            {
+              "id": "3c866d7e-3886-4315-948a-497542e351fc",
+              "rowId": "e779b5ff-4fba-4b44-8d07-00f9905d064b",
+              "headerId": "9017faf9-36f5-44d5-a0fb-a3b808e5e599",
+              "type": "text",
+              "text": "playing"
+            },
+            {
+              "id": "d26d8763-e731-4948-989c-d00b7dcc28db",
+              "rowId": "e779b5ff-4fba-4b44-8d07-00f9905d064b",
+              "headerId": "25a84f4e-8476-4e29-9bf2-fbfbfa27952d",
+              "type": "text",
+              "text": "Video is playing"
+            },
+            {
+              "id": "574ae625-d438-4f9b-b7cf-43bfd87c4eba",
+              "rowId": "6936847d-f369-4eab-a8c7-3cffbcf93490",
+              "headerId": "c637e1b4-4500-410c-b424-efb2a51caf0b",
+              "type": "text",
+              "text": "period"
+            },
+            {
+              "id": "aab87eb7-53e3-4a3b-9e87-d2b97e436e0a",
+              "rowId": "6936847d-f369-4eab-a8c7-3cffbcf93490",
+              "headerId": "9017faf9-36f5-44d5-a0fb-a3b808e5e599",
+              "type": "text",
+              "text": "pause"
+            },
+            {
+              "id": "19a678f0-63c2-49c2-b318-b0d26178f968",
+              "rowId": "6936847d-f369-4eab-a8c7-3cffbcf93490",
+              "headerId": "25a84f4e-8476-4e29-9bf2-fbfbfa27952d",
+              "type": "text",
+              "text": "Video is paused"
+            },
+            {
+              "id": "b5cdb2e1-c9c9-4994-805d-4a3e6428ba34",
+              "rowId": "4a52ee02-a55f-4557-9d7f-9da0e902a6fc",
+              "headerId": "c637e1b4-4500-410c-b424-efb2a51caf0b",
+              "type": "text",
+              "text": "end"
+            },
+            {
+              "id": "0a6b4298-d776-4a3b-b525-acf5968a57f8",
+              "rowId": "4a52ee02-a55f-4557-9d7f-9da0e902a6fc",
+              "headerId": "9017faf9-36f5-44d5-a0fb-a3b808e5e599",
+              "type": "text",
+              "text": "pause"
+            },
+            {
+              "id": "1c02334b-cd19-4cff-89f3-190e683c9a7a",
+              "rowId": "4a52ee02-a55f-4557-9d7f-9da0e902a6fc",
+              "headerId": "25a84f4e-8476-4e29-9bf2-fbfbfa27952d",
+              "type": "text",
+              "text": "Player exited (midway through video)"
+            },
+            {
+              "id": "7ad67257-d015-47c8-9828-40ef57a70406",
+              "rowId": "128b4f23-5379-4d04-bbdb-a190a465918a",
+              "headerId": "c637e1b4-4500-410c-b424-efb2a51caf0b",
+              "type": "text",
+              "text": "str-start"
+            },
+            {
+              "id": "ae19908b-6947-4eec-ab0f-07860709692e",
+              "rowId": "128b4f23-5379-4d04-bbdb-a190a465918a",
+              "headerId": "9017faf9-36f5-44d5-a0fb-a3b808e5e599",
+              "type": "text",
+              "text": "playing"
+            },
+            {
+              "id": "c16ece09-d2d6-4227-85e0-851aa79cb8ea",
+              "rowId": "128b4f23-5379-4d04-bbdb-a190a465918a",
+              "headerId": "25a84f4e-8476-4e29-9bf2-fbfbfa27952d",
+              "type": "text",
+              "text": "Video playback started"
+            }
+          ],
+          "tags": []
+        },
+        "shouldUpdate": false,
+        "viewType": "live-preview"
+      }
     }
   },
   "focusedElement": {

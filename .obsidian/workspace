@@ -4,16 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a6dfd71473733aa4",
+        "id": "60dffe154035ee43",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Work/History v2/Requirements/Datalake.md",
-            "mode": "preview",
-            "backlinks": true,
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -31,9 +26,12 @@
             "id": "c8f1100bed139de9",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2022-07-13 19.51.50.excalidraw.md"
+                "file": "Excalidraw/Drawing 2022-07-13 19.51.50.excalidraw.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
               }
             }
           },
@@ -81,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Work/History v2/Requirements/Datalake.md",
+                "file": "Excalidraw/Drawing 2022-07-13 19.51.50.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,20 +91,12 @@
             }
           },
           {
-            "id": "03020b821db23bcf",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
             "id": "51dc8c5db167d067",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Work/History v2/Requirements/Datalake.md",
+                "file": "Excalidraw/Drawing 2022-07-13 19.51.50.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Work/History v2/Requirements/Datalake.md"
+                "file": "Excalidraw/Drawing 2022-07-13 19.51.50.excalidraw.md"
               }
             }
           },
@@ -140,55 +130,25 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
-          },
-          {
-            "id": "6365b71d23c1ec9f",
-            "type": "leaf",
-            "state": {
-              "type": "BC-matrix",
-              "state": {}
-            }
-          },
-          {
-            "id": "9965a22b5fc16278",
-            "type": "leaf",
-            "state": {
-              "type": "BC-tree",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 5
-      },
-      {
-        "id": "e786a0a90374a3a0",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "94f59ecef928bc2d",
-            "type": "leaf",
-            "state": {
-              "type": "map-of-content",
-              "state": {}
-            }
-          }
-        ]
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
     "width": 166.5
   },
-  "active": "a6dfd71473733aa4",
+  "active": "24025feb5b36b2b2",
   "lastOpenFiles": [
+    "Work/z_Miscellaneous/Secrets/History POC.md",
+    "Work/History v2/Requirements/Datalake.md",
     "Work/History v2/Design/Data Model/Kayo/Kayo Viewing History Data Model.md",
     "Work/History v2/Design/Technical Design/Overview.md",
     "Work/History v2/Design/Technical Design/Kayo/Viewing History API.md",
     "Work/Redis/Jupyter/Redis Test.md",
     "Excalidraw/Drawing 2022-07-13 19.51.50.excalidraw.md",
     "Work/History v2/Design/Technical Design/Kayo/History Recorder.md",
-    "Work/History v2/Requirements/Datalake.md",
     "Work/History v2/Requirements/Viewing History-API.md",
-    "().md",
-    "Work/History v2/zAttachments/History Recorder Sequence.svg"
+    "().md"
   ]
 }
