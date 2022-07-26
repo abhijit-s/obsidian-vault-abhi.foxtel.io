@@ -32,5 +32,8 @@
   "obsidian-dynamic-toc",
   "notion-like-tables",
   "table-extended",
-  "obsidian-jupyter"
+  "obsidian-jupyter",
+  "obsidian-plantuml",
+  "obsidian-graphviz",
+  "obsidian-diagrams-net"
 ]
