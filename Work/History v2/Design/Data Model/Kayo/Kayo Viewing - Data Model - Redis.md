@@ -35,13 +35,19 @@ While this would have been an optimal solution satisfying every type of requirem
 ### 3. Store history as a singular json array.
 
 This was finalised as the approach since it offers the best of both worlds. 
-- Keeps keys to a minimum, i.e. single key for the entire history and possibly an additional one for maintaining viewing sessions (to be elaborated further)
-- Allows for flexibility in performing searches for items within the array using `jsonpath` as supported by the Redisjson module 
+- Keeps keys to a minimum, i.e. single key for the entire history and possibly an additional one for maintaining viewing sessions (to be elaborated further).
+- Allows for flexibility in performing searches for items within the array using `jsonpath` as supported by the [Redisjson](https://docs.aws.amazon.com/memorydb/latest/devguide/json-gs.html) module.
+- Writes can be optimised by the recorder using certain known domain paradigms.
+
+There are some limitations that it introduces, such as:
+- Makes pagination difficult to implement, specially when the notion of a batch/page is at the 'content' level and can shift based on the type of lookups performed. Ex: 
+	- for shows the number of items is equivalent to the number of shows and not individual assets.
+	- when performing lookups by say, `sport` a page would need to only have items matching that criteria, but the underlying array has several other items.
+	- more importantly, paging relies on some type of imposed ordering - in our case it is by recency, which we cannot efficiently maintain in a json array.
 
 
 
-
-## Sample
+## Representation
 Sample
 
 

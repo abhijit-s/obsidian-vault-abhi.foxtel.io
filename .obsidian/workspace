@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Work/History v2/Design/Data Model/Kayo/Kayo Viewing - Data Model - Redis.md",
+            "file": "Work/z_Miscellaneous/Secrets/History POC.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Work/History v2/Design/Data Model/Kayo/Kayo Viewing - Data Model - Redis.md",
+                "file": "Work/z_Miscellaneous/Secrets/History POC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Work/History v2/Design/Data Model/Kayo/Kayo Viewing - Data Model - Redis.md",
+                "file": "Work/z_Miscellaneous/Secrets/History POC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Work/History v2/Design/Data Model/Kayo/Kayo Viewing - Data Model - Redis.md"
+                "file": "Work/z_Miscellaneous/Secrets/History POC.md"
               }
             }
           },
@@ -193,8 +193,8 @@
   },
   "active": "a532d8c98c7675ef",
   "lastOpenFiles": [
-    "Work/History v2/Design/Data Model/Data Model - V2.md",
     "Work/History v2/Design/Data Model/Kayo/Kayo Viewing - Data Model - Redis.md",
+    "Work/History v2/Design/Data Model/Data Model - V2.md",
     "Work/History v2/Design/Data Model/Kayo/Kayo Viewing - Data Model - DynamoDB.md",
     "Work/History v2/Design/Technical Design/Overview.md",
     "Work/History v2/My Tasks.md",
