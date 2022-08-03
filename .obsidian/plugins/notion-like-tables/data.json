@@ -791,6 +791,78 @@
         "shouldUpdate": false,
         "tableCacheVersion": 425
       }
+    },
+    "Work/History v2/Design/Data Model/Kayo/Kayo Viewing - Data Model - Redis.md": {
+      "0": {
+        "data": {
+          "headers": [
+            {
+              "id": "90fdd944-b372-4657-91be-3819e48c6cd5",
+              "content": "Pros",
+              "sortDir": "default",
+              "width": "426px",
+              "shouldWrapOverflow": true,
+              "useAutoWidth": false,
+              "type": "text"
+            },
+            {
+              "id": "7cd1c45b-87a6-46a9-9232-9b84fa421cbe",
+              "content": "Cons",
+              "sortDir": "default",
+              "width": "342px",
+              "shouldWrapOverflow": true,
+              "useAutoWidth": false,
+              "type": "text"
+            }
+          ],
+          "rows": [
+            {
+              "id": "eac61481-25d3-45fa-be48-3644e312cb0c",
+              "initialIndex": 0,
+              "creationTime": 1659514761679
+            },
+            {
+              "id": "2fcd4baa-d681-43fa-83be-8194115654c5",
+              "initialIndex": 1,
+              "creationTime": 1659514850186
+            }
+          ],
+          "cells": [
+            {
+              "id": "fda430a2-84f9-4f3b-99f6-1a56d43947a3",
+              "rowId": "eac61481-25d3-45fa-be48-3644e312cb0c",
+              "headerId": "90fdd944-b372-4657-91be-3819e48c6cd5",
+              "type": "text",
+              "text": "The writer (history-recorder) can do blind writes, without worrying about performing any checked updates/upserts."
+            },
+            {
+              "id": "cde141c8-cf9f-4fdb-b4c1-d4cf413dba09",
+              "rowId": "eac61481-25d3-45fa-be48-3644e312cb0c",
+              "headerId": "7cd1c45b-87a6-46a9-9232-9b84fa421cbe",
+              "type": "text",
+              "text": "The blind writes will need to be done to multiple records - each of the sorted sets and the individual record holder."
+            },
+            {
+              "id": "4b6e1062-590b-4c71-80e0-a8207fc57e7b",
+              "rowId": "2fcd4baa-d681-43fa-83be-8194115654c5",
+              "headerId": "90fdd944-b372-4657-91be-3819e48c6cd5",
+              "type": "text",
+              "text": "Sorted sets provide pre-sorted "
+            },
+            {
+              "id": "547baeef-b436-491d-9a9d-4107e26a39f3",
+              "rowId": "2fcd4baa-d681-43fa-83be-8194115654c5",
+              "headerId": "7cd1c45b-87a6-46a9-9232-9b84fa421cbe",
+              "type": "text",
+              "text": ""
+            }
+          ],
+          "tags": []
+        },
+        "viewType": "reading",
+        "shouldUpdate": true,
+        "tableCacheVersion": 425
+      }
     }
   },
   "focusedElement": {

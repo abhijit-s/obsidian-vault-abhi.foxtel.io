@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "Work/History v2/Design/Data Model/Kayo/Kayo Viewing - Data Model - Redis.md",
-            "mode": "source",
+            "mode": "preview",
             "backlinks": true,
             "source": false
           }
@@ -22,7 +22,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Work/History v2/Design/Data Model/Kayo/Kayo Viewing - Data Model - DynamoDB.md",
+            "file": "Work/History v2/Design/Data Model/Data Model - V2.md",
             "mode": "preview",
             "backlinks": true,
             "source": false
@@ -193,15 +193,15 @@
   },
   "active": "a532d8c98c7675ef",
   "lastOpenFiles": [
-    "Work/History v2/Requirements/Viewing History-API.md",
-    "Work/History v2/Requirements/Indexer.md",
-    "Work/History v2/Requirements/Definition of a History Item.md",
-    "Work/History v2/Requirements/Datalake.md",
-    "Work/History v2/Requirements/Content-API.md",
-    "Work/History v2/Requirements/Additional Requirements.md",
-    "Work/History v2/Design/Data Model/Kayo/Kayo Viewing - Data Model - Redis.md",
+    "Work/History v2/Design/Data Model/Data Model - V2.md",
     "Work/History v2/Design/Data Model/Kayo/Kayo Viewing - Data Model - DynamoDB.md",
-    "Work/History v2/Design/Technical Design/Kayo/History Recorder.md",
-    "Work/History v2/Design/Data Model/Data Model - V2.md"
+    "Work/History v2/Design/Data Model/Kayo/Kayo Viewing - Data Model - Redis.md",
+    "Work/History v2/Design/Technical Design/Overview.md",
+    "Work/History v2/My Tasks.md",
+    "Work/History v2/Design/V2 (Future).md",
+    "Work/History v2/Requirements/Indexer.md",
+    "Work/History v2/Requirements/Viewing History-API.md",
+    "Work/History v2/Requirements/Definition of a History Item.md",
+    "Work/History v2/Requirements/Datalake.md"
   ]
 }
