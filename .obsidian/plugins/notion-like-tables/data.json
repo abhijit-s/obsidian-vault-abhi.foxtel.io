@@ -9,25 +9,31 @@
               "id": "f3e3975d-b7ae-4edf-ab76-dfda056683eb",
               "initialIndex": 0,
               "content": "playerEvent",
-              "sortName": "default",
               "width": "100px",
-              "type": "text"
+              "type": "text",
+              "useAutoWidth": false,
+              "shouldWrapOverflow": true,
+              "sortDir": "default"
             },
             {
               "id": "a33992d8-4ebd-40d6-b3ee-4c518966eb59",
               "initialIndex": 1,
               "content": "playerState",
-              "sortName": "default",
               "width": "100px",
-              "type": "text"
+              "type": "text",
+              "useAutoWidth": false,
+              "shouldWrapOverflow": true,
+              "sortDir": "default"
             },
             {
               "id": "fcc68244-f940-4000-aba6-a24ddc8dc644",
               "initialIndex": 2,
               "content": "Received when",
-              "sortName": "default",
               "width": "192px",
-              "type": "text"
+              "type": "text",
+              "useAutoWidth": false,
+              "shouldWrapOverflow": true,
+              "sortDir": "default"
             }
           ],
           "rows": [
@@ -141,7 +147,8 @@
           "tags": []
         },
         "viewType": "live-preview",
-        "shouldUpdate": false
+        "shouldUpdate": false,
+        "tableCacheVersion": 425
       }
     },
     "Work/History v2/Design/Data Model/Data Model - V2.md": {
