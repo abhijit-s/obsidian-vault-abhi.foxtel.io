@@ -152,17 +152,21 @@
               "id": "b1fc9483-41f5-417a-a30b-7878d02f320d",
               "initialIndex": 0,
               "content": "Pros",
-              "sortName": "default",
               "width": "306px",
-              "type": "text"
+              "type": "text",
+              "useAutoWidth": false,
+              "shouldWrapOverflow": true,
+              "sortDir": "default"
             },
             {
               "id": "2db69fcb-8c8d-4689-be21-e742276fcaef",
               "initialIndex": 1,
               "content": "Cons",
-              "sortName": "default",
               "width": "260px",
-              "type": "text"
+              "type": "text",
+              "useAutoWidth": false,
+              "shouldWrapOverflow": true,
+              "sortDir": "default"
             }
           ],
           "rows": [
@@ -248,202 +252,8 @@
           "tags": []
         },
         "viewType": "live-preview",
-        "shouldUpdate": false
-      }
-    },
-    "Work/History v2/Design/Data Model/Kayo/Kayo Viewing History Data Model.md": {
-      "0": {
-        "data": {
-          "headers": [
-            {
-              "id": "ad969d55-f265-4db8-b70b-3c7767b92b75",
-              "initialIndex": 0,
-              "content": "",
-              "sortName": "default",
-              "width": "154px",
-              "type": "text"
-            },
-            {
-              "id": "327eeadc-67eb-44d3-8d6c-39ddc427e9cc",
-              "initialIndex": 1,
-              "content": "Advantages",
-              "sortName": "default",
-              "width": "319px",
-              "type": "text"
-            },
-            {
-              "id": "468de61a-219c-4204-b3ac-4c19efa60c17",
-              "initialIndex": 2,
-              "content": "Disadvantages",
-              "sortName": "default",
-              "width": "303px",
-              "type": "text"
-            }
-          ],
-          "rows": [
-            {
-              "id": "5e62e05d-c459-428f-8599-125d27fbd603",
-              "initialIndex": 0,
-              "creationTime": 1658107949530
-            },
-            {
-              "id": "83581f82-34c0-48be-8389-694a1600f3cc",
-              "initialIndex": 1,
-              "creationTime": 1658107958458
-            },
-            {
-              "id": "df59dceb-77fe-48db-8a89-4cdcd0cbe04a",
-              "initialIndex": 2,
-              "creationTime": 1658107996115
-            },
-            {
-              "id": "282e055b-de70-43a7-adfc-a6e0a8812897",
-              "initialIndex": 3,
-              "creationTime": 1658116513393
-            },
-            {
-              "id": "96b5f561-b1cf-4e5c-b31f-f756696b1629",
-              "initialIndex": 4,
-              "creationTime": 1658116513185
-            },
-            {
-              "id": "86867205-125d-4a18-80bf-a6c34d5a951e",
-              "initialIndex": 5,
-              "creationTime": 1658116512848
-            }
-          ],
-          "cells": [
-            {
-              "id": "e0a9cd5d-e1ce-45bc-9838-4b05ece246b3",
-              "rowId": "5e62e05d-c459-428f-8599-125d27fbd603",
-              "headerId": "ad969d55-f265-4db8-b70b-3c7767b92b75",
-              "type": "text",
-              "text": "History as a List"
-            },
-            {
-              "id": "71e3bacc-e664-46c7-ac73-668304cbad6e",
-              "rowId": "5e62e05d-c459-428f-8599-125d27fbd603",
-              "headerId": "327eeadc-67eb-44d3-8d6c-39ddc427e9cc",
-              "type": "text",
-              "text": "GETs and PUTs become simpler and quicker."
-            },
-            {
-              "id": "d9343731-2d47-4044-9d19-511f8ceec08c",
-              "rowId": "5e62e05d-c459-428f-8599-125d27fbd603",
-              "headerId": "468de61a-219c-4204-b3ac-4c19efa60c17",
-              "type": "text",
-              "text": "History will have to be processed in memory (similar to current design) adding to processing cost."
-            },
-            {
-              "id": "00ed7c87-b9c5-4ffd-9034-150954f8518e",
-              "rowId": "83581f82-34c0-48be-8389-694a1600f3cc",
-              "headerId": "ad969d55-f265-4db8-b70b-3c7767b92b75",
-              "type": "text",
-              "text": ""
-            },
-            {
-              "id": "516977b5-6995-40c7-b20c-57c8604c25e2",
-              "rowId": "83581f82-34c0-48be-8389-694a1600f3cc",
-              "headerId": "327eeadc-67eb-44d3-8d6c-39ddc427e9cc",
-              "type": "text",
-              "text": "Processing history in memory (service) may not be as expensive"
-            },
-            {
-              "id": "c3f3b59b-aa41-4528-b0d1-ee558e613dea",
-              "rowId": "83581f82-34c0-48be-8389-694a1600f3cc",
-              "headerId": "468de61a-219c-4204-b3ac-4c19efa60c17",
-              "type": "text",
-              "text": "Will require limiting the number of items that can be stored in a single history row (assets). From a Product pov, an item would mean an aggregation (example, at the show level) or for a sport. This is very difficult to manage within a single list."
-            },
-            {
-              "id": "3181205c-b30a-48cd-9092-3e62560c8d78",
-              "rowId": "df59dceb-77fe-48db-8a89-4cdcd0cbe04a",
-              "headerId": "ad969d55-f265-4db8-b70b-3c7767b92b75",
-              "type": "text",
-              "text": ""
-            },
-            {
-              "id": "5ab8332e-065b-4941-a214-b07b37cd1d3b",
-              "rowId": "df59dceb-77fe-48db-8a89-4cdcd0cbe04a",
-              "headerId": "327eeadc-67eb-44d3-8d6c-39ddc427e9cc",
-              "type": "text",
-              "text": "Filtering/Aggregation and Sorting logic can be customised for any purpose at the API layer"
-            },
-            {
-              "id": "860dadd3-f661-43ad-960d-d447359d36e4",
-              "rowId": "df59dceb-77fe-48db-8a89-4cdcd0cbe04a",
-              "headerId": "468de61a-219c-4204-b3ac-4c19efa60c17",
-              "type": "text",
-              "text": ""
-            },
-            {
-              "id": "bb33ce44-abd3-4510-9634-089d9dd1eb14",
-              "rowId": "282e055b-de70-43a7-adfc-a6e0a8812897",
-              "headerId": "ad969d55-f265-4db8-b70b-3c7767b92b75",
-              "type": "text",
-              "text": "Individual History Items"
-            },
-            {
-              "id": "0a36b4e8-09d2-4754-9b70-10cc2a589ab6",
-              "rowId": "282e055b-de70-43a7-adfc-a6e0a8812897",
-              "headerId": "327eeadc-67eb-44d3-8d6c-39ddc427e9cc",
-              "type": "text",
-              "text": "No limit on the number of history items that can be stored"
-            },
-            {
-              "id": "fd8b3979-13e1-4003-b21a-6c4292be34ab",
-              "rowId": "282e055b-de70-43a7-adfc-a6e0a8812897",
-              "headerId": "468de61a-219c-4204-b3ac-4c19efa60c17",
-              "type": "text",
-              "text": "Writing would entail maintaining some sort of summary lists/aggregations that facilitates lookups using additional dimensions/attributes. Therefore a 'write transaction' involves writing to multiple rows and can be inherently complicated to implement (combination of PUTs and get-and-updates)"
-            },
-            {
-              "id": "ac5037bf-6b84-4252-b9ca-eed951e261c2",
-              "rowId": "96b5f561-b1cf-4e5c-b31f-f756696b1629",
-              "headerId": "ad969d55-f265-4db8-b70b-3c7767b92b75",
-              "type": "text",
-              "text": ""
-            },
-            {
-              "id": "e8e060c4-2838-40d5-a7df-e6cb43b9c3b7",
-              "rowId": "96b5f561-b1cf-4e5c-b31f-f756696b1629",
-              "headerId": "327eeadc-67eb-44d3-8d6c-39ddc427e9cc",
-              "type": "text",
-              "text": "Writes to individual history items will be simple PUTs"
-            },
-            {
-              "id": "351a9f1c-4a8e-4354-a26b-2ce6ccc6ec1e",
-              "rowId": "96b5f561-b1cf-4e5c-b31f-f756696b1629",
-              "headerId": "468de61a-219c-4204-b3ac-4c19efa60c17",
-              "type": "text",
-              "text": "Alternatively, in order to facilitate attribute based lookups, we would have to resort to LSIs and utilise Query. Queries in DynamoDB may not be performant."
-            },
-            {
-              "id": "b8d8f4e0-94fa-4227-b7ed-762bf55bf693",
-              "rowId": "86867205-125d-4a18-80bf-a6c34d5a951e",
-              "headerId": "ad969d55-f265-4db8-b70b-3c7767b92b75",
-              "type": "text",
-              "text": ""
-            },
-            {
-              "id": "3cd2dc27-af0c-4c33-9021-1cb8c919000c",
-              "rowId": "86867205-125d-4a18-80bf-a6c34d5a951e",
-              "headerId": "327eeadc-67eb-44d3-8d6c-39ddc427e9cc",
-              "type": "text",
-              "text": "The set of attributes that can be stored in a single row can be extended significantly."
-            },
-            {
-              "id": "c4584c55-14a7-4ee6-9834-f14d20f7d3f9",
-              "rowId": "86867205-125d-4a18-80bf-a6c34d5a951e",
-              "headerId": "468de61a-219c-4204-b3ac-4c19efa60c17",
-              "type": "text",
-              "text": ""
-            }
-          ],
-          "tags": []
-        },
-        "viewType": "reading",
-        "shouldUpdate": false
+        "shouldUpdate": false,
+        "tableCacheVersion": 425
       }
     },
     "Work/z_Miscellaneous/Secrets/History POC.md": {
@@ -771,6 +581,208 @@
         "viewType": "reading",
         "shouldUpdate": true,
         "tableCacheVersion": 422
+      }
+    },
+    "Work/History v2/Design/Data Model/Kayo/Kayo Viewing - Data Model - DynamoDB.md": {
+      "0": {
+        "data": {
+          "headers": [
+            {
+              "id": "ad969d55-f265-4db8-b70b-3c7767b92b75",
+              "initialIndex": 0,
+              "content": "",
+              "width": "154px",
+              "type": "text",
+              "useAutoWidth": false,
+              "shouldWrapOverflow": true,
+              "sortDir": "default"
+            },
+            {
+              "id": "327eeadc-67eb-44d3-8d6c-39ddc427e9cc",
+              "initialIndex": 1,
+              "content": "Advantages",
+              "width": "319px",
+              "type": "text",
+              "useAutoWidth": false,
+              "shouldWrapOverflow": true,
+              "sortDir": "default"
+            },
+            {
+              "id": "468de61a-219c-4204-b3ac-4c19efa60c17",
+              "initialIndex": 2,
+              "content": "Disadvantages",
+              "width": "303px",
+              "type": "text",
+              "useAutoWidth": false,
+              "shouldWrapOverflow": true,
+              "sortDir": "default"
+            }
+          ],
+          "rows": [
+            {
+              "id": "5e62e05d-c459-428f-8599-125d27fbd603",
+              "initialIndex": 0,
+              "creationTime": 1658107949530
+            },
+            {
+              "id": "83581f82-34c0-48be-8389-694a1600f3cc",
+              "initialIndex": 1,
+              "creationTime": 1658107958458
+            },
+            {
+              "id": "df59dceb-77fe-48db-8a89-4cdcd0cbe04a",
+              "initialIndex": 2,
+              "creationTime": 1658107996115
+            },
+            {
+              "id": "282e055b-de70-43a7-adfc-a6e0a8812897",
+              "initialIndex": 3,
+              "creationTime": 1658116513393
+            },
+            {
+              "id": "96b5f561-b1cf-4e5c-b31f-f756696b1629",
+              "initialIndex": 4,
+              "creationTime": 1658116513185
+            },
+            {
+              "id": "86867205-125d-4a18-80bf-a6c34d5a951e",
+              "initialIndex": 5,
+              "creationTime": 1658116512848
+            }
+          ],
+          "cells": [
+            {
+              "id": "e0a9cd5d-e1ce-45bc-9838-4b05ece246b3",
+              "rowId": "5e62e05d-c459-428f-8599-125d27fbd603",
+              "headerId": "ad969d55-f265-4db8-b70b-3c7767b92b75",
+              "type": "text",
+              "text": "History as a List"
+            },
+            {
+              "id": "71e3bacc-e664-46c7-ac73-668304cbad6e",
+              "rowId": "5e62e05d-c459-428f-8599-125d27fbd603",
+              "headerId": "327eeadc-67eb-44d3-8d6c-39ddc427e9cc",
+              "type": "text",
+              "text": "GETs and PUTs become simpler and quicker."
+            },
+            {
+              "id": "d9343731-2d47-4044-9d19-511f8ceec08c",
+              "rowId": "5e62e05d-c459-428f-8599-125d27fbd603",
+              "headerId": "468de61a-219c-4204-b3ac-4c19efa60c17",
+              "type": "text",
+              "text": "History will have to be processed in memory (similar to current design) adding to processing cost."
+            },
+            {
+              "id": "00ed7c87-b9c5-4ffd-9034-150954f8518e",
+              "rowId": "83581f82-34c0-48be-8389-694a1600f3cc",
+              "headerId": "ad969d55-f265-4db8-b70b-3c7767b92b75",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "516977b5-6995-40c7-b20c-57c8604c25e2",
+              "rowId": "83581f82-34c0-48be-8389-694a1600f3cc",
+              "headerId": "327eeadc-67eb-44d3-8d6c-39ddc427e9cc",
+              "type": "text",
+              "text": "Processing history in memory (service) may not be as expensive"
+            },
+            {
+              "id": "c3f3b59b-aa41-4528-b0d1-ee558e613dea",
+              "rowId": "83581f82-34c0-48be-8389-694a1600f3cc",
+              "headerId": "468de61a-219c-4204-b3ac-4c19efa60c17",
+              "type": "text",
+              "text": "Will require limiting the number of items that can be stored in a single history row (assets). From a Product pov, an item would mean an aggregation (example, at the show level) or for a sport. This is very difficult to manage within a single list."
+            },
+            {
+              "id": "3181205c-b30a-48cd-9092-3e62560c8d78",
+              "rowId": "df59dceb-77fe-48db-8a89-4cdcd0cbe04a",
+              "headerId": "ad969d55-f265-4db8-b70b-3c7767b92b75",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "5ab8332e-065b-4941-a214-b07b37cd1d3b",
+              "rowId": "df59dceb-77fe-48db-8a89-4cdcd0cbe04a",
+              "headerId": "327eeadc-67eb-44d3-8d6c-39ddc427e9cc",
+              "type": "text",
+              "text": "Filtering/Aggregation and Sorting logic can be customised for any purpose at the API layer"
+            },
+            {
+              "id": "860dadd3-f661-43ad-960d-d447359d36e4",
+              "rowId": "df59dceb-77fe-48db-8a89-4cdcd0cbe04a",
+              "headerId": "468de61a-219c-4204-b3ac-4c19efa60c17",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "bb33ce44-abd3-4510-9634-089d9dd1eb14",
+              "rowId": "282e055b-de70-43a7-adfc-a6e0a8812897",
+              "headerId": "ad969d55-f265-4db8-b70b-3c7767b92b75",
+              "type": "text",
+              "text": "Individual History Items"
+            },
+            {
+              "id": "0a36b4e8-09d2-4754-9b70-10cc2a589ab6",
+              "rowId": "282e055b-de70-43a7-adfc-a6e0a8812897",
+              "headerId": "327eeadc-67eb-44d3-8d6c-39ddc427e9cc",
+              "type": "text",
+              "text": "No limit on the number of history items that can be stored"
+            },
+            {
+              "id": "fd8b3979-13e1-4003-b21a-6c4292be34ab",
+              "rowId": "282e055b-de70-43a7-adfc-a6e0a8812897",
+              "headerId": "468de61a-219c-4204-b3ac-4c19efa60c17",
+              "type": "text",
+              "text": "Writing would entail maintaining some sort of summary lists/aggregations that facilitates lookups using additional dimensions/attributes. Therefore a 'write transaction' involves writing to multiple rows and can be inherently complicated to implement (combination of PUTs and get-and-updates)"
+            },
+            {
+              "id": "ac5037bf-6b84-4252-b9ca-eed951e261c2",
+              "rowId": "96b5f561-b1cf-4e5c-b31f-f756696b1629",
+              "headerId": "ad969d55-f265-4db8-b70b-3c7767b92b75",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "e8e060c4-2838-40d5-a7df-e6cb43b9c3b7",
+              "rowId": "96b5f561-b1cf-4e5c-b31f-f756696b1629",
+              "headerId": "327eeadc-67eb-44d3-8d6c-39ddc427e9cc",
+              "type": "text",
+              "text": "Writes to individual history items will be simple PUTs"
+            },
+            {
+              "id": "351a9f1c-4a8e-4354-a26b-2ce6ccc6ec1e",
+              "rowId": "96b5f561-b1cf-4e5c-b31f-f756696b1629",
+              "headerId": "468de61a-219c-4204-b3ac-4c19efa60c17",
+              "type": "text",
+              "text": "Alternatively, in order to facilitate attribute based lookups, we would have to resort to LSIs and utilise Query. Queries in DynamoDB may not be performant."
+            },
+            {
+              "id": "b8d8f4e0-94fa-4227-b7ed-762bf55bf693",
+              "rowId": "86867205-125d-4a18-80bf-a6c34d5a951e",
+              "headerId": "ad969d55-f265-4db8-b70b-3c7767b92b75",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "3cd2dc27-af0c-4c33-9021-1cb8c919000c",
+              "rowId": "86867205-125d-4a18-80bf-a6c34d5a951e",
+              "headerId": "327eeadc-67eb-44d3-8d6c-39ddc427e9cc",
+              "type": "text",
+              "text": "The set of attributes that can be stored in a single row can be extended significantly."
+            },
+            {
+              "id": "c4584c55-14a7-4ee6-9834-f14d20f7d3f9",
+              "rowId": "86867205-125d-4a18-80bf-a6c34d5a951e",
+              "headerId": "468de61a-219c-4204-b3ac-4c19efa60c17",
+              "type": "text",
+              "text": ""
+            }
+          ],
+          "tags": []
+        },
+        "viewType": "reading",
+        "shouldUpdate": false,
+        "tableCacheVersion": 425
       }
     }
   },
