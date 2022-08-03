@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "Work/History v2/Design/Data Model/Kayo/Kayo Viewing - Data Model - Redis.md",
-            "mode": "preview",
+            "mode": "source",
             "backlinks": true,
             "source": false
           }
@@ -194,8 +194,8 @@
   "active": "a532d8c98c7675ef",
   "lastOpenFiles": [
     "Work/History v2/Design/Data Model/Data Model - V2.md",
-    "Work/History v2/Design/Data Model/Kayo/Kayo Viewing - Data Model - DynamoDB.md",
     "Work/History v2/Design/Data Model/Kayo/Kayo Viewing - Data Model - Redis.md",
+    "Work/History v2/Design/Data Model/Kayo/Kayo Viewing - Data Model - DynamoDB.md",
     "Work/History v2/Design/Technical Design/Overview.md",
     "Work/History v2/My Tasks.md",
     "Work/History v2/Design/V2 (Future).md",

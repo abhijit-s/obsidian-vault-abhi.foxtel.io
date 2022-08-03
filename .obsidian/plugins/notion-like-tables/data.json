@@ -797,7 +797,7 @@
         "data": {
           "headers": [
             {
-              "id": "90fdd944-b372-4657-91be-3819e48c6cd5",
+              "id": "56ba3293-e7e6-4566-bcd1-a5d6313a3b15",
               "content": "Pros",
               "sortDir": "default",
               "width": "426px",
@@ -806,7 +806,7 @@
               "type": "text"
             },
             {
-              "id": "7cd1c45b-87a6-46a9-9232-9b84fa421cbe",
+              "id": "cbbc1f84-11fe-4306-9f60-ff08ad2cdf11",
               "content": "Cons",
               "sortDir": "default",
               "width": "342px",
@@ -817,44 +817,82 @@
           ],
           "rows": [
             {
-              "id": "eac61481-25d3-45fa-be48-3644e312cb0c",
+              "id": "3824c43b-8b14-45cd-a40a-38aab078d4e7",
               "initialIndex": 0,
               "creationTime": 1659514761679
             },
             {
-              "id": "2fcd4baa-d681-43fa-83be-8194115654c5",
+              "id": "9e6c1e86-243e-4cea-bead-e1af5103012a",
               "initialIndex": 1,
               "creationTime": 1659514850186
+            },
+            {
+              "id": "4af20580-4741-427c-8f96-784aa0ccb1a1",
+              "initialIndex": 2,
+              "creationTime": 1659515925575
+            },
+            {
+              "id": "68801f72-3cb1-4548-9918-cb6e625732d4",
+              "initialIndex": 3,
+              "creationTime": 1659518364250
             }
           ],
           "cells": [
             {
-              "id": "fda430a2-84f9-4f3b-99f6-1a56d43947a3",
-              "rowId": "eac61481-25d3-45fa-be48-3644e312cb0c",
-              "headerId": "90fdd944-b372-4657-91be-3819e48c6cd5",
+              "id": "ecc985b4-bdd2-4bdd-b741-ae3c761cdb0e",
+              "rowId": "3824c43b-8b14-45cd-a40a-38aab078d4e7",
+              "headerId": "56ba3293-e7e6-4566-bcd1-a5d6313a3b15",
               "type": "text",
               "text": "The writer (history-recorder) can do blind writes, without worrying about performing any checked updates/upserts."
             },
             {
-              "id": "cde141c8-cf9f-4fdb-b4c1-d4cf413dba09",
-              "rowId": "eac61481-25d3-45fa-be48-3644e312cb0c",
-              "headerId": "7cd1c45b-87a6-46a9-9232-9b84fa421cbe",
+              "id": "de68e11e-42ce-452b-ba0f-91aeaa74efec",
+              "rowId": "3824c43b-8b14-45cd-a40a-38aab078d4e7",
+              "headerId": "cbbc1f84-11fe-4306-9f60-ff08ad2cdf11",
               "type": "text",
               "text": "The blind writes will need to be done to multiple records - each of the sorted sets and the individual record holder."
             },
             {
-              "id": "4b6e1062-590b-4c71-80e0-a8207fc57e7b",
-              "rowId": "2fcd4baa-d681-43fa-83be-8194115654c5",
-              "headerId": "90fdd944-b372-4657-91be-3819e48c6cd5",
+              "id": "c73452ab-398d-4261-bdb4-5b2a1b8156c4",
+              "rowId": "9e6c1e86-243e-4cea-bead-e1af5103012a",
+              "headerId": "56ba3293-e7e6-4566-bcd1-a5d6313a3b15",
               "type": "text",
-              "text": "Sorted sets provide pre-sorted "
+              "text": "Sorted sets are sorted using weights, which we can use in order to perform range lookups, or slice the entire set using indexes. This can help immensely with pagination."
             },
             {
-              "id": "547baeef-b436-491d-9a9d-4107e26a39f3",
-              "rowId": "2fcd4baa-d681-43fa-83be-8194115654c5",
-              "headerId": "7cd1c45b-87a6-46a9-9232-9b84fa421cbe",
+              "id": "24785347-77e4-4e09-bde5-f4c52de4314e",
+              "rowId": "9e6c1e86-243e-4cea-bead-e1af5103012a",
+              "headerId": "cbbc1f84-11fe-4306-9f60-ff08ad2cdf11",
+              "type": "text",
+              "text": "Maintaining additional data structures and guaranteeing consistency at the service level can get complicated."
+            },
+            {
+              "id": "069123e8-d305-4d22-a32c-01bdb44d3355",
+              "rowId": "4af20580-4741-427c-8f96-784aa0ccb1a1",
+              "headerId": "56ba3293-e7e6-4566-bcd1-a5d6313a3b15",
               "type": "text",
               "text": ""
+            },
+            {
+              "id": "9063fd89-7bd8-4a26-a99a-c26d64447e20",
+              "rowId": "4af20580-4741-427c-8f96-784aa0ccb1a1",
+              "headerId": "cbbc1f84-11fe-4306-9f60-ff08ad2cdf11",
+              "type": "text",
+              "text": "Insert and Remove are &amp;lt;code&amp;gt;O(log(N))&amp;lt;/code&amp;gt; operations"
+            },
+            {
+              "id": "bea5b0d6-d3ce-4949-a36c-f39445df98d7",
+              "rowId": "68801f72-3cb1-4548-9918-cb6e625732d4",
+              "headerId": "56ba3293-e7e6-4566-bcd1-a5d6313a3b15",
+              "type": "text",
+              "text": ""
+            },
+            {
+              "id": "09fd555b-9b60-4616-9d7b-eaf2ab03441d",
+              "rowId": "68801f72-3cb1-4548-9918-cb6e625732d4",
+              "headerId": "cbbc1f84-11fe-4306-9f60-ff08ad2cdf11",
+              "type": "text",
+              "text": "Can lead to key proliferation on account of maintaining additional sorted sets per profile; which in the future may further increase."
             }
           ],
           "tags": []
